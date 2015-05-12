@@ -56,10 +56,34 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    background-color: #000;
+    color: #fff;
+}
 
+.container {
+    padding-top: 2em;
+}
 
+header h1 {
+    font-family: Impact, Charcoal, sans-serif;
 
+}
 
+header h1 em {
+    font-style: normal;
+    color: #ff6a00;
+}
+
+h3 {
+    color: #ff0036;
+}
+
+.testimonials .comment {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    text-align: center;
+}
 
 
 
