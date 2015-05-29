@@ -57,32 +57,64 @@ textarea {
    ========================================================================== */
 
 body {
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
 }
 
-.container {
-    padding-top: 2em;
+em {
+  color: #aaa;
+  font-style: normal;
+  font-weight: 200;
 }
 
 header h1 {
-    font-family: Impact, Charcoal, sans-serif;
-
+  font-family: Impact, Charcoal, sans-serif;
 }
 
 header h1 em {
-    font-style: normal;
-    color: #ff6a00;
+  font-style: normal;
+  color: #ff6a00;
 }
 
-h3 {
-    color: #ff0036;
+header h3 {
+  color: #ff0036;
+}
+
+header h3,
+header h4 {
+  margin-bottom: 0;
+}
+
+.container {
+  padding-top: 2em;
 }
 
 .testimonials .comment {
-    font-family: "Times New Roman", Times, serif;
-    font-style: italic;
-    text-align: center;
+  font-size: 0.7em;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.testimonials .quote-open,
+.testimonials .quote-close {  
+  font-family: "Times New Roman", times, serif;
+}
+
+.testimonials .quote-open {
+  margin-bottom: 0;
+  float: left;
+  line-height: 175px;
+  font-size: 10em;
+  color: #ddd;
+  height: 75px;
+}
+
+.testimonials .quote-close {
+  clear: both;
+  text-align: right;
+  line-height: 58px;
+  font-size: 3em;
+  height: 25px;
 }
 
 
