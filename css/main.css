@@ -80,10 +80,6 @@ h3 {
   color: #ff0036;
 }
 
-.bio h3,
-.bio h4 {
-  margin-bottom: 0;
-}
 
 .main.container {
   padding-top: 2em;
@@ -141,6 +137,17 @@ h3 {
   height: 25px;
 }
 
+/* Bio section styles */
+.bio h3,
+.bio h4 {
+  margin-bottom: 0;
+  display: inline;
+}
+
+.bio h3 {
+  position: relative;
+  top: 1px;
+}
 
 /* ==========================================================================
    Media Queries
