@@ -80,7 +80,6 @@ h3 {
   color: #ff0036;
 }
 
-
 .main.container {
   padding-top: 2em;
 }
@@ -98,6 +97,15 @@ h3 {
 .main.container header nav ul li {
   margin: 0 1em;
   float: left;
+}
+
+.main.container header nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main.container header nav a:hover {
+  color: #bbb;
 }
 
 .testimonials .comment-box .quote-open,
