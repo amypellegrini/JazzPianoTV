@@ -89,6 +89,21 @@ h3 {
   padding-top: 2em;
 }
 
+.main.container header h1 {
+  float: left;
+}
+
+.main.container header nav ul {
+  margin-top: 1.3em;
+  list-style: none;
+  float: right;
+}
+
+.main.container header nav ul li {
+  margin: 0 1em;
+  float: left;
+}
+
 .testimonials .comment-box .quote-open,
 .testimonials .comment-box .quote-close {
   font-family: "Times New Roman", times, serif;
