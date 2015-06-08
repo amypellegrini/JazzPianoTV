@@ -85,15 +85,21 @@
             <!-- Email form -->
             <div id="contact" class="email form overlay container hidden">
                 <form>
-                    <label>Nombre<em>*</em></label>
-                    <input type="text" />
-                    <label>Email<em>*</em></label>
-                    <input type="text" />
-                    <label>Asunto</label>
-                    <input type="text" />
+                    <div class="form-field clearfix">
+                        <label>Nombre<em>*</em></label>
+                        <input type="text" />
+                    </div>
+                    <div class="form-field clearfix">
+                        <label>Email<em>*</em></label>
+                        <input type="text" />
+                    </div>
+                    <div class="form-field clearfix">
+                        <label>Asunto</label>
+                        <input type="text" />
+                    </div>
                     <label>Mensaje</label>
                     <textarea></textarea>
-                    <button>Enviar</button>
+                    <button id="contactSend">Enviar</button>
                 </form>
             </div>
         </div>

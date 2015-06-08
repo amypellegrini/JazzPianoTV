@@ -1,11 +1,13 @@
 var App = (function() {
   var contactBtn = document.getElementById('navContact'),
       contactForm = document.getElementById('contact'),
+      contactSendBtn = document.getElementById('contactSend'),
 
       hideContactForm = function(ev) {
-        ev.stopPropagation();
-
-        if (ev.target === ev.currentTarget) {
+        if (ev && ev.target === ev.currentTarget) {
+          ev.stopPropagation();
+          contactForm.className = "email form overlay container hidden";
+        } else if (!ev) {
           contactForm.className = "email form overlay container hidden";
         }
       },

@@ -116,7 +116,7 @@ h3 {
 
 /* Contact form */
 .email.form.overlay {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   position: fixed;
   top: 0;
   height: 100%;
@@ -133,8 +133,39 @@ h3 {
 
 .email.form.overlay form {
   padding-top: 3em;
-  width: 282px;
+  width: 376px;
   margin: 0 auto;
+}
+
+.email.form.overlay textarea {
+  font-size: 0.7em;
+  color: #000;
+  width: 100%;
+}
+
+.email.form.overlay label {
+  font-size: 0.7em;
+  color: #ccc;
+}
+
+.email.form.overlay .form-field label {
+  float: left;
+}
+
+.email.form.overlay .form-field input {
+  font-size: 0.7em;
+  color: #000;
+  float: right;
+}
+
+.email.form.overlay button {
+  border-color: #ff6a00;
+  color: #fff;
+}
+
+.email.form.overlay button:hover {
+  border-color: #dd6a00;
+  background-color: #cc4a00;
 }
 
 /* Home section */
