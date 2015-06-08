@@ -61,7 +61,7 @@ body {
   color: #fff;
 }
 
-em {
+header em {
   color: #aaa;
   font-style: normal;
   font-weight: 200;
@@ -77,6 +77,12 @@ h1 em {
 }
 
 h3 {
+  color: #ff0036;
+}
+
+.content em {
+  font-weight: 400;
+  font-style: normal;
   color: #ff0036;
 }
 
@@ -181,7 +187,27 @@ h3 {
   top: 1px;
 }
 
+.bio .content {
+  text-align: justify;
+}
 
+.bio .content p {
+  color: #ccc;
+  font-weight: 200;
+  font-size: 0.7em;
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+}
+
+.bio .img-container {
+  width: 350px;
+  float: left;
+  margin-right: 1em;
+}
+
+.bio .img-container img {
+  width: 100%;
+}
 
 /* ==========================================================================
    Media Queries
