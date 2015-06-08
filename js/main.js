@@ -1,21 +1,21 @@
-var App = (function() {
-  var contactBtn = document.getElementById('navContact'),
-      contactForm = document.getElementById('contact'),
-      contactSendBtn = document.getElementById('contactSend'),
+(function() {
+  var 
+      // UI DOM refrerences
+      contactBtn = $('#navContact'),
+      contactForm = $('#contact'),
+      contactSendBtn = $('#contactSend'),
 
       hideContactForm = function(ev) {
-        if (ev && ev.target === ev.currentTarget) {
+        if (!ev || ev && ev.target === ev.currentTarget) {
           ev.stopPropagation();
-          contactForm.className = "email form overlay container hidden";
-        } else if (!ev) {
-          contactForm.className = "email form overlay container hidden";
+          contactForm.addClass('hidden');
         }
       },
 
       showContactForm = function() {
-        contactForm.className = "email form overlay container";
+        contactForm.removeClass('hidden');
       };
 
-  contactBtn.addEventListener('click', showContactForm);
-  contactForm.addEventListener('click', hideContactForm);
+  contactBtn.on('click', showContactForm);
+  contactForm.on('click', hideContactForm);
 }());
