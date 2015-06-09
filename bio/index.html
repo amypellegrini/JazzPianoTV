@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="../css/main.css">
 
         <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
 
     <body>
@@ -72,18 +73,21 @@
                 <form>
                     <div class="form-field clearfix">
                         <label>Nombre<em>*</em></label>
-                        <input type="text" />
+                        <input type="text" required />
                     </div>
                     <div class="form-field clearfix">
                         <label>Email<em>*</em></label>
-                        <input type="text" />
+                        <input type="email" required />
                     </div>
                     <div class="form-field clearfix">
                         <label>Asunto</label>
                         <input type="text" />
                     </div>
-                    <label>Mensaje</label>
-                    <textarea></textarea>
+                    <div class="form-field textarea clearfix">
+                        <label>Mensaje<em>*</em></label>
+                        <textarea required></textarea>
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="6LeQqdESAAAAAP-CugEVVdJI1rP4boTINpCIzJTZ"></div>
                     <button id="contactSend">Enviar</button>
                 </form>
             </div>
@@ -91,7 +95,8 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
+        <script src="../js/vendor/parsley.min.js"></script>
+        <script src="../i18n/es.js"></script>
         <script src="../js/plugins.js"></script>
         <script src="../js/main.js"></script>
     </body>
