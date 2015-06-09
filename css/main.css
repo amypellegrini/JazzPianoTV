@@ -180,19 +180,19 @@ h3 {
 }
 
 .email.form.overlay .form-field .parsley-errors-list {
+  right: 0;
   height: 1.5em;
   font-size: 0.6em;
   position: absolute;
   list-style: none;
-  right: 93px;
-  width: 184px;
+  width: 278px;
   color: #ff0000;
   top: -21px;
 }
 
 .email.form.overlay .form-field.textarea .parsley-errors-list {
+  width: 154px;
   top: 0;
-  right: -31px;
 }
 
 /* Home section */

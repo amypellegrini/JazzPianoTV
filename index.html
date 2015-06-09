@@ -20,7 +20,6 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
 
     <body>
@@ -85,14 +84,15 @@
 
             <!-- Email form -->
             <div id="contact" class="email form overlay container visuallyhidden">
-                <form>
+                <form action="//formspree.io/amyvpellegrini@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="//jazzpiano.tv" />
                     <div class="form-field clearfix">
                         <label>Nombre<em>*</em></label>
-                        <input type="text" required />
+                        <input type="text" required name="name" />
                     </div>
                     <div class="form-field clearfix">
                         <label>Email<em>*</em></label>
-                        <input type="email" required />
+                        <input type="email" required name="_replyto" />
                     </div>
                     <div class="form-field clearfix">
                         <label>Asunto</label>
@@ -100,10 +100,9 @@
                     </div>
                     <div class="form-field textarea clearfix">
                         <label>Mensaje<em>*</em></label>
-                        <textarea required></textarea>
+                        <textarea required name="message"></textarea>
                     </div>
-                    <div class="g-recaptcha" data-sitekey="6LeQqdESAAAAAP-CugEVVdJI1rP4boTINpCIzJTZ"></div>
-                    <button id="contactSend">Enviar</button>
+                    <button id="contactSend" type="submit">Enviar</button>
                 </form>
             </div>
         </div>
