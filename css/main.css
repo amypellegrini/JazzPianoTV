@@ -175,6 +175,25 @@ h3 {
   background-color: #cc4a00;
 }
 
+.email.form.overlay .form-field {
+  position: relative;
+}
+
+.email.form.overlay .form-field .parsley-errors-list {
+  font-size: 0.6em;
+  position: absolute;
+  list-style: none;
+  right: 93px;
+  width: 184px;
+  color: #ff0000;
+  top: -21px;
+}
+
+.email.form.overlay .form-field.textarea .parsley-errors-list {
+  top: 0;
+  right: -31px;
+}
+
 /* Home section */
 .testimonials .comment-box .quote-open,
 .testimonials .comment-box .quote-close {
