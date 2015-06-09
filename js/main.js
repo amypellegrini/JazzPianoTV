@@ -8,12 +8,12 @@
       hideContactForm = function(ev) {
         if (!ev || ev && ev.target === ev.currentTarget) {
           ev.stopPropagation();
-          contactForm.addClass('hidden');
+          contactForm.addClass('visuallyhidden');
         }
       },
 
       showContactForm = function() {
-        contactForm.removeClass('hidden');
+        contactForm.removeClass('visuallyhidden');
       };
 
   contactBtn.on('click', showContactForm);
