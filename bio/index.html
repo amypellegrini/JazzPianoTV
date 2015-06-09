@@ -61,37 +61,41 @@
 
                             <p>A los 28 años de edad descubrí y abracé mi condición transgénero, salí del closet, y desde ese momento he trabajado intensamente para interiorizarme sobre la situación general de las personas trans, con la firme intención de lograr un cambio que no solo permita una sana inclusión de la comunidad trans, sino una mayor libertad para todo ser humano en su condición de ser.</p>
 
-                            <p><em>Denunciar, desmitificar, desconstruír, y proponer</em> son los 4 ejes de mi trabajo como artista y activista, los 4 ejes que considero esenciales para una reforma cultural que a su vez se haga eco en forma de transformación social.</p>
+                            <p><em>Denunciar, desmitificar, deconstruír, y proponer</em> son los 4 ejes de mi trabajo como artista y activista, los 4 ejes que considero esenciales para una reforma cultural que a su vez se haga eco en forma de transformación social.</p>
                         </div>
                     </section>
                 </div>
             </section>
 
             <!-- Email form -->
-            <div id="contact" class="email form overlay container hidden">
-                <form>
+            <div id="contact" class="email form overlay container visuallyhidden">
+                <form action="//formspree.io/amyvpellegrini@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="//jazzpiano.tv" />
                     <div class="form-field clearfix">
                         <label>Nombre<em>*</em></label>
-                        <input type="text" />
+                        <input type="text" required name="name" />
                     </div>
                     <div class="form-field clearfix">
                         <label>Email<em>*</em></label>
-                        <input type="text" />
+                        <input type="email" required name="_replyto" />
                     </div>
                     <div class="form-field clearfix">
                         <label>Asunto</label>
                         <input type="text" />
                     </div>
-                    <label>Mensaje</label>
-                    <textarea></textarea>
-                    <button id="contactSend">Enviar</button>
+                    <div class="form-field textarea clearfix">
+                        <label>Mensaje<em>*</em></label>
+                        <textarea required name="message"></textarea>
+                    </div>
+                    <button id="contactSend" type="submit">Enviar</button>
                 </form>
             </div>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
+        <script src="../js/vendor/parsley.min.js"></script>
+        <script src="../i18n/es.js"></script>
         <script src="../js/plugins.js"></script>
         <script src="../js/main.js"></script>
     </body>

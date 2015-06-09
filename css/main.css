@@ -159,6 +159,7 @@ h3 {
 }
 
 .email.form.overlay .form-field input {
+  width: 278px;
   font-size: 0.7em;
   color: #000;
   float: right;
@@ -172,6 +173,26 @@ h3 {
 .email.form.overlay button:hover {
   border-color: #dd6a00;
   background-color: #cc4a00;
+}
+
+.email.form.overlay .form-field {
+  position: relative;
+}
+
+.email.form.overlay .form-field .parsley-errors-list {
+  right: 0;
+  height: 1.5em;
+  font-size: 0.6em;
+  position: absolute;
+  list-style: none;
+  width: 278px;
+  color: #ff0000;
+  top: -21px;
+}
+
+.email.form.overlay .form-field.textarea .parsley-errors-list {
+  width: 154px;
+  top: 0;
 }
 
 /* Home section */
