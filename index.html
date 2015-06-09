@@ -85,29 +85,30 @@
 
             <!-- Email form -->
             <div id="contact" class="email form overlay container visuallyhidden">
-                <form data-parsley-validate>
+                <form>
                     <div class="form-field clearfix">
                         <label>Nombre<em>*</em></label>
-                        <input type="text" />
+                        <input type="text" required />
                     </div>
                     <div class="form-field clearfix">
                         <label>Email<em>*</em></label>
-                        <input type="text" />
+                        <input type="email" required />
                     </div>
                     <div class="form-field clearfix">
                         <label>Asunto</label>
                         <input type="text" />
                     </div>
                     <label>Mensaje</label>
-                    <textarea></textarea>
-                    <button id="contactSend">Enviar</button>
+                    <textarea required></textarea>
                     <div class="g-recaptcha" data-sitekey="6LeQqdESAAAAAP-CugEVVdJI1rP4boTINpCIzJTZ"></div>
+                    <button id="contactSend">Enviar</button>
                 </form>
             </div>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="i18n/es.js"></script>
         <script src="js/vendor/parsley.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

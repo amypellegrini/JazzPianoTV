@@ -7,7 +7,6 @@
 
       hideContactForm = function(ev) {
         if (!ev || ev && ev.target === ev.currentTarget) {
-          ev.stopPropagation();
           contactForm.addClass('visuallyhidden');
         }
       },
@@ -18,4 +17,5 @@
 
   contactBtn.on('click', showContactForm);
   contactForm.on('click', hideContactForm);
+  contactForm.find('form').parsley();
 }());
