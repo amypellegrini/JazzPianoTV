@@ -195,7 +195,7 @@ h3 {
   top: 0;
 }
 
-/* Home section */
+/* Testimonials section */
 .testimonials .comment-box .quote-open,
 .testimonials .comment-box .quote-close {
   font-family: "Times New Roman", times, serif;
@@ -231,6 +231,11 @@ h3 {
   line-height: 58px;
   font-size: 3em;
   height: 25px;
+}
+
+/* Lessons section */
+.lessons ul li {
+  font-size: 0.7em;
 }
 
 /* Bio section */
