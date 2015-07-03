@@ -1,6 +1,5 @@
 (function() {
-  var 
-      // UI DOM refrerences
+  var
       contactBtn = $('.contact-btn'),
       contactForm = $('#contact'),
       contactSendBtn = $('#contactSend'),
