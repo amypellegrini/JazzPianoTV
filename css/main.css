@@ -76,8 +76,21 @@ h1 em {
   color: #ff6a00;
 }
 
-h3 {
+h3, h4 {
   color: #ff0036;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  color: #ff6a00;
+}
+
+a:hover {
+  color: #ff9e00;
 }
 
 .content em {
@@ -195,7 +208,7 @@ h3 {
   top: 0;
 }
 
-/* Home section */
+/* Testimonials section */
 .testimonials .comment-box .quote-open,
 .testimonials .comment-box .quote-close {
   font-family: "Times New Roman", times, serif;
@@ -231,6 +244,21 @@ h3 {
   line-height: 58px;
   font-size: 3em;
   height: 25px;
+}
+
+/* Lessons section */
+.lessons ul li {
+  font-size: 0.7em;
+}
+
+/* Music section */
+.music.section {
+  margin-bottom: 1.4em;
+}
+
+.music h4 {
+  margin-bottom: 0.2em;
+  margin-top: 1em
 }
 
 /* Bio section */
