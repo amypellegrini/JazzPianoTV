@@ -2,13 +2,12 @@
   <h1><a class="site-title" href="{{ site.baseurl }}/">JazzPiano<em>TV</em></a></h1>
   <nav>
     <ul>
-      <li><a id="navBio" href="/bio">Bio</a></li>
-      <li><a id="navContact" class="contact-btn" href="#contact">Contactar</a></li>
       {% for page in site.pages %}
       {% if page.title %}
         <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
       {% endif %}
       {% endfor %}
+      <li><a id="navContact" class="contact-btn" href="#contact">Contactar</a></li>
     </ul>
   </nav>
 </header>
