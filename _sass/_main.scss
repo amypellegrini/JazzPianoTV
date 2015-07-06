@@ -71,6 +71,12 @@ h1 {
   font-family: Impact, Charcoal, sans-serif;
 }
 
+h1 a,
+h1 a:hover {
+  font-size: inherit;
+  color: inherit;
+}
+
 h1 em {
   font-style: normal;
   color: #ff6a00;
