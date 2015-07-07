@@ -82,7 +82,7 @@ h1 em {
   color: #ff6a00;
 }
 
-h3, h4 {
+h2, h3, h4 {
   color: #ff0036;
 }
 
@@ -277,6 +277,10 @@ a:hover {
 .bio h3 {
   position: relative;
   top: 1px;
+}
+
+.bio h4 {
+  color: #fff;
 }
 
 .bio .content {
