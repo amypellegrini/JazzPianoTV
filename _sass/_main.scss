@@ -309,7 +309,17 @@ a:hover {
   list-style: none;
 }
 
-.post .post-content {}
+.post .post-content {
+  h2.post-title {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #ccc;
+    font-weight: 300;
+  }
+}
 
 img {
   width: 100%;
