@@ -309,7 +309,9 @@ a:hover {
   list-style: none;
 }
 
-.post .post-content img {
+.post .post-content {}
+
+img {
   width: 100%;
 
   &.sheet-music {
