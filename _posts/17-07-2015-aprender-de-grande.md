@@ -35,6 +35,6 @@ Esto último duele al orgullo, lo primero es más cómodo y nos desliga de nuest
 
 Yo quiero ser virtuosa, si hay quién se conforma con menos, está perfecto, es su elección, pero yo no quisiera pasar por esta vida sin haber tocado obras tan hermosas y complejas como las que hay, ni llegar a vieja pensando que quizás mi vida hubiera podido ser diferente, solo porque otra gente me condenó a no ser virtuosa por un prejuicio basado en la ignorancia.
 
-Después de todo, tocar el piano es hermoso, el secreto es aprender a disfrutar el viaje y hacerlo con amor, en vez de andar jugando a ver quién la tiene más grande.
+Después de todo, tocar el piano es hermoso, el secreto es aprender a disfrutar el viaje y hacerlo con amor.
 
 Besos <3
