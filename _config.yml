@@ -1,0 +1,11 @@
+# Site settings
+title: JazzPianoTV
+email: amyvpellegrini@gmail.com
+description: Aprende a tocar el Piano de verdad.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://jazzpiano.tv" # the base hostname & protocol for your site
+twitter_username: amyvpellegrini
+github_username:  amypellegrini
+
+# Build settings
+markdown: kramdown

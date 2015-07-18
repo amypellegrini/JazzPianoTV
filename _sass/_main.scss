@@ -71,12 +71,18 @@ h1 {
   font-family: Impact, Charcoal, sans-serif;
 }
 
+h1 a,
+h1 a:hover {
+  font-size: inherit;
+  color: inherit;
+}
+
 h1 em {
   font-style: normal;
   color: #ff6a00;
 }
 
-h3, h4 {
+h2, h3, h4 {
   color: #ff0036;
 }
 
@@ -273,6 +279,10 @@ a:hover {
   top: 1px;
 }
 
+.bio h4 {
+  color: #fff;
+}
+
 .bio .content {
   text-align: justify;
 }
@@ -293,6 +303,32 @@ a:hover {
 
 .bio .img-container img {
   width: 100%;
+}
+
+.blog ul.posts-list li {
+  list-style: none;
+}
+
+h2.post-title {
+  font-size: 2rem;
+}
+
+.post {
+  .post-content {
+    p {
+      font-size: 1.2rem;
+      color: #ccc;
+      font-weight: 300;
+    }
+  }
+}
+
+img {
+  width: 100%;
+
+  &.sheet-music {
+    background-color: #fff;
+  }
 }
 
 /* ==========================================================================
