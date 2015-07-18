@@ -5,17 +5,18 @@ permalink: /bio/
 ---
 
 <!-- Bio -->
-<div class="bio">
+<div class="bio" itemscope  itemtype="http://schema.org/Person">
+  <meta itemprop="owns" content="JazzPianoTV">
     <section>
         <header>
-            <h3>Bio</h3>
-            <h4>Amy Pellegrini</h4>
-            <p><em>Web Application Developer | Pianista | Polímata</em></p>
+          <h3>Bio</h3>
+          <h4 itemprop="name">Amy Pellegrini</h4>
+          <p itemprop="description"><em>Web Application Developer | Pianista | Polímata</em></p>
         </header>
         <div class="content">
-            <div class="img-container">
-                <img src="../img/bio.jpg" />
-            </div>
+          <div class="img-container">
+            <img itemprop="image" src="../img/bio.jpg" />
+          </div>
 
             <p>Soy pianista, artista, programadora, y activista por los derechos de las personas transgénero.</p>
 
