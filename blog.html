@@ -9,6 +9,7 @@ permalink: /blog/
     <ul class="posts-list">
       {% for post in site.posts %}
         <li>
+          <hr />
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
           <h2 class="post-title">
@@ -16,7 +17,6 @@ permalink: /blog/
           </h2>
 
           {{ post.excerpt }}
-          <p>...</p>
 
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Ver más</a>
         </li>

@@ -305,12 +305,36 @@ a:hover {
   width: 100%;
 }
 
-.blog ul.posts-list li {
-  list-style: none;
-}
+/* Main Blog Page */
+.blog {
+  hr {
+    margin: 0;
+    border-top: 1px solid #333;
+  }
 
-h2.post-title {
-  font-size: 2rem;
+  p {
+    font-size: 1.2rem;
+    color: #ccc;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+
+  .img-container {
+    max-height: 5em;
+    overflow: hidden;
+  }
+
+  h2.post-title {
+    font-size: 2rem;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  ul.posts-list li {
+    list-style: none;
+  }
 }
 
 .post {
