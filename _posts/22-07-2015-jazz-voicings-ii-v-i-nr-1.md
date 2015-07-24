@@ -6,7 +6,7 @@ permalink: /jazz-voicings/ii-v-i/voicing-nr-1/
 
 La siguiente es una rutina de acordes que recorre una configuración básica (voicing) sobre la secuencia II - V - I en todas las tonalidades.
 
-Este voicing se carateriza por presentar una posición <em>cerrada</em> en la mano derecha, es decir, si analizamos cada acorde individualmente, entre cada uno de los grados del acrode no es posible insertar otro grado, al menos sin que sea considerado una extensión o tono superior del acorde.
+Este voicing se carateriza por presentar una posición cerrada en la mano derecha, es decir, si analizamos cada acorde individualmente, entre cada uno de los grados del acrode no es posible insertar otro grado, al menos sin que sea considerado una extensión o tono superior del acorde.
 
 Esta posición cerrada se rompe al pasar del II grado (sub-dominante) al V grado (dominante), ya que entre la 3ra y la 13na del V grado podría incluírse la 5ta, aunque podríamos considerar a la 13na como un reemplazo de la 5ta, y en tal caso la posición del voicing podría considerarse cerrada.
 
