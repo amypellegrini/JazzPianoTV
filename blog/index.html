@@ -5,24 +5,30 @@ title: Blog
 
 <div class="blog">
   <section>
-    <ul class="posts-list">
-      {% for post in paginator.posts %}
-        <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <div class="posts-list-container">
+      <h4>Mostrando resultados en página {{ paginator.page }}</h4>
+      <ul class="posts-list">
+        {% for post in paginator.posts %}
+          <li>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-          <div class="post-excerpt">
-            <h2 class="post-title">
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
+            <div class="post-excerpt">
+              <h2 class="post-title">
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h2>
 
-            {{ post.content }}
-            <div class="excerpt-overlay"></div>
-          </div>
+              {{ post.content }}
+              <div class="excerpt-overlay"></div>
+            </div>
 
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Ver más</a>
-        </li>
-      {% endfor %}
-    </ul>
-    {% include navbar.html %}
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Ver más</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="nav-container">
+      {% include navbar.html %}
+      {% include paginator.html %}
+    </div>
   </section>
 </div>
