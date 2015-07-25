@@ -3,7 +3,8 @@
   <nav>
     <ul>
       {% for page in site.pages %}
-      {% if page.title %}
+      {% if page.url contains 'page' %}
+      {% elsif page.title %}
         <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
       {% endif %}
       {% endfor %}
