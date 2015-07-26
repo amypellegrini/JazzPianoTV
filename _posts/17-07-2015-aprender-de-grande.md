@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Aprender a tocar el piano después de los 30 años
+author: Amy Pellegrini
 permalink: /aprender-de-grande/
 ---
 

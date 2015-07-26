@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Tríada Menor | Rutina Básica
+author: Amy Pellegrini
 permalink: /rutina-basica-triada-menor/
 ---
 

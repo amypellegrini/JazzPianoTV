@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Primer post
+author: Amy Pellegrini
 permalink: /primer-post/
 ---
 

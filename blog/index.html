@@ -6,7 +6,7 @@ title: Blog
 <div class="blog clearfix">
   <section>
     <div class="posts-list-container">
-      <h4>Mostrando resultados en <strong>página {{ paginator.page }}</strong></h4>
+      <h4>Mostrando resultados en <strong>página {{ paginator.page }}</strong> ({{ paginator.per_page }}  de {{ paginator.total_posts }})</h4>
       <ul class="posts-list">
         {% for post in paginator.posts %}
           <li>
@@ -25,13 +25,14 @@ title: Blog
           </li>
         {% endfor %}
       </ul>
+      {% include paginator.html %}
     </div>
     <div class="nav-container">
       {% include navbar.html %}
       {% include paginator.html %}
 
-      <a target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}">
-        <span>RSS</span><img class="icon-suscribe" src="../img/rss-640.png">
+      <a target="_blank" href="{{ '/feed.xml' | prepend: site.baseurl }}">
+        <span>RSS</span><img class="icon-suscribe" src="{{ '/img/rss-640.png' | prepend: site.baseurl }}">
       </a>
     </div>
   </section>

@@ -108,7 +108,7 @@ a:hover {
 
 .rss-suscribe {
   a {
-    color: #000;
+    color: #333;
   }
 }
 
@@ -441,29 +441,37 @@ a:hover {
       letter-spacing: 1px;
     }
   }
+}
 
-  .nav-container {
-    h4 {
-      margin-bottom: 0.5rem;
-    }
+.nav-container {
+  width: 25%;
+  float: right;
 
-    ul {
-      li {
-        font-size: 0.9rem;
-        list-style-type: none;
+  h4 {
+    margin-bottom: 0.5rem;
+  }
 
-        .post-meta {
-          display: block;
-        }
+  ul {
+    li {
+      font-size: 0.9rem;
+      list-style-type: none;
 
-        .post-link {
-        }
+      .post-meta {
+        display: block;
+      }
+
+      .post-link {
       }
     }
   }
 }
 
 .post {
+  padding-right: 25px;
+  width: 75%;
+  float: left;
+  box-sizing: border-box;
+
   .post-title {
     font-size: 2.4rem;
   }

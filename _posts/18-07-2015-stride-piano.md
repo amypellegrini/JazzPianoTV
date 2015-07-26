@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Técnica de Stride Piano
+author: Amy Pellegrini
 permalink: /stride-piano/
 ---
 

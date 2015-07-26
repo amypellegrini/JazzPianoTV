@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Rutina básica de tríadas
+author: Amy Pellegrini
 permalink: /triadas-rutina-basica/
 ---
 
