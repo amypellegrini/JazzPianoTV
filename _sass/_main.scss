@@ -81,7 +81,7 @@ h1 em {
   color: #ff6a00;
 }
 
-h2, h3, h4 {
+h2, h3, h4, h5 {
   color: #ff0036;
 }
 
@@ -94,7 +94,12 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2em;
+  font-size: 1.8rem;
+}
+
+h5 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 a {
@@ -104,6 +109,12 @@ a {
 
 a:hover {
   color: #ff9e00;
+}
+
+footer a,
+footer a:hover {
+  font-size: 1rem;
+  color: #333;
 }
 
 .rss-suscribe {
@@ -159,13 +170,16 @@ a:hover {
   }
 }
 
-.main.container header nav ul li {
-  margin: 0 1em;
-  float: left;
-}
+.main.container {
+  header nav ul li {
+    margin: 0 0.5em;
+    float: left;
+  }
 
-.main.container header nav a {
-  text-decoration: none;
+  header nav a {
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
 }
 
 .main.container header nav a:hover {
@@ -441,6 +455,59 @@ a:hover {
       letter-spacing: 1px;
     }
   }
+}
+
+.score-container {
+  float: right;
+}
+
+.scale-container {
+  width: 75%;
+
+  img {
+    height: 51px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+.exercise-flow-container {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+
+  .exercise-container {
+    background-color: #fff; 
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.options-container {
+  float: right;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0 20px 10px;
+
+  ul {
+    li {
+      height: 25px;
+      list-style-type: none;
+    }
+  }
+
+  label {
+    font-size: 1rem;
+    display: inline;
+  }
+
+  button {}
+}
+
+.question-container {
+  float: left;
+  width: 75%;
 }
 
 .nav-container {
