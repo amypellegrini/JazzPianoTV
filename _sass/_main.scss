@@ -364,9 +364,9 @@ a:hover {
     border-top: 1px solid #333;
   }
 
-  p {
+  .posts-list p {
     font-size: 0.9rem;
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 0.9rem;
   }
 
@@ -390,7 +390,7 @@ a:hover {
       box-sizing: border-box;
       float: left;
       margin-bottom: 0;
-      height: 270px;
+      height: 243px;
       width: 700px;
       list-style: none;
       overflow: hidden;
