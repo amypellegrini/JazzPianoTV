@@ -458,7 +458,10 @@ footer a:hover {
 }
 
 .score-container {
+  font-size: 1.2rem;
   float: right;
+  width: 10%;
+  box-sizing: border-box;
 }
 
 .scale-container {
@@ -470,9 +473,12 @@ footer a:hover {
 }
 
 .exercise-flow-container {
+  .exercises-container {
+    float: left;
+  }
+
   .exercise-container {
     background-color: #fff;
-    display: none;
 
     &.top {
       display: block;
@@ -483,7 +489,7 @@ footer a:hover {
 
 .options-container {
   float: right;
-  width: 25%;
+  width: 20%;
   box-sizing: border-box;
   padding: 0 20px 10px;
 

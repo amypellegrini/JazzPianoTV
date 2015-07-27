@@ -10,81 +10,13 @@ permalink: /ejercicios/
   <p>A continuación puede verse una vista previa de algunos de los ejercicios que estoy preparando.</p>
 </section>
 
-
 <div class="exercise-flow-container clearfix">
-
-  <!-- First step -->
-  <div class="exercise-container top clearfix" step="1">
-    <div class="question-container">
-      <h4>¿Qué Escala es ésta?</h4>
-      <p>TIP: La primer nota se corresponde con la fundamental de la escala.</p>
-      <div class="scale-container">
-        <img src="{{ '../img/scales/eb-major.svg' }}">
-      </div>
-    </div>
-    <div class="options-container">
-      <form id="scales-form-list-e2">
-        <h5>Opciones</h5>
-        <ul>
-          <li>
-            <input type="radio" name="scale-name" id="option-1" value="bb-major" />
-            <label for="option-1">Bb Mayor</label>
-          </li>
-          <li>
-            <input type="radio" name="scale-name" id="option-2" value="eb-major" />
-            <label for="option-2">Eb Mayor</label>
-          </li>
-          <li>
-            <input type="radio" name="scale-name" id="option-3" value="f-minor" />
-            <label for="option-3">F Menor</label>
-          </li>
-          <li>
-            <input type="radio" name="scale-name" id="option-4" value="bbmaj7" />
-            <label for="option-4">Bbmaj7</label>
-          </li>
-        </ul>
-        <button type="submit">OK</button>
-      </form>
-    </div>
+  <div class="exercises-container">
+    {% include exercises/que-escala-es-esta.html %}
+    {% include exercises/que-acorde-es-este.html %}
+    {% include exercises/a-que-obra-pertenece.html %}
+    {% include exercises/a-que-compositor-pertenece.html %}
+    {% include exercises/que-intervalo-es-este.html %}
   </div>
-
-  <!-- Step 2 -->
-  <div class="exercise-container clearfix" step="2">
-    <div class="question-container">
-      <h4>¿Qué Escala es ésta?</h4>
-      <p>TIP: La primer nota se corresponde con la raíz de la escala.</p>
-      <div class="scale-container">
-        <img src="{{ '../img/scales/eb-major.svg' }}">
-      </div>
-    </div>
-    <div class="options-container">
-      <form id="scales-form-list-e2">
-        <h5>Opciones</h5>
-        <ul>
-          <li>
-            <input type="radio" name="scale-name" id="option-1" value="bb-major" />
-            <label for="option-1">Bb Mayor</label>
-          </li>
-          <li>
-            <input type="radio" name="scale-name" id="option-2" value="eb-major" />
-            <label for="option-2">Eb Mayor</label>
-          </li>
-          <li>
-            <input type="radio" name="scale-name" id="option-3" value="f-minor" />
-            <label for="option-3">F Menor</label>
-          </li>
-          <li>
-            <input type="radio" name="scale-name" id="option-4" value="bbmaj7" />
-            <label for="option-4">Bbmaj7</label>
-          </li>
-        </ul>
-        <button type="submit">OK</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- Score -->
-  <div class="score-container">
-    <span class="score-number">0</span><span> puntos</span>
-  </div>
+  {% include ui-gameplay/score.html %}
 </div>
