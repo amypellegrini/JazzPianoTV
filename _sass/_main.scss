@@ -472,6 +472,43 @@ footer a:hover {
   }
 }
 
+.scale-types-list-container,
+.keys-list-container {
+  ul {
+    li {
+      list-style-type: none;
+      width: 120px;
+      height: 40px;
+      border: 1px solid #333;
+      border-radius: 2px;
+      float: left;
+      margin: 3px 3px;
+      text-align: center;
+
+      &:hover {
+        background-color: #eee;
+        cursor: pointer;
+      };
+    }
+  }
+}
+
+.scale-types-list-container {
+  h4 {
+    clear: both;
+  }
+
+  ul {
+    li {
+      width: 200px;
+    }
+  }
+}
+
+.scale-builder {
+  .section-container {}
+}
+
 .exercise-flow-container {
   .exercises-container {
     float: left;

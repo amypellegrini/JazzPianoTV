@@ -4,4 +4,10 @@
 <script src="{{ '/js/vendor/parsley.min.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/i18n/es.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/js/plugins.js' | prepend: site.baseurl }}"></script>
-<script data-main="/js/main" src="scripts/require.js"></script>
+<script data-main="/js/main" src="{{ '/js/vendor/require.js' | prepend: site.baseurl }}"></script>
+
+{% if page.scripts %}
+  {% for script in page.scripts %}
+    <script src="{{ script | prepend: site.baseurl }}"></script>
+  {% endfor %}
+{% endif %}
