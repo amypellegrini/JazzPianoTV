@@ -462,8 +462,6 @@ footer a:hover {
 }
 
 .scale-container {
-  width: 75%;
-
   img {
     height: 51px;
     margin-bottom: 20px;
@@ -472,15 +470,14 @@ footer a:hover {
 }
 
 .exercise-flow-container {
-  position: relative;
-  overflow: hidden;
-  height: 300px;
-
   .exercise-container {
-    background-color: #fff; 
-    position: absolute;
-    top: 0;
-    left: 0;
+    background-color: #fff;
+    display: none;
+
+    &.top {
+      display: block;
+      float: left;
+    }
   }
 }
 
