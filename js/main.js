@@ -1,20 +1,13 @@
-(function() {
-  var
-      contactBtn = $('.contact-btn'),
-      contactForm = $('#contact'),
-      contactSendBtn = $('#contactSend'),
+define(['views/contactView'], function(ContactView) {
 
-      hideContactForm = function(ev) {
-        if (!ev || ev && ev.target === ev.currentTarget) {
-          contactForm.addClass('visuallyhidden');
-        }
-      },
+var JazzApp = {};
 
-      showContactForm = function() {
-        contactForm.removeClass('visuallyhidden');
-      };
+JazzApp.contactView = new ContactView({
+  ui: {
+    contactBtn: $('.contact-btn'),
+    contactForm: $('#contact'),
+    contactSendBtn: $('#contactSend')
+  }
+});
 
-  contactBtn.on('click', showContactForm);
-  contactForm.on('click', hideContactForm);
-  contactForm.find('form').parsley();
-}());
+});
