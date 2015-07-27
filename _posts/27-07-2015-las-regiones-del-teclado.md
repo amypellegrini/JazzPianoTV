@@ -1,0 +1,1 @@
+El Teclado puede dividirse en tres regiones, áreas, o registros principales. Los límites entre estos 3 registros no están claramente definidos.
