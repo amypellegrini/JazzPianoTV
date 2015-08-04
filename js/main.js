@@ -1,4 +1,4 @@
-define(['views/contactView'], function(ContactView) {
+define(['views/contact-view'], function(ContactView) {
 
 var JazzApp = {};
 

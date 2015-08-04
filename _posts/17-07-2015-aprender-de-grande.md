@@ -3,6 +3,8 @@ layout: post
 title: Aprender a tocar el piano después de los 30 años
 author: Amy Pellegrini
 permalink: /aprender-de-grande/
+categories: [Motivación]
+tags: [Motivación]
 ---
 
 Uno de los desafíos que me propongo como pianista, es desterrar la idea de que a menos que empieces a tocar a los 3 años es imposible que llegues a ser un pianista virtuoso.

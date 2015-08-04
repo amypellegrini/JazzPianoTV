@@ -3,6 +3,8 @@ layout: post
 title: Técnica de Stride Piano
 author: Amy Pellegrini
 permalink: /stride-piano/
+categories: [Tríadas, Rutinas]
+tags: [Tríadas, Rutinas]
 ---
 
 <div class="img-container">

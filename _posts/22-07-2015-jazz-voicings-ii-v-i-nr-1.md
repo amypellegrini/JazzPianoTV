@@ -17,7 +17,7 @@ Una variante del mismo voicing repte la misma configuración del acrode Dominant
 
 Para resaltar la tónica de cada acorde y el movimiento en 4tas y 5tas entre las mismas, el bajo es separado del acorde y conducido por la mano izquierda.
 
-Este tipo de voicing suele estar asociado a la Escuela Jazzística, aunque su uso puede remontarse a la época del renacimiento europeo.
+Este tipo de voicing suele estar asociado a la Escuela Jazzística, aunque su uso puede remontarse a la época del impresionismo europeo.
 
 <div class="img-container">
   <img class="sheet-music" src="{{ "/sheet-music/jazz-voicings/ii-v-i/nr-1/jazz-voicings-ii-v-i-nr-1.svg" | prepend: site.baseurl }}" alt="Jazz Voicing II - V - I" />

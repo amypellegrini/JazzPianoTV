@@ -3,6 +3,8 @@ layout: post
 title: Primer post
 author: Amy Pellegrini
 permalink: /primer-post/
+categories: []
+tags: []
 ---
 
 ¡Este es mi primer post!
