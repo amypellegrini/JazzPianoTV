@@ -117,6 +117,17 @@ footer a:hover {
   color: #333;
 }
 
+.ad-container {
+  &.leaderboard-728x90 {
+    height: 90px;
+    width: 728px;
+  }
+
+  &.dev {
+    outline: 1px solid red;
+  }
+}
+
 .rss-suscribe {
   a {
     color: #333;
@@ -378,11 +389,6 @@ footer a:hover {
     border-top: 1px solid #333;
   }
 
-  .posts-list p {
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-bottom: 0.9rem;
-  }
 
   .img-container {}
 
@@ -398,14 +404,18 @@ footer a:hover {
   ul.posts-list {
     margin: 0;
 
+    p {
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 0.9rem;
+    }
+
     li {
-      margin-right: 20px;
       border-top: 1px solid #333;
       box-sizing: border-box;
       float: left;
       margin-bottom: 0;
       height: 243px;
-      width: 700px;
       list-style: none;
       overflow: hidden;
 
@@ -446,7 +456,7 @@ footer a:hover {
 
   .posts-list-container {
     float: left;
-    width: 75%;
+    width: 728px;
 
     h4 {
       color: #333;
@@ -551,8 +561,10 @@ footer a:hover {
 }
 
 .nav-container {
-  width: 25%;
+  width: 232px;
   float: right;
+  box-sizing: border-box;
+  padding-left: 15px;
 
   h4 {
     margin-bottom: 0.5rem;
