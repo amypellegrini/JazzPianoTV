@@ -185,6 +185,10 @@ footer a:hover {
   header nav ul li {
     margin: 0 0.5em;
     float: left;
+
+    .lang-option {
+      display: block;
+    }
   }
 
   header nav a {
