@@ -1,13 +1,11 @@
 define(['views/contact-view'], function(ContactView) {
+  var JazzApp = {};
 
-var JazzApp = {};
-
-JazzApp.contactView = new ContactView({
-  ui: {
-    contactBtn: $('.contact-btn'),
-    contactForm: $('#contact'),
-    contactSendBtn: $('#contactSend')
-  }
-});
-
+  JazzApp.contactView = new ContactView({
+    ui: {
+      contactBtn: $('.contact-btn'),
+      contactForm: $('#contact'),
+      contactSendBtn: $('#contactSend')
+    }
+  });
 });
