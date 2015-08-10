@@ -33,13 +33,13 @@ if ('undefined' !== typeof window.ParsleyValidator)
 
 window.i18n = window.i18n || {};
 
-window.i18n.es = {
+window.i18n.en = {
   menu: {
     bio: 'Bio',
-    exercises: 'Ejercicios',
-    events: 'Eventos',
+    exercises: 'Exercises',
+    events: 'Events',
     blog: 'Blog',
-    contact: 'Contacto',
+    contact: 'Contact',
     english: 'English',
     spanish: 'Español'
   }
