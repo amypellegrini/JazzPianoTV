@@ -566,20 +566,51 @@ footer a:hover {
 .options-container {
   ul {
     li {
-      height: 25px;
+      height: 18px;
       list-style-type: none;
-    }
-  }
+      line-height: 18px;
 
-  label {
-    font-size: 1rem;
-    display: inline;
+      label {
+        font-size: 0.9rem;
+        display: inline;
+        font-weight: 300;
+      }
+    }
   }
 
   button {}
 }
 
-.question-container {}
+.question-container {
+  .scale-container {
+    cursor: pointer;
+  }
+}
+
+.exercises-container {
+  .prizes {
+    top: 68px;
+    position: absolute;
+    right: -226px;
+    width: 100px;
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  .punishments {
+    top: 68px;
+    position: absolute;
+    right: -226px;
+    width: 100px;
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
+
 
 .nav-container {
   width: 336px;

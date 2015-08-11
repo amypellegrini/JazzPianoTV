@@ -21,17 +21,18 @@
           <input type="radio" name="scale-name" id="option-3" value="f-minor" />
           <label for="option-3">F Minor</label>
         </li>
-        <li>
-          <input type="radio" name="scale-name" id="option-4" value="bbmaj7" />
-          <label for="option-4">Bbmaj7</label>
-        </li>
       </ul>
-
       {% include ui-gameplay/ok-button.html %}
-
     </form>
   </div>
-
   {% include ui-gameplay/audio-controls.html %}
 
+  <div class="prizes">
+    <p>+5 for listening!</p>
+    <p>+50 for a straight, correct answer</p>
+  </div>
+  <div class="punishments">
+    <p>-10 the answer is incorrect</p>
+    <p>-30 the answer is the least possible answer</p>
+  </div>
 </div>
