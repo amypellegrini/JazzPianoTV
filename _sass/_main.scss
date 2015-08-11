@@ -470,13 +470,6 @@ footer a:hover {
   }
 }
 
-.score-container {
-  font-size: 1.2rem;
-  float: right;
-  width: 10%;
-  box-sizing: border-box;
-}
-
 .scale-container {
   img {
     height: 51px;
@@ -527,25 +520,32 @@ footer a:hover {
   width: 800px;
 
   .exercises-container {
+    width: 600px;
     float: left;
+
+    .exercise-container {
+      background-color: #fff;
+
+      &.top {
+        display: block;
+        float: left;
+      }
+    }
   }
 
-  .exercise-container {
-    background-color: #fff;
+  .score-container {
+    font-size: 1.2rem;
+    float: right;
+    width: 100px;
+  }
 
-    &.top {
-      display: block;
-      float: left;
-    }
+  .menu-container {
+    float: right;
+    width: 100px;
   }
 }
 
 .options-container {
-  float: right;
-  width: 34%;
-  box-sizing: border-box;
-  padding: 0 20px 10px;
-
   ul {
     li {
       height: 25px;
@@ -561,10 +561,7 @@ footer a:hover {
   button {}
 }
 
-.question-container {
-  float: left;
-  width: 66%;
-}
+.question-container {}
 
 .nav-container {
   width: 336px;
@@ -591,10 +588,8 @@ footer a:hover {
 }
 
 .post {
-  padding-right: 25px;
-  width: 75%;
+  width: 729px;
   float: left;
-  box-sizing: border-box;
 
   .post-title {
     font-size: 2.4rem;
