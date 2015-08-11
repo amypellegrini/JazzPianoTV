@@ -122,10 +122,6 @@ footer a:hover {
     height: 90px;
     width: 728px;
   }
-
-  &.dev {
-    outline: 1px solid red;
-  }
 }
 
 .rss-suscribe {
@@ -527,6 +523,9 @@ footer a:hover {
 }
 
 .exercise-flow-container {
+  margin: 0 auto;
+  width: 800px;
+
   .exercises-container {
     float: left;
   }
@@ -543,7 +542,7 @@ footer a:hover {
 
 .options-container {
   float: right;
-  width: 20%;
+  width: 34%;
   box-sizing: border-box;
   padding: 0 20px 10px;
 
@@ -564,7 +563,7 @@ footer a:hover {
 
 .question-container {
   float: left;
-  width: 75%;
+  width: 66%;
 }
 
 .nav-container {
