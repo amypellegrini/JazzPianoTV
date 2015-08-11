@@ -1,0 +1,23 @@
+---
+layout: page
+title: Exercises
+permalink: /exercises/
+scripts: [/js/views/exercises-demo-view.js]
+---
+
+<section>
+  <h2>Exercises</h2>
+  <p>The following section is currently under development.</p>
+  <p>These are previews of some of the exercises I'm developing.</p>
+</section>
+
+<div class="exercise-flow-container clearfix">
+  <div class="exercises-container">
+    {% include exercises/which-scale-is-this.html %}
+    {% include exercises/which-chord-is-this.html %}
+    {% include exercises/music-fragment-contained-in.html %}
+    {% include exercises/music-fragment-written-by.html %}
+    {% include exercises/which-interval-is-this.html %}
+  </div>
+  {% include ui-gameplay/score.html %}
+</div>
