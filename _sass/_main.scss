@@ -524,11 +524,19 @@ footer a:hover {
     float: left;
 
     .exercise-container {
+      position: relative;
       background-color: #fff;
 
       &.top {
         display: block;
         float: left;
+      }
+
+      .audio-controls-container {
+        width: 185px;
+        position: absolute;
+        top: 145px;
+        right: 0;
       }
     }
   }
@@ -537,6 +545,16 @@ footer a:hover {
     font-size: 1.2rem;
     float: right;
     width: 100px;
+
+    span {
+      display: block;
+      text-align: center;
+    }
+
+    .score-number {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+    }
   }
 
   .menu-container {

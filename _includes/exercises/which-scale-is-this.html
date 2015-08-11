@@ -26,11 +26,12 @@
           <label for="option-4">Bbmaj7</label>
         </li>
       </ul>
-      <button type="submit">OK</button>
+
+      {% include ui-gameplay/ok-button.html %}
+
     </form>
   </div>
-  <div class="audio-controls-container">
-    <div class="play">PLAY</div>
-    <p>You have <span class="span-amount">3</span> plays left.</p>
-  </div>
+
+  {% include ui-gameplay/audio-controls.html %}
+
 </div>
