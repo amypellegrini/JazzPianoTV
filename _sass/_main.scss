@@ -150,6 +150,8 @@ footer a:hover {
 }
 
 .main.container {
+  max-width: none;
+
   header h1 {
     margin-bottom: 0;
     float: left;
@@ -566,10 +568,9 @@ footer a:hover {
 }
 
 .nav-container {
-  width: 232px;
+  width: 336px;
   float: right;
-  box-sizing: border-box;
-  padding-left: 15px;
+  margin-left: 15px;
 
   h4 {
     margin-bottom: 0.5rem;
