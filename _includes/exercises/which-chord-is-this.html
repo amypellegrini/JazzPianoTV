@@ -1,8 +1,8 @@
 <div class="exercise-container clearfix">
   <div class="question-container">
     <h4>Which chord is this?</h4>
-    <div class="scale-container">
-      <img src="{{ '../img/scales/eb-major.svg' }}">
+    <div class="chord-container">
+      <img src="{{ '/sheet-music/chords/four-note-chords/m6/cm6/cm6.svg' | prepend: site.baseurl }}">
     </div>
   </div>
   <div class="options-container">
@@ -11,7 +11,7 @@
       <ul>
         <li>
           <input type="radio" name="scale-name" id="option-1" value="bb-major" />
-          <label for="option-1">Bb Major</label>
+          <label for="option-1">Bbmaj7</label>
         </li>
         <li>
           <input type="radio" name="scale-name" id="option-2" value="eb-major" />
@@ -19,7 +19,7 @@
         </li>
         <li>
           <input type="radio" name="scale-name" id="option-3" value="f-minor" />
-          <label for="option-3">F Minor</label>
+          <label for="option-3">Cm6</label>
         </li>
       </ul>
       {% include ui-gameplay/ok-button.html %}

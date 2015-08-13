@@ -482,6 +482,55 @@ footer a:hover {
   }
 }
 
+.chord-container {
+  img {
+    height: 110px;
+    margin-bottom: 20px;
+    width: 18%;
+  }
+}
+
+.hl-container {
+  position: relative;
+
+  .sequence-1,
+  .sequence-2,
+  .sequence-3,
+  .sequence-4 {
+    position: absolute;
+    background-color: #7ED9F7;
+    top: 0;
+  }
+
+  .sequence-1 {
+    left: 1px;
+  }
+  .sequence-2 {
+    left: 10px;
+  }
+  .sequence-3 {
+    left: 20px;
+  }
+  .sequence-4 {
+    left: 30px;
+  }
+
+  &.play {
+    .sequence-1 {
+      transition-delay: 1s;
+    }
+    .sequence-2 {
+      transition-delay: 2s;
+    }
+    .sequence-3 {
+      transition-delay: 3s;
+    }
+    .sequence-4 {
+      transition-delay: 4s;
+    }
+  }
+}
+
 .scale-types-list-container,
 .keys-list-container {
   ul {
