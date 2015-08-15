@@ -157,10 +157,17 @@ footer a:hover {
     float: left;
   }
 
-  header nav ul {
-    margin-top: 1.3em;
-    list-style: none;
-    float: right;
+  header nav {
+    a {
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    ul {
+      margin-top: 1.3em;
+      list-style: none;
+      float: right;
+    }
   }
 
   p {
@@ -191,11 +198,6 @@ footer a:hover {
     .lang-option {
       display: block;
     }
-  }
-
-  header nav a {
-    text-decoration: none;
-    font-size: 1.2rem;
   }
 }
 
