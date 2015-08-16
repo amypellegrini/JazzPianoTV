@@ -2,8 +2,9 @@ define([
   'views/contact-view',
   'views/exercises-demo-view'],
 function(ContactView, DemoView) {
-  var JazzApp = window.JazzApp = {},
-      $el = $('.main'),
+  var
+      JazzApp = window.JazzApp = {},
+      $el = $('.main-app'),
       $gameplay = $el.find('.gameplay-container');
 
   JazzApp.contactView = new ContactView({
