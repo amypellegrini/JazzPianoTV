@@ -1,29 +1,46 @@
-<div class="exercise-container clearfix">
-  <div class="question-container">
+<div class="exercise clearfix">
+  <div class="question">
     <h4>Which chord is this?</h4>
-    <div class="chord-container">
+    <div class="chord sheet-music-layout">
       <img src="{{ '/sheet-music/chords/four-note-chords/m6/cm6/cm6.svg' | prepend: site.baseurl }}">
+      <div class="play-control">
+        <span>Play</span>
+      </div>
     </div>
   </div>
-  <div class="options-container">
-    <form id="scales-form-list-e2">
-      <h5>Options</h5>
-      <ul>
-        <li>
-          <input type="radio" name="scale-name" id="option-1" value="bb-major" />
-          <label for="option-1">Bbmaj7</label>
-        </li>
-        <li>
-          <input type="radio" name="scale-name" id="option-2" value="eb-major" />
-          <label for="option-2">Eb Major</label>
-        </li>
-        <li>
-          <input type="radio" name="scale-name" id="option-3" value="f-minor" />
-          <label for="option-3">Cm6</label>
-        </li>
-      </ul>
-      {% include ui-gameplay/ok-button.html %}
-    </form>
+  <div class="options">
+    <div class="form-container">
+      <form>
+        <h5>Options</h5>
+        <ul>
+          <li>
+            <input type="radio" name="scale-name" id="option-1" value="bb-major" />
+            <label for="option-1">Bbmaj7</label>
+          </li>
+          <li>
+            <input type="radio" name="scale-name" id="option-2" value="eb-major" />
+            <label for="option-2">Eb Major</label>
+          </li>
+          <li>
+            <input type="radio" name="scale-name" id="option-3" value="f-minor" />
+            <label for="option-3">Cm6</label>
+          </li>
+        </ul>
+        {% include ui-gameplay/ok-button.html %}
+      </form>
+    </div>
+    <div class="controls">
+      {% include ui-gameplay/next-button.html %}
+      {% include ui-gameplay/audio-controls.html %}
+    </div>
   </div>
-  {% include ui-gameplay/audio-controls.html %}
+
+  <div class="prizes">
+    <p>+5 for listening!</p>
+    <p>+50 for a straight, correct answer</p>
+  </div>
+  <div class="punishments">
+    <p>-10 the answer is incorrect</p>
+    <p>-30 the answer is the least possible answer</p>
+  </div>
 </div>

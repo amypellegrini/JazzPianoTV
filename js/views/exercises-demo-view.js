@@ -7,7 +7,7 @@ define(['views/exercise-view'], function(ExerciseView) {
         $exercises,
 
         setCurrentExercise = function() {
-          $exercises = $el.find('.exercise-container');
+          $exercises = $el.find('.exercise');
           $current = $exercises.first().addClass('current');
         },
 
@@ -15,7 +15,7 @@ define(['views/exercise-view'], function(ExerciseView) {
          * Set DOM reference vars.
          */
         setUI = function() {
-          $exercises = $el.find('.exercise-container');
+          $exercises = $el.find('.exercise');
           $next = $el.find('.next');
 
           setCurrentExercise();

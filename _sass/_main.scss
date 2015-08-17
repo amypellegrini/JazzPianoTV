@@ -476,68 +476,47 @@ footer a:hover {
   }
 }
 
-.exercise-container {
+.exercise {
   display: none;
 
   &.current {
     display: block;
   }
-}
 
-.scale-container {
-  img {
-    height: 51px;
-    margin-bottom: 20px;
-    width: 100%;
+  button {
+    margin-bottom: 0.5rem;
+  }
+
+  .scale {
+  }
+
+  .chord {
+  }
+
+  .music-fragment {
   }
 }
 
-.chord-container {
-  img {
-    height: 110px;
-    margin-bottom: 20px;
-    width: 18%;
-  }
-}
 
-.hl-container {
+.sheet-music-layout {
+  text-align: center;
   position: relative;
-
-  .sequence-1,
-  .sequence-2,
-  .sequence-3,
-  .sequence-4 {
-    position: absolute;
-    background-color: #7ED9F7;
-    top: 0;
-  }
-
-  .sequence-1 {
-    left: 1px;
-  }
-  .sequence-2 {
-    left: 10px;
-  }
-  .sequence-3 {
-    left: 20px;
-  }
-  .sequence-4 {
-    left: 30px;
-  }
+  cursor: pointer;
+  margin-bottom: 1rem;
 
   &.play {
-    .sequence-1 {
-      transition-delay: 1s;
+    cursor: default;
+  }
+
+  &:hover {
+    .play-control {
+      display: block;
     }
-    .sequence-2 {
-      transition-delay: 2s;
-    }
-    .sequence-3 {
-      transition-delay: 3s;
-    }
-    .sequence-4 {
-      transition-delay: 4s;
-    }
+  }
+
+  img {
+    max-width: 100%;
+    width: auto;
   }
 
   .play-control {
@@ -556,12 +535,6 @@ footer a:hover {
     line-height: 60px;
     font-weight: 600;
     color: #fff;
-  }
-
-  &:hover {
-    .play-control {
-      display: block;
-    }
   }
 }
 
@@ -598,19 +571,17 @@ footer a:hover {
   }
 }
 
-.scale-builder {
-  .section-container {}
-}
+.scale-builder {}
 
-.exercise-flow-container {
+.exercise-flow {
   margin: 0 auto;
   width: 800px;
 
-  .exercises-container {
+  .exercises {
     width: 600px;
     float: left;
 
-    .exercise-container {
+    .exercise {
       position: relative;
       background-color: #fff;
 
@@ -619,20 +590,50 @@ footer a:hover {
         float: left;
       }
 
-      .audio-controls-container {
+      .controls {
         width: 185px;
         position: absolute;
-        top: 145px;
+        top: 0;
         right: 0;
 
-        button {
-          margin-bottom: 0.5rem;
+        .next {
+          background-color: #D46A6A;
+          color: #fff;
+          border: 1px solid #801515;
+        }
+
+        .play {
+          background-color: #58AF53;
+          color: #fff;
+          border: 1px solid #197214;
         }
       }
     }
+
+    .prizes,
+    .punishments {
+      p {
+        font-size: 0.8rem;
+        display: none;
+      }
+    }
+
+    .prizes {
+      top: 68px;
+      position: absolute;
+      right: -226px;
+      width: 100px;
+    }
+
+    .punishments {
+      top: 68px;
+      position: absolute;
+      right: -226px;
+      width: 100px;
+    }
   }
 
-  .score-container {
+  .score {
     font-size: 1.2rem;
     float: right;
     width: 100px;
@@ -654,7 +655,9 @@ footer a:hover {
   }
 }
 
-.options-container {
+.options {
+  position: relative;
+
   h5 {
     margin-bottom: 0.5rem;
   }
@@ -674,40 +677,7 @@ footer a:hover {
       }
     }
   }
-
-  button {}
 }
-
-.question-container {
-  .scale-container {
-    cursor: pointer;
-  }
-}
-
-.exercises-container {
-  .prizes,
-  .punishments {
-    p {
-      font-size: 0.8rem;
-      display: none;
-    }
-  }
-
-  .prizes {
-    top: 68px;
-    position: absolute;
-    right: -226px;
-    width: 100px;
-  }
-
-  .punishments {
-    top: 68px;
-    position: absolute;
-    right: -226px;
-    width: 100px;
-  }
-}
-
 
 .nav-container {
   width: 336px;

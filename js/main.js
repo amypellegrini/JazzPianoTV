@@ -5,7 +5,7 @@ function(ContactView, DemoView) {
   var
       JazzApp = window.JazzApp = {},
       $el = $('.main-app'),
-      $gameplay = $el.find('.gameplay-container');
+      $gameplay = $el.find('.gameplay');
 
   JazzApp.contactView = new ContactView({
     ui: {
@@ -17,7 +17,7 @@ function(ContactView, DemoView) {
 
   if ($gameplay.length > 0) {
     JazzApp.demoView = new DemoView({
-      el: $('.gameplay-container')
+      el: $gameplay
     });
   }
 });
