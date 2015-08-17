@@ -1,0 +1,19 @@
+<div class="exercise clearfix">
+  <div class="question">
+    <h4>Try to play this</h4>
+    <p>A Bass line will be playing along with you.</p>
+    <p>Music will start at the count of 4</p>
+    <div class="chord sheet-music-layout">
+      <img src="{{ '/sheet-music/music-fragments/music-fragment-bach-fugue-c-minor-m-9-10.svg' | prepend: site.baseurl }}">
+      <div class="play-control">
+        <span>Play</span>
+      </div>
+    </div>
+  </div>
+  <div class="options">
+    <div class="controls">
+      {% include ui-gameplay/next-button.html %}
+      {% include ui-gameplay/audio-controls.html %}
+    </div>
+  </div>
+</div>
