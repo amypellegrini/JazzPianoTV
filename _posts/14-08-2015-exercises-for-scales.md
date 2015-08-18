@@ -27,7 +27,7 @@ Then you can work in porgressive dificulty by adding variations to the scale as 
 
 A complete exploration of the scales imply the achievement of a deep understanding of all the necessary information you need to be ready to play instantly without errors. This information is aquired in the form of muscular memory, and improve your hability for musical deduction (when you already know how to play something without ever having played it before).
 
-#### See more
+#### Related posts
 
 - <a href="{{ "/major-scale-basic-routine/" | prepend: site.baseurl }}">Major Scale Basic Routine</a>
 - <a href="{{ "/bachian-minor-scale-basic-routine/" | prepend: site.baseurl }}">Bach Minor Scale Basic Routine</a>
