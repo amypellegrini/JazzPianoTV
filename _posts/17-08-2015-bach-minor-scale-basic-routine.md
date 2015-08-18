@@ -9,8 +9,8 @@ tags: [routines, scales]
 
 This routine covers the Bach Minor Scale with both hands in all keys.
 
-<img src='{{ "/sheet-music/scales/bach-minor/bach-minor-scale-basic-routine/bach-minor-scale-basic-routine.svg" | prepend: site.baseurl }}'>
-<a href='{{ "/sheet-music/scales/bach-minor/bach-minor-scale-basic-routine/bach-minor-scale-basic-routine.pdf" | prepend: site.baseurl }}' target="_blank">Download in PDF</a>
+<img src='{{ "/scores/scales/bach-minor/bach-minor-scale-basic-routine/bach-minor-scale-basic-routine.svg" | prepend: site.baseurl }}'>
+<a href='{{ "/scores/scales/bach-minor/bach-minor-scale-basic-routine/bach-minor-scale-basic-routine.pdf" | prepend: site.baseurl }}' target="_blank">Download in PDF</a>
 
 #### See More
 

@@ -11,4 +11,4 @@ There are two approaches to harmonization: one way is to consider the relationsh
 
 ####Vertical and Horizontal Harmony comparision
 
-<img src='{{ "/img/ultimate-jazz-piano-course/horizontal-harmony-vs-vertical-harmony.svg" | prepend: site.baseurl }}'>
+<img src='{{ "/scores/ultimate-jazz-piano-course/horizontal-harmony-vs-vertical-harmony.svg" | prepend: site.baseurl }}'>

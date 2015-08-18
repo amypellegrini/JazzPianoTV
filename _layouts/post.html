@@ -2,14 +2,27 @@
 layout: default
 ---
 <div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article>
+    <header class="post-header">
+      <p class="post-meta">{{ page.date | date: "%d/%m/%Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+      <h2 class="post-title" itemprop="headline">{{ page.title }}</h2>
+    </header>
 
-  <header class="post-header">
-    <p class="post-meta">{{ page.date | date: "%d/%m/%Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-    <h2 class="post-title" itemprop="headline">{{ page.title }}</h2>
-  </header>
+    <div class="post-content">
+      {{ content }}
+    </div>
 
-  <article class="post-content">
-    {{ content }}
+    <footer>
+      <h4>More posts</h4>
+      <ul>
+        {% if page.previous.url %}
+          <li><span><strong>Previous: </strong><a href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}</a></span></li>
+        {% endif %}
+        {% if page.next.url %}
+          <li><span><strong>Next: </strong><a href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }}</a></span></li>
+        {% endif %}
+      </ul>
+    </footer>
   </article>
 </div>
 

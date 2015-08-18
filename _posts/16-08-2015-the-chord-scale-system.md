@@ -11,4 +11,4 @@ The Chord-scale system is a Tonal system that stablishes that for every chord, o
 
 #### Chord-Scale relationship in a II-V-I sequence in C Major
 
-<img src='{{ "/img/ultimate-jazz-piano-course/chord-scale-relationship-ii-v-i-sequence-c-major.svg" | prepend: site.baseurl }}'>
+<img src='{{ "/scores/ultimate-jazz-piano-course/chord-scale-relationship-ii-v-i-sequence-c-major.svg" | prepend: site.baseurl }}'>

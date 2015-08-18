@@ -14,34 +14,40 @@
 
     <h4>Categories</h4>
     <ul>
-    {% for category in site.categories %}
-      <li>
-        <span>{{ category | first }}</span>
-        {% for posts in category %}
-          <ul>
-            {% for post in posts %}
-              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-          </ul>
-        {% endfor %}
-      </li>
-    {% endfor %}
-  </ul>
+      {% for category in site.categories %}
+        <li>
+          <div class="category">
+            <span><strong>{{ category | first }}</strong></span>
+            <ul>
+              {% for posts in category %}
+                {% for post in posts %}
+                  {% if post.url %}
+                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            </ul>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
 
-  <h4>Tags</h4>
+    <h4>Tags</h4>
     <ul>
-    {% for tag in site.tags %}
-      <li>
-        <span>{{ tag | first }}</span>
-        {% for posts in tag %}
-          <ul>
-            {% for post in posts %}
-              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-          </ul>
-        {% endfor %}
-      </li>
-    {% endfor %}
-  </ul>
+      {% for tag in site.tags %}
+        <li>
+          <div class="tag">
+            <span><strong>{{ tag | first }}</strong></span>
+            <ul>
+              {% for posts in tag %}
+                {% for post in posts %}
+                  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+              {% endfor %}
+            </ul>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
   </nav>
 </aside>

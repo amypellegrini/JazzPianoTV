@@ -17,11 +17,11 @@ Example:
 
 #### C Major Scale
 
-<img src='{{ "/sheet-music/scales/major/c-major-scale/c-major-scale.svg" | prepend: site.baseurl }}'>
+<img src='{{ "/scores/scales/major/c-major-scale/c-major-scale.svg" | prepend: site.baseurl }}'>
 
 #### Eb Major Scale
 
-<img src='{{ "/sheet-music/scales/major/eb-major-scale/eb-major-scale.svg" | prepend: site.baseurl }}'>
+<img src='{{ "/scores/scales/major/eb-major-scale/eb-major-scale.svg" | prepend: site.baseurl }}'>
 
 Then you can work in porgressive dificulty by adding variations to the scale as it follows: apply rhythmic patterns to the scale, and if possible, apply any given rhythmic pattern in all possible combinations including anticipation, ritardation, permutation, sequential variation, etc.
 
