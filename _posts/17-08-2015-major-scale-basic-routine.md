@@ -9,9 +9,9 @@ tags: [routines, scales]
 
 This routine covers the Major Scale with both hands in all keys.
 
-<img src='{{ "/sheet-music/major-scale-basic-routine/major-scale-basic-routine.svg" | prepend: site.baseurl }}'>
-<a href='{{ "/sheet-music/major-scale-basic-routine/major-scale-basic-routine.pdf" | prepend: site.baseurl }}' target="_blank">Download in PDF</a>
+<img src='{{ "/sheet-music/scales/major/major-scale-basic-routine/major-scale-basic-routine.svg" | prepend: site.baseurl }}'>
+<a href='{{ "/sheet-music/scales/major/major-scale-basic-routine/major-scale-basic-routine.pdf" | prepend: site.baseurl }}' target="_blank">Download in PDF</a>
 
 #### See More
 
-- <a href="{{ "/bachian-minor-scale-basic-routine/" | prepend: site.baseurl }}">Bachian Minor Scale Basic Routine</a>
+- <a href="{{ "/bachian-minor-scale-basic-routine/" | prepend: site.baseurl }}">Bach Minor Scale Basic Routine</a>
