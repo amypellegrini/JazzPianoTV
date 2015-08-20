@@ -2,4 +2,15 @@
 layout: default
 ---
 
-{{ content }}
+<div class="page">
+  <section>
+    <header class="post-header">
+      <p class="post-meta">{{ page.date | date: "%d/%m/%Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+      <h2 class="post-title" itemprop="headline">{{ page.title }}</h2>
+    </header>
+
+    <div class="page-content">
+      {{ content }}
+    </div>
+  </section>
+</div>  
