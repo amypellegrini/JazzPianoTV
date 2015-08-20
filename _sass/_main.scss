@@ -429,6 +429,10 @@ a:hover {
 
       &:hover {}
 
+      > .post-link {
+        font-size: 1.2rem;
+      }
+
       .post-meta {
         margin-bottom: 10px;
         line-height: 1rem;
@@ -721,9 +725,6 @@ a:hover {
         .post-meta {
           font-size: 1rem;
           display: block;
-        }
-
-        .post-link {
         }
       }
     }
