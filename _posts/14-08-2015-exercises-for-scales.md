@@ -13,13 +13,13 @@ The first approach is to be able to play the scale in a relaxed manner, at a slo
 
 Not too much obsession with perfection should be stressed here.
 
-Example:
+Example: C Major Scale in eighths
 
 #### C Major Scale
 
 <img src='{{ "/scores/scales/major/c-major-scale/c-major-scale.svg" | prepend: site.baseurl }}'>
 
-#### Eb Major Scale
+#### Eb Major Scale in eighths
 
 <img src='{{ "/scores/scales/major/eb-major-scale/eb-major-scale.svg" | prepend: site.baseurl }}'>
 

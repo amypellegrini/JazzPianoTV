@@ -3,8 +3,8 @@ layout: post
 title: The Bach Minor Scale
 author: Amy Pellegrini
 permalink: /bach-minor-scale/
-categories: [scales, theory, harmony]
-tags: [scales, theory, harmony]
+categories: [scales, theory, harmony, ultimate jazz piano course]
+tags: [scales, theory, harmony, ultimate jazz piano course]
 ---
 
 The concept of a Bach Minor Scale can be traced to Buenos Aires, where I first heard about it by mouth of different local professors, which according to a common school, there is no Melodic Minor Scale, but only two different and unique scales instead. When used in combination, the ascending Bach Minor Scale, with the descending Minor Aeolian Scale, are traditionally considered as the mixed "Melodic" Minor Scale, which according to this modern standard, it has no theoretical reason to be.
