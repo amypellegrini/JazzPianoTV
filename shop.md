@@ -5,6 +5,8 @@ permalink: /shop/
 scripts: []
 ---
 
+## Shop
+
 Welcome to JazzPianoTV on-line store!
 
 ### Coming soon
