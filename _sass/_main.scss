@@ -58,6 +58,7 @@ textarea {
 
 body {
   color: #333;
+  font-family: "Lora", sans-serif;
 }
 
 header em {
@@ -66,7 +67,7 @@ header em {
 }
 
 h1 {
-  font-family: Impact, Charcoal, sans-serif;
+  font-family: "Fjalla One", Impact, Charcoal, sans-serif;
   color: #000;
 }
 
@@ -82,6 +83,7 @@ h1 em {
 }
 
 h2, h3, h4, h5 {
+  font-family: "Lobster", serif;
   color: #ff0036;
 }
 
@@ -161,7 +163,8 @@ a:hover {
   header nav {
     a {
       text-decoration: none;
-      font-size: 0.9rem;
+      font-family: "Fjalla One", Impact, Charcoal, sans-serif;
+      font-size: 1.3rem;
     }
 
     ul {
