@@ -1,0 +1,22 @@
+{
+  "name": "jazzpianotv",
+  "version": "1.0.0",
+  "description": "Learn to Play the Piano for real",
+  "main": "js/app.js",
+  "scripts": {
+    "test": "run tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amypellegrini/JazzPianoTV.git"
+  },
+  "author": "Amy Pellegrini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amypellegrini/JazzPianoTV/issues"
+  },
+  "homepage": "https://github.com/amypellegrini/JazzPianoTV#readme",
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}
