@@ -1,3 +1,3 @@
 # JazzPianoTV
 
-JazzPianoTV Channel Official Website
+JazzPianoTV Website
