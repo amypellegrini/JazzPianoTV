@@ -1,4 +1,14 @@
+@font-face {
+  font-family: 'Impact';
+  src: url('fonts/impact.ttf');
+}
+
+h1 {
+  font-family: 'Impact';
+}
+
 h1 em {
+  font-family: 'Impact';
   color: #ff6a00;
   font-style: normal;
 }
