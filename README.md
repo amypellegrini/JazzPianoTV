@@ -4,6 +4,5 @@ npm run test
 
 npm server
 
-[![Build Status](https://travis-ci.org/jasmine/jasmine-npm.png?branch=master)](https://travis-ci.org/jasmine/jasmine-npm)
+[![Build Status](https://travis-ci.org/amypellegrini/JazzPianoTV.svg?branch=recycled-site)](https://travis-ci.org/amypellegrini/JazzPianoTV)
 
-https://travis-ci.org/amypellegrini/JazzPianoTV.svg?branch=recycled-site
