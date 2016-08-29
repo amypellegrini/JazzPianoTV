@@ -4,6 +4,7 @@
   "description": "Learn to Play the Piano for real",
   "main": "js/app.js",
   "scripts": {
+    "server": "webpack-dev-server",
     "test": "run test",
     "lint": "eslint js/*.js"
   },
@@ -23,6 +24,8 @@
     "normalize.css": "^4.2.0"
   },
   "devDependencies": {
-    "eslint": "^3.3.1"
+    "eslint": "^3.3.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0"
   }
 }
