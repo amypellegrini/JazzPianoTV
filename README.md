@@ -1,3 +1,5 @@
 # JazzPianoTV
 
-JazzPianoTV Website
+npm run test
+
+npm server

@@ -1,12 +1,10 @@
 (function() {
+  'use strict';
+
   angular
     .module('JazzPianoTV')
-    .controller('MainController', MainController);
+    .config(function() {
+      
+    });
 
-  /**
-   * Main app controller.
-   */
-  function MainController() {
-
-  }
 })();

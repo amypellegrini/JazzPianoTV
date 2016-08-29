@@ -5,7 +5,7 @@
   "main": "js/app.js",
   "scripts": {
     "server": "webpack-dev-server",
-    "test": "test",
+    "test": "jasmine",
     "lint": "eslint js/*.js"
   },
   "repository": {
@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "eslint": "^3.3.1",
+    "jasmine": "^2.4.1",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.0"
   }
