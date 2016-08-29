@@ -5,7 +5,7 @@
   "main": "js/app.js",
   "scripts": {
     "server": "webpack-dev-server",
-    "test": "run test",
+    "test": "test",
     "lint": "eslint js/*.js"
   },
   "repository": {
