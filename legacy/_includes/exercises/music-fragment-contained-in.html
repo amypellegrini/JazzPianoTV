@@ -1,0 +1,37 @@
+<div class="exercise clearfix">
+  <div class="question">
+    <h4>The following musical fragment is contained in which work?</h4>
+    <div class="chord sheet-music-layout">
+      <img src="{{ '/scores/music-fragments/music-fragment-bach-fugue-c-minor-m-9-10.svg' | prepend: site.baseurl }}">
+      <div class="play-control">
+        <span>Play</span>
+      </div>
+    </div>
+  </div>
+  <div class="options">
+    <div class="form-container">
+      <form>
+        <h5>Options</h5>
+        <ul>
+          <li>
+            <input type="radio" name="scale-name" id="option-1" value="bb-major" />
+            <label for="option-1">Piano Sonata Op.13 Nº8 "Pathétique" by Beethoven</label>
+          </li>
+          <li>
+            <input type="radio" name="scale-name" id="option-2" value="eb-major" />
+            <label for="option-2">Etude Op.10 Nº2 by Chopin</label>
+          </li>
+          <li>
+            <input type="radio" name="scale-name" id="option-3" value="f-minor" />
+            <label for="option-3">Bach Fugue Nº II in C minor (from Well Tempered Klavier)</label>
+          </li>
+        </ul>
+        {% include ui-gameplay/ok-button.html %}
+      </form>
+    </div>
+    <div class="controls">
+      {% include ui-gameplay/next-button.html %}
+      {% include ui-gameplay/audio-controls.html %}
+    </div>
+  </div>
+</div>

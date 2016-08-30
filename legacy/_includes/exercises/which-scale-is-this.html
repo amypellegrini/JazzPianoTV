@@ -1,0 +1,47 @@
+<!-- Exercise -->
+<div class="exercise clearfix">
+  <div class="question">
+    <h4>Which scale is this?</h4>
+    <div class="scale sheet-music-layout">
+      <img src="{{ '/scores/scales/major/eb-major-scale/eb-major-scale.svg' | prepend: site.baseurl }}">
+      <div class="play-control">
+        <span>Play</span>
+      </div>
+    </div>
+  </div>
+  <div class="options">
+    <div class="form-container">
+      <form>
+        <h5>Options</h5>
+        <ul>
+          <li>
+            <input type="radio" name="scale-name" id="option-1" value="bb-major" />
+            <label for="option-1">Bb Major</label>
+          </li>
+          <li>
+            <input type="radio" name="scale-name" id="option-2" value="eb-major" />
+            <label for="option-2">Eb Major</label>
+          </li>
+          <li>
+            <input type="radio" name="scale-name" id="option-3" value="f-minor" />
+            <label for="option-3">F Minor</label>
+          </li>
+        </ul>
+        {% include ui-gameplay/ok-button.html %}
+      </form>
+    </div>
+    <div class="controls">
+      {% include ui-gameplay/next-button.html %}
+      {% include ui-gameplay/audio-controls.html %}
+    </div>
+  </div>
+
+  <div class="prizes">
+    <p>+5 for listening!</p>
+    <p>+50 for a straight, correct answer</p>
+  </div>
+  <div class="punishments">
+    <p>-10 the answer is incorrect</p>
+    <p>-30 the answer is the least possible answer</p>
+  </div>
+</div>

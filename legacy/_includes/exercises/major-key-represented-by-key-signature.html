@@ -1,0 +1,29 @@
+<div class="exercise clearfix">
+  <div class="question">
+    <h4>Which Major Key is represented by the following Key Signature?</h4>
+    <div class="img">
+      <img src="{{ '/scores/key-signatures/f-major-d-minor.svg' | prepend: site.baseurl }}">
+    </div>
+  </div>
+  <div class="options">
+    <form id="scales-form-list-e2">
+      <h5>Options</h5>
+      <ul>
+        <li>
+          <input type="radio" name="scale-name" id="option-1" value="bb-major" />
+          <label for="option-1">F Major</label>
+        </li>
+        <li>
+          <input type="radio" name="scale-name" id="option-2" value="eb-major" />
+          <label for="option-2">Bb Major</label>
+        </li>
+        <li>
+          <input type="radio" name="scale-name" id="option-3" value="f-minor" />
+          <label for="option-3">D Major</label>
+        </li>
+      </ul>
+      {% include ui-gameplay/ok-button.html %}
+    </form>
+  </div>
+  {% include ui-gameplay/audio-controls.html %}
+</div>

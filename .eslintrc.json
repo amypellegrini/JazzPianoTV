@@ -1,0 +1,11 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 5
+    },
+    "rules": {
+
+    },
+    "globals": {
+        "angular": true
+    }
+}

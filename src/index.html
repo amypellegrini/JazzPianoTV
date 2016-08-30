@@ -1,0 +1,117 @@
+<!doctype html ng-app="JazzPianoTV">
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JazzPianoTV</title>
+    <meta name="description" content="Learn to play the piano for real">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- inject:css -->
+    <!-- endinject -->
+  </head>
+  <body>
+    <header>
+      <h1>JazzPiano<em>TV</em></h1>
+      <div id="login">
+        <span ng-click="register()">Register</span>
+        <span ng-click="login()">Login</span>
+      </div>
+    </header>
+
+
+    <article>
+      <h2>Major Triad 16th note subdivision</h2>
+      <div class="video">
+      </div>
+      <div class="tags">
+        <a ng-repeat="tag in tags" ng-href="tag.url">{{ tag.text }}</a>
+      </div>
+    </article>
+
+    <article>
+      <h2>Minor Triad 16th note subdivision</h2>
+      <div class="video">
+      </div>
+      <div class="tags">
+        <a ng-repeat="tag in tags" ng-href="tag.url">{{ tag.text }}</a>
+      </div>
+    </article>
+
+    <article>
+      <h2>Augmented Triad 16th note subdivision</h2>
+      <div class="video">
+      </div>
+      <div class="tags">
+        <a ng-repeat="tag in tags" ng-href="tag.url">{{ tag.text }}</a>
+      </div>
+    </article>
+
+    <article>
+      <h2>Diminished Triad 16th note subdivision</h2>
+      <div class="video">
+      </div>
+      <div class="tags">
+        <a ng-repeat="tag in tags" ng-href="tag.url">{{ tag.text }}</a>
+      </div>
+    </article>
+
+    <article>
+      <h2>Major Triad ternary 8th note subdivision</h2>
+      <div class="video">
+      </div>
+      <div class="tags">
+        <a ng-repeat="tag in tags" ng-href="tag.url">{{ tag.text }}</a>
+      </div>
+    </article>
+
+    <article>
+      <h2>Minor Triad ternary 8th note subdivision</h2>
+      <div class="video">
+      </div>
+      <div class="tags">
+        <a ng-repeat="tag in tags" ng-href="tag.url">{{ tag.text }}</a>
+      </div>
+    </article>
+
+    <article>
+      <h2>Diminshed Triad ternary 8th note subdivision</h2>
+      <div class="video">
+      </div>
+      <div class="tags">
+        <a ng-repeat="tag in tags" ng-href="tag.url">{{ tag.text }}</a>
+      </div>
+    </article>
+
+    <article>
+      <h2>Augmented Triad ternary 8th note subdivision</h2>
+      <div class="video">
+      </div>
+      <div class="tags">
+        <a ng-repeat="tag in tags" ng-href="tag.url">{{ tag.text }}</a>
+      </div>
+    </article>
+
+    <article>
+      <h2>Major Scale / Ionian Mode 16th note subdivision</h2>
+      <div class="video">
+      </div>
+      <div class="tags">
+        <a ng-repeat="tag in tags" ng-href="tag.url">{{ tag.text }}</a>
+      </div>
+    </article>
+
+    <article>
+      <h2>Dorian Mode 16th note subdivision</h2>
+      <div class="video">
+      </div>
+      <a ng-href="article.pdfLink">Sheet music (PDF)</a>
+      <div class="tags">
+        <a ng-repeat="tag in tags" ng-href="tag.url">{{ tag.text }}</a>
+      </div>
+    </article>
+
+    <!-- inject:js -->
+    <!-- endinject -->
+  </body>
+</html>

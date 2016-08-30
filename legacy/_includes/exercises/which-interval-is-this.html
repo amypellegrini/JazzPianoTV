@@ -1,0 +1,48 @@
+<div class="exercise clearfix">
+  <div class="question">
+    <h4>Which interval is this?</h4>
+    <div class="interval sheet-music-layout">
+      <img src="{{ '/scores/intervals/augmented-fifth/d-a%23/d-a%23-augmented-fifth-interval.svg' | prepend: site.baseurl }}">
+      <div class="play-control">
+        <span>Play</span>
+      </div>
+    </div>
+  </div>
+  <div class="options">
+    <div class="form-container">
+      <form>
+        <h5>Options</h5>
+        <ul>
+          <li>
+            <input type="radio" name="scale-name" id="option-1" value="bb-major" />
+            <label for="option-1">Augmented 5th</label>
+          </li>
+          <li>
+            <input type="radio" name="scale-name" id="option-2" value="eb-major" />
+            <label for="option-2">Minor 3rd</label>
+          </li>
+          <li>
+            <input type="radio" name="scale-name" id="option-4" value="bbmaj7" />
+            <label for="option-4">Perfect 5th</label>
+          </li>
+        </ul>
+        {% include ui-gameplay/ok-button.html %}
+      </form>
+    </div>
+    <div class="controls">
+      {% include ui-gameplay/next-button.html %}
+      {% include ui-gameplay/audio-controls.html %}
+    </div>
+  </div>
+
+  <div class="prizes">
+    <p>+5 for listening!</p>
+    <p>+50 for a straight, correct answer</p>
+  </div>
+  <div class="punishments">
+    <p>-10 the answer is incorrect</p>
+    <p>-30 the answer is the least possible answer</p>
+  </div>
+</div>
+
+  
