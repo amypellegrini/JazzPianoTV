@@ -1,5 +1,8 @@
-var gulp = require('gulp');
-var inject = require('gulp-inject');
+const gulp = require('gulp');
+const inject = require('gulp-inject');
+
+// Desired production build steps: concat > minify > inject
+// Desired dev build steps: inject > serve
 
 gulp.task('index', function() {
   var target = gulp.src('./src/index.html');
