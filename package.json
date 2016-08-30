@@ -4,9 +4,10 @@
   "description": "Learn to Play the Piano for real",
   "main": "js/app.js",
   "scripts": {
+    "build": "webpack",
     "serve": "webpack-dev-server",
     "test": "jasmine",
-    "lint": "eslint js/*.js"
+    "lint": "eslint src/*.js"
   },
   "repository": {
     "type": "git",
