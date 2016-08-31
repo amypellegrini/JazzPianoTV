@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 const inject = require('gulp-inject');
 
@@ -15,17 +16,18 @@ gulp.task('css', () => {
 });
 
 gulp.task('js', () => {
-  let src = gulp.src('./src/**/*.js');
+  let src = gulp.src(['./src/**/*.js', '!./src/**/*.spec.js']);
   return src
+    .pipe(concat('app.js'))
     .pipe(babel({ presets: ['es2015'] }))
     .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('default', ['js', 'css'], () => {
   let target = gulp.src('./src/index.html');
-  let sources = gulp.src(['./dist/**/*.js', './dist/**/*.css'], { read: false });
+  let sources = gulp.src(['dist/**/*.js', 'dist/**/*.css'], { read: false });
 
   return target
     .pipe(inject(sources, { relative: false }))
-    .pipe(gulp.dest('./dist/'));
+    .pipe(gulp.dest('dist'));
 });
