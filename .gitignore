@@ -2,6 +2,7 @@ _site
 .sass-cache
 .editorconfig
 node_modules/
+bower_components/
 npm-debug.log
 bin/
 dist/

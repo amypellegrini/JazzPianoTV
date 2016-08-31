@@ -3,6 +3,7 @@ const serve = require('gulp-serve');
 const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 const inject = require('gulp-inject');
+const wiredep = require('wiredep').stream;
 
 /**
  * Desired production build steps: concat > bebel > minify > inject
@@ -32,6 +33,7 @@ gulp.task('default', ['js', 'css'], () => {
   let sources = gulp.src(['dist/**/*.js', 'dist/**/*.css'], { read: false });
 
   return target
+    .pipe(wiredep())
     .pipe(inject(sources, { relative: false, ignorePath: 'dist' }))
     .pipe(gulp.dest('dist'));
 });
