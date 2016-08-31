@@ -1,10 +1,11 @@
 const gulp = require('gulp');
+const serve = require('gulp-serve');
 const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 const inject = require('gulp-inject');
 
 /**
- * Desired production build steps: concat > bebel > minify > inject > serve
+ * Desired production build steps: concat > bebel > minify > inject
  *
  * Ideally we sohuld be able to use sourcemaps for debugging with client side
  * code minified and bundled in its final state, no need for a "dev" or "prod"
@@ -22,6 +23,9 @@ gulp.task('js', () => {
     .pipe(babel({ presets: ['es2015'] }))
     .pipe(gulp.dest('dist/js'));
 });
+
+// just a basic dev serve task for now
+gulp.task('serve', serve('dist'));
 
 gulp.task('default', ['js', 'css'], () => {
   let target = gulp.src('./src/index.html');

@@ -4,15 +4,7 @@
 
 Commands:
 
-`npm run test`
-
-`npm server`
-
-`npm run build`
-
-If you installed dependencies globally you can alternatively use the following commands, as defined in `package.json`:
-
-- **build**: `webpack`
-- **serve**: `webpack-dev-server`
-- **test**: `jasmine`
-- **lint**: `eslint src/*.js`
+- **build**: `npm run build`
+- **serve**: `npm start`
+- **test**: `npm run test`
+- **lint**: `npm run lint`
