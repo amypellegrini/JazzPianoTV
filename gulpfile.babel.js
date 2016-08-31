@@ -28,6 +28,6 @@ gulp.task('default', ['js', 'css'], () => {
   let sources = gulp.src(['dist/**/*.js', 'dist/**/*.css'], { read: false });
 
   return target
-    .pipe(inject(sources, { relative: false }))
+    .pipe(inject(sources, { relative: false, ignorePath: 'dist' }))
     .pipe(gulp.dest('dist'));
 });
