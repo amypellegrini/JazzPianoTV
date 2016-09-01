@@ -36,7 +36,7 @@ gulp.task('js', () => {
  * Concat and build js vendor files.
  */
 gulp.task('js-vendor', () => {
-  let src = gulp.src(['./bower_components/**/*.js', '!./bower_components/**/*.min.js']);
+  let src = gulp.src(['./bower_components/**/*.min.js']);
   return src
     .pipe(concat('vendor.js'))
     .pipe(gulp.dest('dist/js'));
