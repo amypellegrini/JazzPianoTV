@@ -12,11 +12,18 @@ const wiredep = require('wiredep').stream;
  * code minified and bundled in its final state, no need for a "dev" or "prod"
  * build.
  */
+
+/**
+ * Build css files.
+ */
 gulp.task('css', () => {
   let src = gulp.src('./src/**/*.css');
   return src.pipe(gulp.dest('dist'));
 });
 
+/**
+ * Concat js files, transpile es2015 to plain old JavaScript, build dist.
+ */
 gulp.task('js', () => {
   let src = gulp.src(['./src/**/*.js', '!./src/**/*.spec.js']);
   return src
@@ -25,15 +32,29 @@ gulp.task('js', () => {
     .pipe(gulp.dest('dist/js'));
 });
 
-// just a basic dev serve task for now
-gulp.task('serve', serve('dist'));
+/**
+ * Concat and build js vendor files.
+ */
+gulp.task('js-vendor', () => {
+  let src = gulp.src(['./bower_components/**/*.js', '!./bower_components/**/*.min.js']);
+  return src
+    .pipe(concat('vendor.js'))
+    .pipe(gulp.dest('dist/js'));
+});
 
-gulp.task('default', ['js', 'css'], () => {
+/**
+ * Wire dependencies and build index.html.
+ */
+gulp.task('default', ['js-vendor', 'js', 'css'], () => {
   let target = gulp.src('./src/index.html');
-  let sources = gulp.src(['dist/**/*.js', 'dist/**/*.css'], { read: false });
+  let jsVendor = gulp.src([ 'dist/js/vendor.js' ], { read: false });
+  let sources = gulp.src(['dist/js/app.js', 'dist/**/*.css'], { read: false });
 
   return target
-    .pipe(wiredep())
+    .pipe(inject(jsVendor, { relative: false, ignorePath: 'dist', name: 'vendor' } ))
     .pipe(inject(sources, { relative: false, ignorePath: 'dist' }))
     .pipe(gulp.dest('dist'));
 });
+
+// just a basic dev serve task for now
+gulp.task('serve', serve('dist'));
