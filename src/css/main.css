@@ -3,12 +3,16 @@
   src: url('fonts/impact.ttf');
 }
 
+body {
+  padding: 1rem;
+}
+
 h1 {
-  font-family: 'Impact';
+  font-family: 'Impact', sans-serif;;
 }
 
 h1 em {
-  font-family: 'Impact';
+  font-family: 'Impact', sans-serif;
   color: #ff6a00;
   font-style: normal;
 }

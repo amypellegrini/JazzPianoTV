@@ -1,10 +1,1 @@
-(function() {
-  'use strict';
-
-  angular
-    .module('JazzPianoTV')
-    .config(function() {
-      
-    });
-
-})();
+const JazzPianoTV = angular.module('JazzPianoTV', []);

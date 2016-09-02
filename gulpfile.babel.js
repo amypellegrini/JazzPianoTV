@@ -1,17 +1,20 @@
-const gulp = require('gulp');
-const serve = require('gulp-serve');
-const concat = require('gulp-concat');
-const babel = require('gulp-babel');
-const inject = require('gulp-inject');
-const wiredep = require('wiredep').stream;
-
 /**
+ * Default Gulp tasks for JazzPianoTV app.
+ *
  * Desired production build steps: concat > bebel > minify > inject
  *
  * Ideally we sohuld be able to use sourcemaps for debugging with client side
  * code minified and bundled in its final state, no need for a "dev" or "prod"
  * build.
  */
+
+const gulp = require('gulp');
+const serve = require('gulp-serve');
+const concat = require('gulp-concat');
+const babel = require('gulp-babel');
+const inject = require('gulp-inject');
+const wiredep = require('wiredep').stream;
+const templateCache = require('gulp-angular-templatecache');
 
 /**
  * Build css files.
@@ -22,10 +25,20 @@ gulp.task('css', () => {
 });
 
 /**
+ * Build angular template cache.
+ */
+gulp.task('templates', () => {
+  // fetch HTML templates to build Angular $templateCache
+  return gulp.src(['./src/**/*.html', '!./**/index.html'])
+    .pipe(templateCache('tpls.js', { module: 'JazzPianoTV' }))
+    .pipe(gulp.dest('.tmp'));
+});
+
+/**
  * Concat js files, transpile es2015 to plain old JavaScript, build dist.
  */
-gulp.task('js', () => {
-  let src = gulp.src(['./src/**/*.js', '!./src/**/*.spec.js']);
+gulp.task('js', ['templates'], () => {
+  let src = gulp.src(['./src/**/*.js', '!./src/**/*.spec.js', '.tmp/tpls.js']);
   return src
     .pipe(concat('app.js'))
     .pipe(babel({ presets: ['es2015'] }))
