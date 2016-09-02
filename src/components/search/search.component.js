@@ -1,6 +1,8 @@
 angular
   .module('JazzPianoTV')
-  .component({
+  .component('appSearch', {
     templateUrl: 'components/search/search.html',
-    controller: 'SearchController'
+    controller: 'SearchController',
+    controllerAs: 'search',
+    scope: {}
   });
