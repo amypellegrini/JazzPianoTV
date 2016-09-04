@@ -1,1 +1,2 @@
-const JazzPianoTV = angular.module('JazzPianoTV', []);
+angular
+  .module('JazzPianoTV', []);

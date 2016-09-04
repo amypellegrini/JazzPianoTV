@@ -1,3 +1,4 @@
+/* Just in case Impact is not available in the client */
 @font-face {
   font-family: 'Impact';
   src: url('fonts/impact.ttf');
@@ -5,14 +6,36 @@
 
 body {
   padding: 1rem;
+  font-family: Arial, sans-serif;
 }
 
 h1 {
-  font-family: 'Impact', sans-serif;;
+  font-family: 'Impact', sans-serif;
 }
 
 h1 em {
   font-family: 'Impact', sans-serif;
   color: #ff6a00;
   font-style: normal;
+}
+
+/* Theme */
+.nav-link {
+  text-decoration: none;
+}
+
+.nav {
+  list-style-type: none;
+}
+
+.nav li {
+  float: left;
+  margin-right: 1rem;
+}
+
+/* Helper classes */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }

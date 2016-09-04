@@ -1,5 +1,7 @@
-<ul>
-  <li ng-repeat="navItem in nav.items">
-    <a ng-href="{{ navItem.href }}">{{ navItem.text }}</a>
-  </li>
-</ul>
+<nav>
+  <ul class="nav group">
+    <li ng-repeat="navItem in nav.items">
+      <a class="nav-link" ng-href="{{ navItem.href }}">{{ navItem.text }}</a>
+    </li>
+  </ul>
+</nav>
