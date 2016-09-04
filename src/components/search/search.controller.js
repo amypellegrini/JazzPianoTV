@@ -1,9 +1,9 @@
-// class SearchController {
-//   constructor() {
+class SearchController {
+  constructor() {
 
-//   }
-// }
+  }
+}
 
-// angular
-//   .module('JazzPianoTV')
-//   .controller('SearchController', SearchController);
+angular
+  .module('JazzPianoTV')
+  .controller('SearchController', SearchController);
