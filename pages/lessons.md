@@ -1,6 +1,6 @@
 #Private lessons
 
-If you think you would like to go forward and take private personalized lessons feel free to call me, or you can send an email and I'll be getting in touch with you soon.
+If you think you would like to go forward and take private personalized lessons feel free to call me, or you can send an email with a valid phone number and I'll be getting in touch with you soon.
 
 #Location
 
