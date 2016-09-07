@@ -1,0 +1,13 @@
+<h2>Upcoming performances / events</h2>
+
+<div ng-if="!performances.length">
+  <p></p>
+</div>
+
+<div>
+  <ol>
+    <li ng-repeat="performance in performances">
+      <performance performance="performance"></performance>
+    </li>
+  </ol>
+</div>

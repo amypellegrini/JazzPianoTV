@@ -13,4 +13,6 @@ JazzPianoTV is an educational platform designed to provide Piano students (and m
 
 JazzPianoTV is the result of many years of work and constant dedication both to music as much as to the web-applications development world.
 
+Here you will find exercises, videos, articles and many other resources 
+
 I hope you enjoy it!

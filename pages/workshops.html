@@ -1,0 +1,13 @@
+<h2>Workshops</h2>
+
+<div ng-if="!workshops.length">
+  <p></p>
+</div>
+
+<div ng-if="workshops.length">
+  <ol>
+    <li ng-repeat="workshop in workshops">
+      <performance performance="performance"></performance>
+    </li>
+  </ol>
+</div>

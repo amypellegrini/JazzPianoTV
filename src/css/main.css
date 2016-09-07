@@ -39,3 +39,7 @@ h1 em {
   display: table;
   clear: both;
 }
+
+.pad-0 {
+  padding: 0;
+}
