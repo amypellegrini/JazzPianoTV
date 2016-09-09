@@ -24,8 +24,10 @@
 
   <div class="score">
     <span>{{ vm.score }}</span>
+    <span>points</span>
   </div>
   <div class="sheet-music-layout">
-    <img ng-src="{{ vm.path }}">
+    <img class="right-hand treble-clef" ng-src="{{ vm.rhPath }}">
+    <img class="left-hand bass-clef" ng-src="{{ vm.lhPath }}">
   </div>
 </div>
