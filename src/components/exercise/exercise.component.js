@@ -3,5 +3,8 @@ angular
   .component('exercise', {
     templateUrl: 'components/exercise/exercise.html',
     controller: 'ExerciseController',
-    scope: {}
+    controllerAs: 'vm',
+    scope: {
+      path: '='
+    }
   });
