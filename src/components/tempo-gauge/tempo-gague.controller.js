@@ -8,7 +8,7 @@ class TempoGaugeController {
       this.arc = d3.arc();
 
       this.arc({
-        context: $element[0],
+        context: $element.find('canvas')[0],
         innerRadius: 0,
         outerRadius: 100,
         startAngle: 0,
