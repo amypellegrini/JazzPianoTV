@@ -29,7 +29,9 @@
     <span>points</span>
   </div>
   <div class="sheet-music-layout">
-    <img class="right-hand treble-clef" ng-src="{{ vm.rhPath }}">
-    <img class="left-hand bass-clef" ng-src="{{ vm.lhPath }}">
+    <div class="step" ng-repeat="step in vm.sequence">
+      <img class="right-hand treble-clef" ng-src="{{ step.rh }}">
+      <img class="left-hand bass-clef" ng-src="{{ step.lh }}">
+    </div>
   </div>
 </div>
