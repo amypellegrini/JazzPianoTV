@@ -9,6 +9,7 @@
  */
 
 const gulp = require('gulp');
+const sass = require('gulp-sass');
 const serve = require('gulp-serve');
 const concat = require('gulp-concat');
 const babel = require('gulp-babel');
@@ -19,9 +20,11 @@ const templateCache = require('gulp-angular-templatecache');
 /**
  * Build css files.
  */
-gulp.task('css', () => {
-  let src = gulp.src('./src/**/*.css');
-  return src.pipe(gulp.dest('dist'));
+gulp.task('scss', () => {
+  let src = gulp.src('./src/scss/*.scss');
+  return src
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('dist/css'));
 });
 
 /**
@@ -58,7 +61,7 @@ gulp.task('js-vendor', () => {
 /**
  * Wire dependencies and build index.html.
  */
-gulp.task('default', ['js-vendor', 'js', 'css'], () => {
+gulp.task('default', ['js-vendor', 'js', 'scss'], () => {
   let target = gulp.src('./src/index.html');
   let jsVendor = gulp.src([ 'dist/js/vendor.js' ], { read: false });
   let sources = gulp.src(['dist/js/app.js', 'dist/**/*.css'], { read: false });

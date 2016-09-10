@@ -20,6 +20,7 @@
     "angular-ui-router": "^0.3.1",
     "moment": "momentjs#^2.14.1",
     "d3": "^4.2.2",
-    "d3-shape": "^1.0.3"
+    "d3-shape": "^1.0.3",
+    "font-awesome": "^4.6.3"
   }
 }

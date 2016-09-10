@@ -80,8 +80,9 @@ h2 {
 .bass-clef {
   width: 100%;
   display: block;
+
+  .inactive {
+    opacity: 0.5;
+  }
 }
 
-.inactive {
-  opacity: 0.5;
-}
