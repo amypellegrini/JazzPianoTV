@@ -81,3 +81,7 @@ h2 {
   width: 100%;
   display: block;
 }
+
+.inactive {
+  opacity: 0.5;
+}
