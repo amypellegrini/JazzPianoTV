@@ -1,12 +1,6 @@
-/* Just in case Impact is not available in the client */
-@font-face {
-  font-family: 'Impact';
-  src: url('fonts/impact.ttf');
-}
-
 body {
   padding: 1rem;
-  font-family: Arial, sans-serif;
+  font-family: Tahoma, Arial, sans-serif;
 }
 
 h1 {
@@ -27,7 +21,16 @@ h2 {
 
 /* Theme */
 .nav-link {
+  font-family: Arial, sans-serif;
   text-decoration: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .nav {
