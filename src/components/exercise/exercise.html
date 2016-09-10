@@ -30,8 +30,16 @@
   </div>
   <div class="sheet-music-layout">
     <div class="step" ng-repeat="step in vm.sequence">
-      <img class="right-hand treble-clef" ng-src="{{ step.rh }}">
-      <img class="left-hand bass-clef" ng-src="{{ step.lh }}">
+      <div class="upper-row">
+        <span class="chord">{{ step.chord }}</span>
+      </div>
+      <div class="middle-row">
+        <img class="right-hand treble-clef" ng-src="{{ step.rh }}">
+        <img class="left-hand bass-clef" ng-src="{{ step.lh }}">
+      </div>
+      <div class="bottom-row text-center">
+        <span>{{ step.hFunction }}</span>
+      </div>
     </div>
   </div>
 </div>

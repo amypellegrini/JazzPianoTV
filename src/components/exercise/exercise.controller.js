@@ -11,6 +11,7 @@ class ExerciseController {
     this.sequence = [
       {
         key: 'C',
+        chord: 'Cmaj7',
         tempo: 60,
         timeSignature: 'C',
         rh: rootUrl + 'voicings/c-c-cmaj7.svg',
@@ -19,6 +20,7 @@ class ExerciseController {
       },
       {
         key: 'C',
+        chord: 'Dm7',
         tempo: 60,
         timeSignature: 'C',
         rh: rootUrl + 'voicings/c-c-dm7.svg',
@@ -27,6 +29,7 @@ class ExerciseController {
       },
       {
         key: 'C',
+        chord: 'G7',
         tempo: 60,
         timeSignature: 'C',
         rh: rootUrl + 'voicings/c-c-g7.svg',
