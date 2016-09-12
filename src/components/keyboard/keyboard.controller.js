@@ -6,6 +6,22 @@ class KeyboardController {
   constructor($scope) {
     this.octaves = $scope.octaves;
   }
+
+  /**
+   * Play a sequence.
+   * @param {Array} sequence
+   */
+  playSequence(sequence) {
+
+  }
+
+  stopSequence() {
+
+  }
+
+  setActiveNotes() {
+
+  }
 }
 
 angular

@@ -2,8 +2,16 @@
   "tags": [
     "clef-chage",
     "3-additional-lines",
+    "2-additional-lines",
+    "1-additional-line",
     "treble-clef",
     "bass-clef",
-    "ternary-subdivision"
+    "ternary-subdivision",
+    "binary-subdivision",
+    "16th note",
+    "8th note",
+    "4th note",
+    "whole note",
+    "half note"
   ]
 }
