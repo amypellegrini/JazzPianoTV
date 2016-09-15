@@ -1,0 +1,25 @@
+.nav-link {
+  font-family: Impact, Arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: 2px;
+
+  &:hover {
+    color: #999;
+  }
+}
+
+.nav {
+  margin: 1rem 0;
+  list-style-type: none;
+}
+
+.nav li {
+  float: left;
+  text-align: center;
+  width: 20%;
+}

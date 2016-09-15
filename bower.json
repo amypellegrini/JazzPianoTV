@@ -22,6 +22,7 @@
     "d3": "^4.2.2",
     "d3-shape": "^1.0.3",
     "font-awesome": "^4.6.3",
-    "JazzScript": "jazzscript#^0.1.0-alpha"
+    "JazzScript": "jazzscript#^0.1.0-alpha",
+    "showdown": "^1.4.3"
   }
 }
