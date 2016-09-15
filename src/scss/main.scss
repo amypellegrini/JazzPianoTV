@@ -24,6 +24,10 @@ input[type="text"] {
   border-radius: 8px;
 }
 
+ul {
+  margin: 0;
+}
+
 /* Theme */
 .nav-link {
   font-family: Impact, Arial, sans-serif;
@@ -41,12 +45,14 @@ input[type="text"] {
 }
 
 .nav {
+  margin: 1rem 0;
   list-style-type: none;
 }
 
 .nav li {
   float: left;
-  margin-right: 1rem;
+  text-align: center;
+  width: 20%;
 }
 
 /* Helper classes */
@@ -64,7 +70,26 @@ input[type="text"] {
   text-align: center;
 }
 
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/*  Header */
+header {
+  width: 66%;
+  margin: 0 auto 1rem;
+}
+
 /* Exercise layout */
+.exercise {
+  width: 33%;
+  margin: 0 auto;
+}
+
 .sheet-music-layout {
   width: 500px;
   font-size: 3rem;
