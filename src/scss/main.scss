@@ -1,3 +1,5 @@
+@import 'helpers';
+
 body {
   padding: 155px 0 0;
   font-family: Tahoma, Arial, sans-serif;
@@ -10,18 +12,23 @@ h1 {
 }
 
 h1 em {
-  font-family: 'Impact', sans-serif;
   color: #ff6a00;
   font-style: normal;
 }
 
 h2 {
   margin: 0;
+  font-family: "Lobster", serif;
+  font-size: 2rem;
+  color: #ff0036;
 }
 
 input[type="text"] {
+  box-sizing: border-box;
+  padding: 0 1rem;
+  line-height: 1.5rem;
   border: 1px solid #666;
-  border-radius: 8px;
+  border-radius: 15px;
 }
 
 ul {
@@ -53,29 +60,6 @@ ul {
   float: left;
   text-align: center;
   width: 20%;
-}
-
-/* Helper classes */
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.pad-0 {
-  padding: 0;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
 }
 
 /*  Header */

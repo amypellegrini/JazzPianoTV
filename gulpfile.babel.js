@@ -21,7 +21,7 @@ const templateCache = require('gulp-angular-templatecache');
  * Build css files.
  */
 gulp.task('scss', () => {
-  let src = gulp.src('./src/scss/*.scss');
+  let src = gulp.src('./src/scss/main.scss');
   return src
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('dist/css'));
