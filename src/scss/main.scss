@@ -1,5 +1,5 @@
 body {
-  padding: 1rem;
+  padding: 155px 0 0;
   font-family: Tahoma, Arial, sans-serif;
 }
 
@@ -80,8 +80,10 @@ ul {
 
 /*  Header */
 header {
+  position: fixed;
+  top: 0;
   width: 66%;
-  margin: 0 auto 1rem;
+  margin-left: 17.5%;
 }
 
 /* Exercise layout */
