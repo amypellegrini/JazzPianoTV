@@ -1,6 +1,6 @@
 angular
   .module('JazzPianoTV')
-  .component('KeyboardComponent', {
+  .component('keyboard', {
     controller: 'KeyboardController',
     scope: {
       octaves: '='
