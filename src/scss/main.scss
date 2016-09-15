@@ -1,10 +1,12 @@
 @import 'helpers';
 @import 'header';
 @import 'nav';
+@import 'buttons';
+@import 'exercise';
 
 /* Theme */
 body {
-  padding: 155px 0 0;
+  padding: 165px 0 0;
   font-family: Tahoma, Arial, sans-serif;
 }
 
@@ -37,41 +39,3 @@ input[type="text"] {
 ul {
   margin: 0;
 }
-
-/* Exercise layout */
-.exercise {
-  width: 33%;
-  margin: 0 auto;
-}
-
-.sheet-music-layout {
-  width: 500px;
-  font-size: 3rem;
-  font-family: "Times New Roman", Times, serif;
-  position: relative;
-  left: 50%;
-  margin-left: -250px;
-}
-
-.upper-row {
-
-}
-
-.middle-row {
-
-}
-
-.upper-row .chord {
-  margin-left: 7rem;
-}
-
-.treble-clef,
-.bass-clef {
-  width: 100%;
-  display: block;
-
-  .inactive {
-    opacity: 0.5;
-  }
-}
-

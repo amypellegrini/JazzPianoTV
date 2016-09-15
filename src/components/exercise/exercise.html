@@ -9,6 +9,8 @@
       <option>Descending half step</option>
     </select>
   </div>
+
+  <!-- @todo: put tempo component here when ready -->
   <div class="tempo">
     <label>Tempo</label>
     <select>
@@ -21,8 +23,6 @@
       <option>180 b/m</option>
     </select>
   </div>
-
-  <tempo-gauge></tempo-gauge>
 
   <div class="score">
     <span>{{ vm.score }}</span>
@@ -42,4 +42,7 @@
       </div>
     </div>
   </div>
+
+  <button class="action-button fa fa-expand" title="Full screen"></button>
+  <button class="action-button fa fa-file-pdf-o" title="Download as PDF"></button>
 </div>

@@ -1,0 +1,35 @@
+.exercise {
+  width: 66%;
+  margin: 0 auto;
+}
+
+.sheet-music-layout {
+  width: 250px;
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  left: 50%;
+  margin-left: -250px;
+
+  &.full-screen {
+    font-size: 3rem;
+  }
+
+  .upper-row {
+    .chord {
+      margin-left: 7rem;
+    }
+    .middle-row {
+
+    }
+  }
+}
+
+.treble-clef,
+.bass-clef {
+  width: 100%;
+  display: block;
+
+  .inactive {
+    opacity: 0.5;
+  }
+}
