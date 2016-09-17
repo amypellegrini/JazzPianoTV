@@ -1,2 +1,5 @@
 angular
-  .module('JazzPianoTV', []);
+  .module('JazzPianoTV', [
+    'ui.router',
+    'btford.markdown'
+  ]);

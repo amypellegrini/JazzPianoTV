@@ -14,7 +14,7 @@ const serve = require('gulp-serve');
 const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 const inject = require('gulp-inject');
-const wiredep = require('wiredep').stream;
+const mainBowerFiles = require('main-bower-files');
 const templateCache = require('gulp-angular-templatecache');
 
 /**
@@ -51,23 +51,23 @@ gulp.task('js', ['templates'], () => {
 /**
  * Concat and build js vendor files.
  */
-gulp.task('js-vendor', () => {
-  let src = gulp.src(['./bower_components/**/*.min.js']);
-  return src
-    .pipe(concat('vendor.js'))
-    .pipe(gulp.dest('dist/js'));
-});
+// gulp.task('js-vendor', () => {
+//   return gulp.src('./src/index.html')
+//     .pipe(inject)
+//     //.pipe(gulp.dest('dist'));
+// });
 
 /**
  * Wire dependencies and build index.html.
  */
-gulp.task('default', ['js-vendor', 'js', 'scss'], () => {
+gulp.task('default', ['js', 'scss'], () => {
   let target = gulp.src('./src/index.html');
   let jsVendor = gulp.src([ 'dist/js/vendor.js' ], { read: false });
   let sources = gulp.src(['dist/js/app.js', 'dist/**/*.css'], { read: false });
 
   return target
-    .pipe(inject(jsVendor, { relative: false, ignorePath: 'dist', name: 'vendor' } ))
+    // .pipe(inject(jsVendor, { relative: false, ignorePath: 'dist', name: 'vendor' } ))
+    .pipe(wiredep())
     .pipe(inject(sources, { relative: false, ignorePath: 'dist' }))
     .pipe(gulp.dest('dist'));
 });
