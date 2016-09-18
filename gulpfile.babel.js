@@ -51,23 +51,22 @@ gulp.task('js', ['templates'], () => {
 /**
  * Concat and build js vendor files.
  */
-// gulp.task('js-vendor', () => {
-//   return gulp.src('./src/index.html')
-//     .pipe(inject)
-//     //.pipe(gulp.dest('dist'));
-// });
+gulp.task('js-vendor', () => {
+  return gulp.src(mainBowerFiles())
+    .pipe(concat('vendor.js'))
+    .pipe(gulp.dest('dist/js'));
+});
 
 /**
  * Wire dependencies and build index.html.
  */
-gulp.task('default', ['js', 'scss'], () => {
+gulp.task('default', ['js-vendor', 'js', 'scss'], () => {
   let target = gulp.src('./src/index.html');
-  let jsVendor = gulp.src([ 'dist/js/vendor.js' ], { read: false });
+  let jsVendor = gulp.src(['dist/js/vendor.js'], { read: false });
   let sources = gulp.src(['dist/js/app.js', 'dist/**/*.css'], { read: false });
 
   return target
-    // .pipe(inject(jsVendor, { relative: false, ignorePath: 'dist', name: 'vendor' } ))
-    .pipe(wiredep())
+    .pipe(inject(jsVendor, { relative: false, ignorePath: 'dist', name: 'vendor' } ))
     .pipe(inject(sources, { relative: false, ignorePath: 'dist' }))
     .pipe(gulp.dest('dist'));
 });
