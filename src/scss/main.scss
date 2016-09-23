@@ -7,13 +7,13 @@
 /* Theme */
 body {
   padding: 115px 0 0;
-  font-family: Tahoma, Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 h1 {
   margin: 0 0 -12px;
   font-size: 4rem;
-  font-family: 'Impact', Arial, sans-serif;
+  font-family: "Impact", Arial, sans-serif;
 }
 
 h1 em {
@@ -32,6 +32,10 @@ h3 {
   font-family: Impact, Arial, sans-serif;
   font-size: 2rem;
   margin: 0;
+}
+
+p {
+  color: #333;
 }
 
 input[type="text"] {
