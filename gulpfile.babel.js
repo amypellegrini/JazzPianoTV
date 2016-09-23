@@ -7,13 +7,13 @@
  * code minified and bundled in its final state, no need for a "dev" or "prod"
  * build.
  */
-
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const serve = require('gulp-serve');
 const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 const inject = require('gulp-inject');
+const connect = require('gulp-connect');
 const mainBowerFiles = require('main-bower-files');
 const templateCache = require('gulp-angular-templatecache');
 
@@ -71,5 +71,15 @@ gulp.task('default', ['js-vendor', 'js', 'scss'], () => {
     .pipe(gulp.dest('dist'));
 });
 
-// just a basic dev serve task for now
-gulp.task('serve', serve('dist'));
+/**
+ * DEV environment server.
+ * @todo: What about a PROD server. To be continued...
+ */
+gulp.task('serve', () => {
+  connect.server({
+    root: 'dist',
+    port: 3000,
+    host: 'localhost',
+    fallback: 'dist/index.html'
+  });
+});
