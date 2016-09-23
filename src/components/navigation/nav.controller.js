@@ -2,7 +2,8 @@ class NavController {
   constructor() {
     this.items = [
       { text: 'Home', href: '/home' },
-      { text: 'Home', href: '/videos' },
+      { text: 'Dashboard', href: '/dashboard' },
+      { text: 'Videos', href: '/videos' },
       { text: 'Blog', href: '/blog' },
       { text: 'Exercises', href: '/exercises' },
       { text: 'Products', href: '/products' },
