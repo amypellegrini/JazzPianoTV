@@ -23,6 +23,7 @@ h1 em {
 }
 
 h2, h3, h4, h5, h6 {
+  color: #333;
   margin: 0;
 }
 
@@ -33,11 +34,16 @@ h2 {
 }
 
 h3 {
-  font-family: Impact, Arial, sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.4rem;
 }
 
 p {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
   color: #333;
 }
 
@@ -51,9 +57,27 @@ input[type="text"] {
 
 ul {
   margin: 0;
+
+  li {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
 }
 
 .page-body {
   width: 66%;
   margin: 0 auto;
+}
+
+.page-content {
+  padding: 0 15%;
+  box-sizing: border-box;
+
+  h3 {
+    margin: 1.8rem 0;
+  }
+
+  h4, h5, h6 {
+    margin: 1.4rem 0;
+  }
 }

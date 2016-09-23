@@ -10,6 +10,10 @@ angular
       .state('exercises', {
         url: '/exercises',
         templateUrl: 'pages/exercises.html'
+      })
+      .state('about', {
+        url: '/about',
+        templateUrl: 'pages/about.html'
       });
 
     $locationProvider.html5Mode(true);
