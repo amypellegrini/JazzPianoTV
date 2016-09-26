@@ -7,7 +7,13 @@
 @import 'footer';
 
 /* Theme */
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
+  box-sizing: border-box;
   padding: 115px 0 0;
   font-family: Arial, sans-serif;
 }
@@ -68,6 +74,7 @@ ul {
 .page-body {
   width: 66%;
   margin: 0 auto;
+  padding-bottom: 3rem;
 }
 
 .page-content {
