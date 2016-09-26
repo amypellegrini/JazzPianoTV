@@ -6,4 +6,10 @@ header {
   border-bottom: 1px solid #CCC;
   background-color: rgba(255,255,255, 0.95);
   z-index: 1;
+
+  .languages {
+    right: 5px;
+    top: 15px;
+    position: absolute
+  }
 }
