@@ -52,7 +52,7 @@ gulp.task('js', ['templates'], () => {
  * Concat and build js vendor files.
  */
 gulp.task('js-vendor', () => {
-  return gulp.src(mainBowerFiles())
+  return gulp.src([ mainBowerFiles(), './src/vendor'])
     .pipe(concat('vendor.js'))
     .pipe(gulp.dest('dist/js'));
 });

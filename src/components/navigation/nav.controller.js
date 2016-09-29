@@ -8,7 +8,7 @@ class NavController {
       { text: 'Exercises', href: '/exercises' },
       { text: 'Products', href: '/products' },
       { text: 'About', href: '/about' },
-      { text: 'Login/Register', href: '/register-login' }
+      { text: 'Login/Register' }
     ];
   }
 }
