@@ -52,7 +52,11 @@ gulp.task('js', ['templates'], () => {
  * Concat and build js vendor files.
  */
 gulp.task('js-vendor', () => {
-  return gulp.src([ mainBowerFiles(), './src/vendor'])
+  let vendorFiles = mainBowerFiles();
+  // @todo: fix amazon cognito identity sourcemap issue.
+  // vendorFiles.push('./src/vendor/*.js');
+
+  return gulp.src(mainBowerFiles())
     .pipe(concat('vendor.js'))
     .pipe(gulp.dest('dist/js'));
 });

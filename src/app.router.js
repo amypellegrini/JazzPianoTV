@@ -14,6 +14,10 @@ angular
       .state('about', {
         url: '/about',
         templateUrl: 'pages/about.html'
+      })
+      .state('products', {
+        url: '/products',
+        templateUrl: 'pages/products.html'
       });
 
     $locationProvider.html5Mode(true);
