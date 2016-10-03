@@ -20,7 +20,8 @@
     "angular-ui-router": "^0.3.1",
     "d3": "^4.2.2",
     "d3-shape": "^1.0.3",
-    "showdown": "^1.4.3"
+    "showdown": "^1.4.3",
+    "howler.js": "howler#^2.0.0"
   },
   "resolutions": {
     "showdown": "~0.3.1"

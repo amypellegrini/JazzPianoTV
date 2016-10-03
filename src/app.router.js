@@ -4,12 +4,15 @@ angular
     $stateProvider
       .state('home', {
         url: '/home',
-        //abstract: true,
         templateUrl: 'pages/home.html'
       })
       .state('exercises', {
         url: '/exercises',
         templateUrl: 'pages/exercises.html'
+      })
+      .state('harmonicProgressions', {
+        url: '/exercises/harmonic-progressions',
+        templateUrl: 'pages/harmonic-progressions/harmonic-progressions.html'
       })
       .state('about', {
         url: '/about',
