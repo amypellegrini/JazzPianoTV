@@ -5,16 +5,22 @@ button {
 .action-button {
   color: #666;
   background: none;
-  width: 2rem;
-  height: 2rem;
-  padding: 0;
-  border: 1px solid #999;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #999;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.2rem;
+  transition: all 200ms ease-in;
+
+  &:hover {
+    color: #9F0A9F;
+    border: 2px solid #9F0A9F;
+    transition: all 200ms ease-in;
+  }
 }
 
-.unlock-button {
+.conversion-button {
   transition: background-color 200ms ease-in;
   background-color: #800080;
   border: none;
