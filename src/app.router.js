@@ -29,6 +29,10 @@ angular
       .state('crashCourse', {
         url: '/products/jazzpiano-crash-course',
         templateUrl: 'pages/jazzpiano-course/buy.html'
+      })
+      .state('proMembership', {
+        url: '/products/pro-membership-subscription',
+        templateUrl: 'pages/pro-membership/buy.html'
       });
 
     $locationProvider.html5Mode(true);
