@@ -18,6 +18,10 @@ angular
         url: '/exercises/harmonic-progressions/II-V-I',
         templateUrl: 'pages/harmonic-progressions/ii-v-i.html'
       })
+      .state('voicings', {
+        url: '/exercises/voicings',
+        templateUrl: 'pages/voicings/voicings.html'
+      })
       .state('about', {
         url: '/about',
         templateUrl: 'pages/about.html'

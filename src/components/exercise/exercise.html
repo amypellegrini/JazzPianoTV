@@ -1,53 +1,20 @@
 <div class="exercise">
-  <div class="progression-mode">
-    <label>Progression mode</label>
-    <select>
-      <option>Random/dodecaphonic</option>
-      <option>Ascending 4ths</option>
-      <option>Ascending 5ths</option>
-      <option>Ascending half step</option>
-      <option>Descending half step</option>
-    </select>
-  </div>
-
-  <!-- @todo: put tempo component here when ready -->
-  <div class="tempo">
-    <label>Tempo</label>
-    <select>
-      <option>60 b/m</option>
-      <option>80 b/m</option>
-      <option>100 b/m</option>
-      <option>120 b/m</option>
-      <option>140 b/m</option>
-      <option>160 b/m</option>
-      <option>180 b/m</option>
-    </select>
-  </div>
-
-  <div class="voicing">
-    <label>Voicing</label>
-    <select>
-      <option>3 7 9 5 - 7 3 13 9 - 3 6 9 5</option>
-    </select>
-  </div>
-
+  <h3>{{ exercise.title }}</h3>
+  <duration></duration>
+  <keys></keys>
   <div class="score">
     <span>{{ vm.score }}</span>
     <span>points</span>
   </div>
   <div class="sheet-music-layout">
-    <div class="step" ng-repeat="step in vm.sequence">
-      <div class="upper-row">
-        <span class="chord">{{ step.chord }}</span>
-      </div>
-      <div class="middle-row">
-        <img class="right-hand treble-clef inactive" ng-src="{{ step.rh }}">
-        <img class="left-hand bass-clef" ng-src="{{ step.lh }}">
-      </div>
-      <div class="bottom-row text-center">
-        <span>{{ step.hFunction }}</span>
-      </div>
-    </div>
+    
+  </div>
+  <div class="playback-controls">
+    <div>PLAY</div>
+    <div>PAUSE</div>
+    <div>STOP</div>
+    <div>PREVIOUS</div>
+    <div>NEXT</div>
   </div>
 
   <button class="action-button fa fa-expand" title="Full screen"></button>
