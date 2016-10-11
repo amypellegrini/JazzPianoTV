@@ -1,0 +1,29 @@
+<div class="exercise-page" ng-controller="ScalesController as scales">
+  <div class="sidebar left group">
+    <h3>Scales</h3>
+    <h5>Greek Modes / Diatonic Scales</h5>
+    <ol>
+      <li>Major - Ionian</li>
+      <li>Minor 7th - Dorian</li>
+      <li>Phrygian</li>
+      <li>Lydian</li>
+      <li>Dominant - Mixolydian</li>
+      <li>Minor relative - Aeolian</li>
+      <li>Locrian</li>
+    </ol>
+    <h5>Minor Scales</h5>
+    <ol>
+      <li>Bach Minor</li>
+      <li>Harmonic Minor</li>
+    </ol>
+  </div>
+  <div class="exercise-lesson">
+    <exercise settings="voicings.settings"></exercise>
+
+    <div class="videos">
+      <ul>
+        <li ng-repeat="videoItem in videos"><div calss="video-thumbnail"></div></li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -97,4 +97,12 @@ ul {
 .sidebar {
   width: 20%;
   margin-right: 2rem;
+
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  ol {
+    list-style-type: none;
+  }
 }

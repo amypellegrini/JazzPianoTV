@@ -22,6 +22,10 @@ angular
         url: '/exercises/voicings',
         templateUrl: 'pages/voicings/voicings.html'
       })
+      .state('scales', {
+        url: '/exercises/scales',
+        templateUrl: 'pages/scales/scales.html'
+      })
       .state('about', {
         url: '/about',
         templateUrl: 'pages/about.html'
