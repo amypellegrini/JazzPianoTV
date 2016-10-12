@@ -77,6 +77,7 @@ class ExerciseController {
       this.loop();
     })
     this.track.drums.play('intro');
+    this.sequenceStatus = 'intro';
   }
 
   /**
@@ -85,10 +86,14 @@ class ExerciseController {
   loop() {
     this.track.drums.play('drumLoop');
     this.track.bass.play('C');
+    this.sequenceStatus = 'loop';
   }
 
   coda() {
-
+    this.track.bass.stop();
+    this.track.drums.stop();
+    this.track.drums.play('end');
+    this.sequenceStatus = 'coda';
   }
 
   /**
@@ -122,14 +127,17 @@ class ExerciseController {
    */
   stop() {
     if (this.playbackStatus !== 'stopped') {
-      this.track.bass.loop(false).once('end', () => {
-        this.track.bass.stop();
+      if (this.sequenceStatus === 'intro') {
+        this.track.drums.off('end');
         this.track.drums.stop();
-        this.track.drums.play('end');
         this.playbackStatus = 'stopped';
-        this.$scope.$apply();
-      });
-
+      } else {
+        this.track.drums.loop(false).once('end', () => {
+          this.coda();
+          this.playbackStatus = 'stopped';
+          this.$scope.$apply();
+        });
+      }
     }
   }
 }
