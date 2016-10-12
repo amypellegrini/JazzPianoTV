@@ -1,9 +1,10 @@
 <div class="exercise">
   <h3>{{ exercise.settings.title }}</h3>
+  <p ng-if="exercise.loading">Loading...</p>
   <duration></duration>
   <keys></keys>
   <div class="score">
-    <span>{{ vm.score }}</span>
+    <span>{{ exercise.score }}</span>
     <span>points</span>
   </div>
   <div class="sheet-music-layout">

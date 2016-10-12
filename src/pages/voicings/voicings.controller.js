@@ -32,7 +32,7 @@ class VoicingsController {
             rootUrl + 'tracks/60bpm-drums-ride-swing.wav'
           ],
           sprite: {
-            intro: [ 0, 1000 ],
+            intro: [ 0, 4000 ],
             drumLoop: [ 8000, 12000, true ],
             end: [ 2000, 3000 ]
           }

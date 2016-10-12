@@ -7,8 +7,12 @@ class ExerciseController {
     let rootUrl = 'https://s3.amazonaws.com/jazzpiano.tv/assets/';
 
     this.settings = $scope.exercise.settings;
+    this.$scope = $scope;
+    this.score = 0;
+    this.loading = true;
     this.score = 0;
     this.playbackStatus = 'stopped';
+
     this.soundsLoaded = {
       bass: false,
       drums: false
@@ -19,9 +23,21 @@ class ExerciseController {
     }
 
     $rootScope.$on('$stateChangeStart', () => {
-      this.track.drums.stop().unload();
-      this.track.bass.stop().unload();
+      this.unloadSounds();
     });
+  }
+
+  /**
+   * On load sound handler.
+   * @param {String} sound Sound/track key.
+   */
+  onLoadSound(sound) {
+    this.soundsLoaded[sound] = true;
+
+    if (this.soundsLoaded.bass && this.soundsLoaded.drums) {
+      this.loading = false;
+      this.$scope.$apply();
+    }
   }
 
   /**
@@ -37,7 +53,7 @@ class ExerciseController {
         src: this.settings.sounds[sound].src,
         sprite: this.settings.sounds[sound].sprite,
         onload: () => {
-          this.soundsLoaded[sound] = true;
+          this.onLoadSound(sound);
         },
         onloaderror: (id, err) => {
           console.log('Cannot load sound: ', err, id);
@@ -50,14 +66,18 @@ class ExerciseController {
    * This must happen when navigating out to avoid memory leaks.
    */
   unloadSounds() {
-
+    this.track.drums.stop().unload();
+    this.track.bass.stop().unload();
   }
 
   /**
-   * Play intro to harmonic progression loop.
+   * Play intro to harmonic progression and chain to loop.
    */
   intro() {
-
+    this.track.drums.once('end', () => {
+      this.loop();
+    })
+    this.track.drums.play('intro');
   }
 
   /**
@@ -83,17 +103,7 @@ class ExerciseController {
 
     if (this.playbackStatus !== 'playing') {
       this.playbackStatus = 'playing';
-      this.loop();
-      // Start
-      // this.track.drums.on('end', function() {
-
-      // })
-      // this.track.drums.play('start');
-
-      // // Loop
-
-      // // End
-      // this.track.drums.play('end')
+      this.intro();
     }
   }
 
