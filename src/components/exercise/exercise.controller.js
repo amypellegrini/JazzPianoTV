@@ -66,14 +66,22 @@ class ExerciseController {
    * Pause exercise handler.
    */
   pause() {
-
+    if (this.playbackStatus !== 'paused') {
+      this.track.bass.pause();
+      this.track.drums.pause();
+      this.playbackStatus = 'paused';
+    }
   }
 
   /**
    * Stop exercise handler.
    */
   stop() {
-
+    if (this.playbackStatus !== 'stopped') {
+      this.track.bass.stop();
+      this.track.drums.stop();
+      this.playbackStatus = 'stopped';
+    }
   }
 }
 
