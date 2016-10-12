@@ -10,8 +10,10 @@ class ExerciseController {
 
     this.score = 0;
     this.playbackStatus = 'stopped';
-
-    console.log($scope);
+    this.soundsLoaded = {
+      bass: false,
+      drums: false
+    };
 
     if (this.settings.sounds) {
       this.preloadSounds();
@@ -21,15 +23,20 @@ class ExerciseController {
   preloadSounds() {
     let self = this;
 
-    this.sounds = [];
+    this.track = {};
 
-    this.settings.sounds.forEach(function(sound) {
-      this.sounds.push(new Howl({
-        src: [ sound ]
-      }))
-    }, this);
-
-    console.log(this.sounds);
+    for (let sound in this.settings.sounds) {
+      this.track[sound] = new Howl({
+        src: this.settings.sounds[sound].src,
+        onload: function() {
+          console.log('Loaded!');
+          self.soundsLoaded[sound] = true;
+        },
+        onloaderror: function(id, err) {
+          console.log('Cannot load sound: ', err, id);
+        }
+      });
+    }
   }
 
   /**
@@ -39,17 +46,32 @@ class ExerciseController {
 
   }
 
+  /**
+   * Play exercise handler.
+   */
   play() {
+    if (!this.soundsLoaded.bass || !this.soundsLoaded.drums) {
+      console.log('Sounds not loaded: ', this.soundsLoaded);
+      return;
+    }
+
     if (this.playbackStatus !== 'playing') {
       this.playbackStatus = 'playing';
-      this.sounds[0].play();
+      this.track.bass.play();
+      this.track.drums.play();
     }
   }
 
+  /**
+   * Pause exercise handler.
+   */
   pause() {
 
   }
 
+  /**
+   * Stop exercise handler.
+   */
   stop() {
 
   }

@@ -11,10 +11,10 @@
   </div>
   <div class="playback-controls">
     <div ng-click="exercise.play()">PLAY</div>
-    <div>PAUSE</div>
-    <div>STOP</div>
-    <div>PREVIOUS</div>
-    <div>NEXT</div>
+    <div ng-click="exercise.pause()">PAUSE</div>
+    <div ng-click="exercise.stop()">STOP</div>
+    <div ng-click="exercise.prev()">PREVIOUS</div>
+    <div ng-click="exercise.next()">NEXT</div>
   </div>
 
   <button class="action-button fa fa-expand" title="Full screen"></button>
