@@ -3,11 +3,10 @@ class ExerciseController {
    * @param {Object} $scope
    * @constructor
    */
-  constructor($scope) {
+  constructor($scope, $rootScope) {
     let rootUrl = 'https://s3.amazonaws.com/jazzpiano.tv/assets/';
 
     this.settings = $scope.exercise.settings;
-
     this.score = 0;
     this.playbackStatus = 'stopped';
     this.soundsLoaded = {
@@ -18,8 +17,16 @@ class ExerciseController {
     if (this.settings.sounds) {
       this.preloadSounds();
     }
+
+    $rootScope.$on('$stateChangeStart', () => {
+      this.track.drums.stop().unload();
+      this.track.bass.stop().unload();
+    });
   }
 
+  /**
+   * Start loading sounds immediately.
+   */
   preloadSounds() {
     let self = this;
 
@@ -28,11 +35,11 @@ class ExerciseController {
     for (let sound in this.settings.sounds) {
       this.track[sound] = new Howl({
         src: this.settings.sounds[sound].src,
-        onload: function() {
-          console.log('Loaded!');
-          self.soundsLoaded[sound] = true;
+        sprite: this.settings.sounds[sound].sprite,
+        onload: () => {
+          this.soundsLoaded[sound] = true;
         },
-        onloaderror: function(id, err) {
+        onloaderror: (id, err) => {
           console.log('Cannot load sound: ', err, id);
         }
       });
@@ -47,6 +54,25 @@ class ExerciseController {
   }
 
   /**
+   * Play intro to harmonic progression loop.
+   */
+  intro() {
+
+  }
+
+  /**
+   * Play loop.
+   */
+  loop() {
+    this.track.drums.play('drumLoop');
+    this.track.bass.play('C');
+  }
+
+  coda() {
+
+  }
+
+  /**
    * Play exercise handler.
    */
   play() {
@@ -57,8 +83,17 @@ class ExerciseController {
 
     if (this.playbackStatus !== 'playing') {
       this.playbackStatus = 'playing';
-      this.track.bass.play();
-      this.track.drums.play();
+      this.loop();
+      // Start
+      // this.track.drums.on('end', function() {
+
+      // })
+      // this.track.drums.play('start');
+
+      // // Loop
+
+      // // End
+      // this.track.drums.play('end')
     }
   }
 

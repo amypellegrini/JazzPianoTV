@@ -6,6 +6,19 @@
 
 }
 
+.playback-controls {
+  .ui-control {
+    cursor: pointer;
+    float: left;
+    font-size: 1rem;
+    color: #333;
+    margin-right: 2rem;
+  }
+  .play {
+  }
+}
+
+/* @deprecated */
 .sheet-music-layout {
   width: 250px;
   font-family: "Times New Roman", Times, serif;

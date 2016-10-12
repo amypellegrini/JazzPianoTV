@@ -7,30 +7,34 @@ class VoicingsController {
       sounds: { 
         bass: {
           src: [
-            rootUrl + 'raw/20161003/ZOOM0001.ogg',
-            rootUrl + 'raw/20161003/ZOOM0001.mp3',
-            rootUrl + 'raw/20161003/ZOOM0001.WAV'
+            rootUrl + 'tracks/60bpm-bass-whole-ii-V-I.mp3',
+            rootUrl + 'tracks/60bpm-bass-whole-ii-V-I.ogg',
+            rootUrl + 'tracks/60bpm-bass-whole-ii-V-I.wav'
           ],
           sprite: {
-            C: [ 0, 1000 ],
-            F: [ 1000, 2000 ],
-            Bb: [ 2000, 3000 ],
-            Eb: [ 3000, 4000 ],
-            Ab: [ 4000, 5000 ],
-            Db: [ 5000, 6000 ],
-            Gb: [ 6000, 7000 ],
-            B: [ 7000, 8000 ],
-            E: [ 8000, 9000 ],
-            A: [ 9000, 10000 ],
-            D: [ 10000, 11000 ]
+            C: [ 0, 48000, true ],
+            F: [ 1000, 2000, true ],
+            Bb: [ 2000, 3000, true ],
+            Eb: [ 3000, 4000, true ],
+            Ab: [ 4000, 5000, true ],
+            Db: [ 5000, 6000, true ],
+            Gb: [ 6000, 7000, true ],
+            B: [ 7000, 8000, true ],
+            E: [ 8000, 9000, true ],
+            A: [ 9000, 10000, true ],
+            D: [ 10000, 11000, true ]
           }
         },
         drums: {
-          src: [ rootUrl + 'raw/20161012/ZOOM0003.WAV' ],
+          src: [
+            rootUrl + 'tracks/60bpm-drums-ride-swing.mp3',
+            rootUrl + 'tracks/60bpm-drums-ride-swing.ogg',
+            rootUrl + 'tracks/60bpm-drums-ride-swing.wav'
+          ],
           sprite: {
             intro: [ 0, 1000 ],
-            drumLoop: [ 1000, 2000 ],
-            end: [ 3000, 4000 ]
+            drumLoop: [ 8000, 12000, true ],
+            end: [ 2000, 3000 ]
           }
         }
       }
