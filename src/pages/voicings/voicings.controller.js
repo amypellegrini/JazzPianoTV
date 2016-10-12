@@ -34,7 +34,7 @@ class VoicingsController {
           sprite: {
             intro: [ 0, 4000 ],
             drumLoop: [ 8000, 12000, true ],
-            end: [ 2000, 3000 ]
+            end: [ 28000, 29000 ]
           }
         }
       }

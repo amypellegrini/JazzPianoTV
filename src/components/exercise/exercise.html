@@ -11,11 +11,21 @@
     
   </div>
   <div class="playback-controls group">
-    <div class="fa fa-step-backward ui-control" ng-click="exercise.prev()" title="previous"></div>
-    <div class="fa fa-play ui-control" ng-click="exercise.play()" title="play"></div>
-    <div class="fa fa-pause ui-control" ng-click="exercise.pause()" title="pause"></div>
-    <div class="fa fa-stop ui-control" ng-click="exercise.stop()" title="stop"></div>
-    <div class="fa fa-step-forward ui-control" ng-click="exercise.next()" title="next"></div>
+    <div class="fa fa-step-backward ui-control"
+      ng-click="exercise.prev()" title="previous"></div>
+
+    <div class="fa fa-play ui-control"
+      ng-class="{ 'active': exercise.playbackStatus === 'playing' }"
+      ng-click="exercise.play()" title="play"></div>
+
+    <div class="fa fa-pause ui-control"
+      ng-click="exercise.pause()" title="pause"></div>
+
+    <div class="fa fa-stop ui-control"
+      ng-click="exercise.stop()" title="stop"></div>
+
+    <div class="fa fa-step-forward ui-control"
+      ng-click="exercise.next()" title="next"></div>
   </div>
 
   <button class="action-button fa fa-expand" title="Full screen"></button>

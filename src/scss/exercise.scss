@@ -10,11 +10,13 @@
   .ui-control {
     cursor: pointer;
     float: left;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #333;
     margin-right: 2rem;
-  }
-  .play {
+
+    &.active {
+      color: #CCC;
+    }
   }
 }
 

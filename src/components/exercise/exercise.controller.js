@@ -8,7 +8,6 @@ class ExerciseController {
 
     this.settings = $scope.exercise.settings;
     this.$scope = $scope;
-    this.score = 0;
     this.loading = true;
     this.score = 0;
     this.playbackStatus = 'stopped';
@@ -123,9 +122,14 @@ class ExerciseController {
    */
   stop() {
     if (this.playbackStatus !== 'stopped') {
-      this.track.bass.stop();
-      this.track.drums.stop();
-      this.playbackStatus = 'stopped';
+      this.track.bass.loop(false).once('end', () => {
+        this.track.bass.stop();
+        this.track.drums.stop();
+        this.track.drums.play('end');
+        this.playbackStatus = 'stopped';
+        this.$scope.$apply();
+      });
+
     }
   }
 }
