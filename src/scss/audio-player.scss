@@ -1,0 +1,14 @@
+.playback-controls {
+  margin: 1rem 0;
+  .ui-control {
+    cursor: pointer;
+    float: left;
+    font-size: 1.2rem;
+    color: #333;
+    margin-right: 2rem;
+
+    &.active {
+      color: #CCC;
+    }
+  }
+}

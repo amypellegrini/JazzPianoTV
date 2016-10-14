@@ -27,6 +27,10 @@ class ExerciseController {
     });
   }
 
+  onKeyChange() {
+
+  }
+
   /**
    * On load sound handler.
    * @param {String} sound Sound/track key.
@@ -52,6 +56,7 @@ class ExerciseController {
       this.track[sound] = new Howl({
         src: this.settings.sounds[sound].src,
         sprite: this.settings.sounds[sound].sprite,
+        html5: true,
         onload: () => {
           this.onLoadSound(sound);
         },
@@ -76,7 +81,8 @@ class ExerciseController {
   intro() {
     this.track.drums.once('end', () => {
       this.loop();
-    })
+    });
+
     this.track.drums.play('intro');
     this.sequenceStatus = 'intro';
   }
@@ -86,7 +92,7 @@ class ExerciseController {
    */
   loop() {
     this.track.drums.play('drumLoop');
-    this.track.bass.play('C');
+    this.track.bass.play(this.currentKey);
     this.sequenceStatus = 'loop';
   }
 
@@ -102,6 +108,8 @@ class ExerciseController {
    */
   play() {
     if (!this.soundsLoaded.bass || !this.soundsLoaded.drums) {
+      // @todo: implement proper error notification here (toastr?)
+      // hardcoded console.log()'s doesn't look good
       console.log('Sounds not loaded: ', this.soundsLoaded);
       return;
     }

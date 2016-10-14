@@ -3,6 +3,7 @@ angular
   .component('keys', {
     templateUrl: 'components/dropdowns/keys/keys.html',
     bindings: {
+      disabled: '=',
       currentKey: '='
     },
     controller: 'KeysDropdownController',

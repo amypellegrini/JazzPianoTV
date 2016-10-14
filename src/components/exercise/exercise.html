@@ -1,8 +1,9 @@
 <div class="exercise">
-  <h3>{{ exercise.settings.title }}</h3>
+  <h3>{{ exercise.settings.title }} in the key of {{ exercise.currentKey }}</h3>
   <p ng-if="exercise.loading">Loading...</p>
   <duration></duration>
-  <keys current-key="exercise.currentKey"></keys>
+  <keys disabled="exercise.playbackStatus === 'playing'"
+    current-key="exercise.currentKey"></keys>
   <div class="score">
     <span>{{ exercise.score }}</span>
     <span>points</span>

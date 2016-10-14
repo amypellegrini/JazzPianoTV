@@ -13,7 +13,7 @@ class VoicingsController {
           ],
           sprite: {
             C: [ 0, 48000, true ],
-            F: [ 1000, 2000, true ],
+            F: [ 66500, 80000, true ],
             Bb: [ 2000, 3000, true ],
             Eb: [ 3000, 4000, true ],
             Ab: [ 4000, 5000, true ],

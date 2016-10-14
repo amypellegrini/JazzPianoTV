@@ -6,20 +6,6 @@
 
 }
 
-.playback-controls {
-  .ui-control {
-    cursor: pointer;
-    float: left;
-    font-size: 1.2rem;
-    color: #333;
-    margin-right: 2rem;
-
-    &.active {
-      color: #CCC;
-    }
-  }
-}
-
 /* @deprecated */
 .sheet-music-layout {
   width: 250px;
