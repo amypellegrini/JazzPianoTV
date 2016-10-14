@@ -1,17 +1,6 @@
 <div>
   <label>Key</label>
-  <ol>
-    <li>C</li>
-    <li>F</li>
-    <li>Bb</li>
-    <li>Eb</li>
-    <li>Ab</li>
-    <li>Db</li>
-    <li>Gb</li>
-    <li>B</li>
-    <li>E</li>
-    <li>A</li>
-    <li>D</li>
-    <li>G</li>
-  </ol>
+  <select>
+    <option ng-selected="dd.currentKey === key" ng-repeat="key in dd.keys">{{ key }}</option>
+  </select>
 </div>

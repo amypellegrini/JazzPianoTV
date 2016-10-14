@@ -11,6 +11,7 @@ class ExerciseController {
     this.loading = true;
     this.score = 0;
     this.playbackStatus = 'stopped';
+    this.currentKey = 'C';
 
     this.soundsLoaded = {
       bass: false,

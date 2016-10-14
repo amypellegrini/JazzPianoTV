@@ -2,7 +2,7 @@
   <h3>{{ exercise.settings.title }}</h3>
   <p ng-if="exercise.loading">Loading...</p>
   <duration></duration>
-  <keys></keys>
+  <keys current-key="exercise.currentKey"></keys>
   <div class="score">
     <span>{{ exercise.score }}</span>
     <span>points</span>
