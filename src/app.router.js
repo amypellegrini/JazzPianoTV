@@ -1,9 +1,9 @@
 angular
   .module('JazzPianoTV')
-  .config(($stateProvider, $locationProvider) => {
+  .config(($stateProvider, $locationProvider, $urlRouterProvider) => {
     $stateProvider
       .state('home', {
-        url: '/home',
+        url: '/',
         templateUrl: 'pages/home.html'
       })
       .state('exercises', {
@@ -43,5 +43,6 @@ angular
         templateUrl: 'pages/pro-membership/buy.html'
       });
 
+    $urlRouterProvider.when('', '/');
     $locationProvider.html5Mode(true);
   });
