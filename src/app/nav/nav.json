@@ -36,6 +36,7 @@
   },
   {
     "text": "Login/Rgister",
-    "enabled": true
+    "enabled": true,
+    "href": "/register"
    }
 ]
