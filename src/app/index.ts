@@ -7,6 +7,7 @@ import {TechsModule} from './techs';
 import {MainComponent} from './main';
 import {HeaderComponent} from './header';
 import {FooterComponent} from './footer';
+import {NavComponent} from './nav/nav';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import {FooterComponent} from './footer';
     RootComponent,
     MainComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NavComponent
   ],
   bootstrap: [RootComponent]
 })
