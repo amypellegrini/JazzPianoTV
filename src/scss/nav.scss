@@ -9,7 +9,7 @@
   letter-spacing: 2px;
 
   &:hover {
-    color: #999;
+    color: $jptv-orange;
   }
 }
 
@@ -22,4 +22,8 @@
   float: left;
   text-align: center;
   margin-left: 1rem;
+
+  a {
+    cursor: pointer;
+  }
 }
