@@ -1,9 +1,4 @@
-.tmp
-.vscode
-.sass-cache
-.editorconfig
-node_modules/
-bower_components/
-npm-debug.log
-bin/
+.tmp/
+coverage/
 dist/
+node_modules/
