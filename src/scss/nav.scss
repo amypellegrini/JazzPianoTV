@@ -7,10 +7,6 @@
   font-weight: 400;
   color: #333;
   letter-spacing: 2px;
-
-  &:hover {
-    color: $jptv-orange;
-  }
 }
 
 .nav {
@@ -25,5 +21,10 @@
 
   a {
     cursor: pointer;
+
+    &:hover {
+      transition: color 250ms ease-out;
+      color: $jptv-orange;
+    }
   }
 }

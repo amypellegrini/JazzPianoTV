@@ -35,7 +35,7 @@
     "href": "/about"
   },
   {
-    "text": "Login/Rgister",
+    "text": "Login/Register",
     "enabled": true,
     "href": "/register"
    }
