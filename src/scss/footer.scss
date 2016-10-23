@@ -4,6 +4,12 @@ footer {
   display: block;
 
   p, a, span {
-    color: #fff;
+    color: #eee;
+  }
+
+  a {
+    &:hover {
+      color: #bbb;
+    }
   }
 }
