@@ -2,6 +2,7 @@
 
 import 'core-js/client/shim';
 import 'zone.js/dist/zone';
+import 'moment/src/moment';
 
 import '@angular/common';
 import 'rxjs';
