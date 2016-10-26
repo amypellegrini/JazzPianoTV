@@ -7,10 +7,6 @@
   font-weight: 400;
   color: #333;
   letter-spacing: 2px;
-
-  &:hover {
-    color: #999;
-  }
 }
 
 .nav {
@@ -22,4 +18,13 @@
   float: left;
   text-align: center;
   margin-left: 1rem;
+
+  a {
+    cursor: pointer;
+
+    &:hover {
+      transition: color 250ms ease-out;
+      color: #999;
+    }
+  }
 }

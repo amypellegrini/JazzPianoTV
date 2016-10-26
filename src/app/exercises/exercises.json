@@ -1,0 +1,72 @@
+[
+  {
+    "uiSref": "scales",
+    "title": "Scales",
+    "enabled": false,
+    "small": false,
+    "description": "Learn, memorize, and practice <strong>Scales</strong> in all keys"
+  },
+  {
+    "uiSref": "triads",
+    "title": "Triads",
+    "small": false,
+    "enabled": false,
+    "description": "Practice all different types of Triad chords in all keys"
+  },
+  {
+    "uiSref": "chords",
+    "title": "Chords",
+    "small": false,
+    "enabled": false,
+    "description": "Practice the most common types of Chords in all keys"
+  }
+  {
+    "uiSref": "voicings",
+    "title": "Voicings",
+    "enabled": true,
+    "small": true,
+    "description": "Practice Jazz voicings on top of the most common Harmonic Progressions (II-V-I, 12 Bar Blues Rhythm Changes, etc)"
+  },
+  {
+    "uiSref": "harmonicProgressions",
+    "title": "Harmonic Progressions",
+    "enabled": false,
+    "small": true,
+    "description": "Memorize the usual Harmonic Progressions in all keys (II-V-I, 12 Bar Blues, Rhythm Changes, etc)"
+  },
+  {
+    "uiSref": "sightReading",
+    "title": "Sight Reading",
+    "enabled": false,
+    "small": false,
+    "description": "Learn to read music with these progressive sight reading exercises"
+  },
+  {
+    "uiSref": "blues",
+    "title": "Blues Scale &amp; Blues Patterns",
+    "enabled": false,
+    "small": false,
+    "description": "Master the <strong>Blues Piano</strong> style in all keys"
+  },
+  {
+    "uiSref": "walkingBass",
+    "title": "Walking Bass",
+    "enabled": false,
+    "small": false,
+    "description": "Learn to improvise <strong>Walking Bass</strong> lines in all keys"
+  },
+  {
+    "uiSref": "rhythmPatterns",
+    "title": "Rhythm Patterns &amp; Formulas",
+    "enabled": false,
+    "small": false,
+    "description": ""
+  },
+  {
+    "uiSref": "technicalExercises",
+    "title": "Technical Exercises",
+    "enabled": false,
+    "small": false,
+    "description": "Boost your sound and musicality with pianistic technical exercises"
+  }
+];

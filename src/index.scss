@@ -1,0 +1,63 @@
+@import './scss/colours';
+@import './scss/main';
+@import './scss/footer';
+@import './scss/helpers';
+@import './scss/header';
+@import './scss/nav';
+@import './scss/buttons';
+@import './scss/exercises';
+@import './scss/audio-player';
+@import './scss/exercise';
+@import './scss/footer';
+
+body, h1, h2, h3 {
+  font-weight: 300
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.techs-container {
+  margin: 1rem;
+}
+.techs-h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.techs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tech {
+  height: 15rem;
+  width: 15rem;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+.tech-logo {
+  width: 5rem;
+  height: 5rem;
+  float: right;
+  margin: 0 0 .5rem .5rem;
+}
+.tech-h3 {
+  font-size: 1.5rem;
+  margin: 0 0 2rem 0;
+}
