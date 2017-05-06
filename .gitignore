@@ -3,3 +3,4 @@
 _site
 .sass-cache
 .editorconfig
+node_modules
