@@ -1,4 +1,14 @@
 export default function orderNotes(notesArray, ascending) {
-  // @todo: implement this...
-  return notesArray;
+  const notes = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+  const final = [];
+
+  notes.forEach((note) => {
+    notesArray.forEach((currentNote) => {
+      if (currentNote === note) {
+        final.push(currentNote);
+      }
+    });
+  });
+
+  return final;
 }

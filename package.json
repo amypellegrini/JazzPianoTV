@@ -9,16 +9,18 @@
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
     "babelify": "^7.3.0",
-    "tape": "^4.6.3"
+    "tape": "^4.6.3",
+    "webpack": "^2.5.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack --config webpack.config.js",
+    "test": "babel-node src/order-notes/order-notes.test.js | faucet"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amypellegrini/JazzPianoTV.git"
   },
-  "author": "",
+  "author": "Amy Pellegrini",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/amypellegrini/JazzPianoTV/issues"
