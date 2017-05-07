@@ -12,11 +12,21 @@ test('order notes function', (assert) => {
   assert.end();
 });
 
-test('order notes repeated values', (assert) => {
+test('order notes with repeated values', (assert) => {
   const message = 'it should be able to handle repeated values';
 
   const expected = ['A', 'B', 'B', 'C', 'C', 'C', 'F'];
   const actual = orderNotes(['B', 'C', 'F', 'B', 'C', 'A', 'C']);
+
+  assert.deepEqual(actual, expected, message);
+  assert.end();
+});
+
+test('order notes with chromatic values', (assert) => {
+  const message = 'it should be able to handle chromatic values';
+
+  const expected = ['A', 'Bb', 'B', 'B', 'C', 'C#', 'F', 'F#'];
+  const actual = orderNotes(['B', 'A', 'B', 'Bb', 'C#', 'C', 'F#', 'F']);
 
   assert.deepEqual(actual, expected, message);
   assert.end();

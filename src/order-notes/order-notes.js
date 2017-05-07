@@ -1,10 +1,11 @@
-export default function orderNotes(notesArray, ascending) {
-  const notes = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+export default function orderNotes(notesArray) {
+  const notes = ['A', 'Bb', 'A#', 'Cb', 'B', 'B#', 'C', 'Db', 'C#', 'D',
+                  'Eb', 'D#', 'E', 'Fb', 'F', 'Gb', 'F#', 'G', 'Ab', 'G#'];
   const final = [];
 
   notes.forEach((note) => {
     notesArray.forEach((currentNote) => {
-      if (currentNote === note) {
+      if (note === currentNote) {
         final.push(currentNote);
       }
     });
