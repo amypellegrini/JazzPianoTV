@@ -1,7 +1,7 @@
 /**
- * 
  * @param {*} notesArray Array or string representing a list of notes. 
- * @param {Boolean} ascending 
+ * @param {String} direction Direction in which the scale should be ordered.
+ * @returns {Object[]} an array of notes in the desired order.
  */
 export default function orderNotes(notesArray, direction) {
   const notes = ['A', 'Bb', 'A#', 'Cb', 'B', 'B#', 'C', 'Db', 'C#', 'D',
