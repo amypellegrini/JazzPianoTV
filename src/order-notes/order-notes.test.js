@@ -22,8 +22,8 @@ test('order notes with repeated values', (assert) => {
   assert.end();
 });
 
-test('order notes with chromatic values', (assert) => {
-  const message = 'it should be able to handle chromatic values';
+test('order notes with altered values', (assert) => {
+  const message = 'it should be able to handle altered values';
 
   const expected = ['A', 'Bb', 'B', 'B', 'C', 'C#', 'F', 'F#'];
   const actual = orderNotes(['B', 'A', 'B', 'Bb', 'C#', 'C', 'F#', 'F']);
