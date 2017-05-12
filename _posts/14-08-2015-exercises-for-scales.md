@@ -9,7 +9,7 @@ tags: [scales]
 
 There are many different ways by which musical scales may be practiced.
 
-The first approach is to be able to play the scale in a relaxed manner, at a slow pace, in a uniform subdivision of notes.
+The first step is to be able to play the scale in a relaxed manner, at a slow pace, in a uniform subdivision of notes.
 
 Not too much obsession with perfection should be stressed here.
 

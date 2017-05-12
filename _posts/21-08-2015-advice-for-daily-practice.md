@@ -9,9 +9,11 @@ tags: [motivation]
 
 #### The Main Goal
 
-Jazz Piano, and Music in general, is a field so vast in possibilities that, most of the time, the task of deciding what, when, and how to play, overwhelms the capacity of a great percentaje of music students.
+JazzPiano, and Music in general, is a field so vast in possibilities that, most of the time, the task of deciding what, when, and how to play, overwhelms the capacity of a great percentaje of music students.
 
-Knowing how to approach the intent to play an instrument proficently may be a daunting experience for the novice and for anyone ignorant about technique, or without proper guidance.
+Knowing how to approach practice in order to play an instrument proficently may be a daunting experience for many people.
+
+To achieve the most comprehensive Piano technique one should understand that the landscape to be explored is so immense, so vast, that it is absolutely impossible for one single person to ever master it entirely.
 
 #### Be patient
 
