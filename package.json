@@ -4,6 +4,8 @@
   "description": "JazzPianoTV Channel Official Website",
   "main": "index.js",
   "dependencies": {
+    "howler": "^2.0.3",
+    "mongodb": "^2.2.26",
     "tape": "^4.6.3"
   },
   "devDependencies": {
