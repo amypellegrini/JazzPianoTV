@@ -1,3 +1,3 @@
-export default const login = () => {
-  return {};
+export default function login() {
+  //
 }
