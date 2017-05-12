@@ -31,3 +31,26 @@ test('order notes with altered values', (assert) => {
   assert.deepEqual(actual, expected, message);
   assert.end();
 });
+
+test('order notes with string parameter', (assert) => {
+  const message = 'it should be able to handle a notes list as string';
+
+  const expected = ['A', 'Bb', 'B', 'B', 'C', 'C#', 'F', 'F#'];
+  const actual = orderNotes('BABBbC#CF#F');
+
+  assert.deepEqual(actual, expected, message);
+  assert.end();
+});
+
+test('order notes with ascending or descending parameter', (assert) => {
+  const message = 'it should be able to accept a second parameter'
+      + 'to set direction as ascending or descending';
+
+  const initialList = ['B', 'A', 'B', 'Bb', 'C#', 'C', 'F#', 'F'];
+
+  const expected = ['F#', 'F', 'C#', 'C', 'B', 'B', 'Bb', 'A'];
+  const actual = orderNotes(initialList, 'descending');
+
+  assert.deepEqual(actual, expected, message);
+  assert.end();
+});
