@@ -1,5 +1,7 @@
 #Playing hours
 
+One recurrent topic among Pianists is how many hours should a Pianist put  
+
 The rate of playing hours by a Pianist is the answer to the old question: “how many hours a day should a Pianist play?”
 
 ##What does a Pianist when she or he isn’t playing?
