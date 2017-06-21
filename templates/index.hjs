@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>JazzPianoTV</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway|Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/jptv-main.css">
     <meta name="description" content="Learn to play the Piano for real.">
     <meta name="author" content="Amy Pellegrini">
   </head>
@@ -12,5 +14,6 @@
     </header>
     <section>
     </section>
+    <script src="/js/jptv-main.js"></script>
   </body>
 </html>
