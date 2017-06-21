@@ -1,7 +1,7 @@
 {
   "name": "jazzpianotv",
   "version": "1.0.0",
-  "description": "JazzPianoTV Channel Official Website",
+  "description": "JazzPianoTV Website",
   "main": "index.js",
   "dependencies": {
     "howler": "^2.0.3",

@@ -2,12 +2,10 @@
 
 ## Tech stack
 
-All the implementation is based on NodeJS.
+- NodeJS
+- Express
+- React
 
-## Build
+## Commands
 
-The production bundle...
-
-## Tests
-
-To run the tests...
+- Test: `npm test`
