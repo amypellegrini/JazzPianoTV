@@ -1,5 +1,5 @@
-export default (stats) => {
-  <div>
-    { stats.messages.login }
-  </div>
-}
+// export default (stats) => {
+//   <div>
+//     { stats.messages.login }
+//   </div>
+// }
