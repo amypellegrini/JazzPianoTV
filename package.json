@@ -22,6 +22,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.24.1",
     "babelify": "^7.3.0",
+    "cheerio": "^1.0.0-rc.1",
     "isparta": "^4.0.0",
     "tape": "^4.6.3",
     "webpack": "^2.5.0"
