@@ -8,12 +8,7 @@
     <meta name="author" content="Amy Pellegrini">
   </head>
   <body>
-    <header>
-      <h1>JazzPiano<span class="domain-suffix">TV</span></h1>
-      <p>Learn to play the Piano for real</p>
-    </header>
-    <section>
-    </section>
+    <div id="root"></div>
     <script src="/js/jptv-main.js"></script>
   </body>
 </html>
