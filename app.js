@@ -9,7 +9,7 @@ const index = require('./routes/index');
 const app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'templates'));
+app.set('views', path.join(__dirname, 'public/views/templates'));
 app.set('view engine', 'hjs');
 
 // uncomment after placing your favicon in /public

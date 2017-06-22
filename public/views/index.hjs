@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>JazzPianoTV</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway|Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/jptv-main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway|Roboto" rel="stylesheet">
     <meta name="description" content="Learn to play the Piano for real.">
     <meta name="author" content="Amy Pellegrini">
   </head>
