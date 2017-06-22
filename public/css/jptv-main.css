@@ -446,6 +446,7 @@ template {
   display: none;
 }
 header h1 {
+  font-size: 3rem;
   font-family: 'Montserrat';
   text-transform: uppercase;
 }
