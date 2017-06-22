@@ -1,3 +1,1 @@
-import login from './login/login';
-
-login();
+import '../css/main.css';

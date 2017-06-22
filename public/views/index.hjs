@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <h1>JazzPianoTV</h1>
+      <h1>JazzPiano<span class="domain-suffix">TV</span></h1>
       <p>Learn to play the Piano for real</p>
     </header>
     <section>
