@@ -1,4 +1,5 @@
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
@@ -14,6 +15,9 @@ module.exports = {
     ]
   },
   plugins: [
-      new ExtractTextPlugin('../css/jptv-main.css'),
-    ]
+    new ExtractTextPlugin('../css/jptv-main.css'),
+    new CopyWebpackPlugin([
+      { from: 'src/templates/index.hjs', to: '../views/index.hjs' }
+    ])
+  ]
 };

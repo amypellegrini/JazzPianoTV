@@ -25,6 +25,7 @@
     "babel-register": "^6.24.1",
     "babelify": "^7.3.0",
     "cheerio": "^1.0.0-rc.1",
+    "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^2.1.2",
     "isparta": "^4.0.0",
@@ -34,7 +35,7 @@
   },
   "scripts": {
     "start": "node ./bin/www",
-    "clean": "",
+    "clean": "rm -r public",
     "build": "webpack",
     "test": "tape -r babel-register 'src/**/*.test.js' | faucet"
   },
