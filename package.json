@@ -34,6 +34,7 @@
   },
   "scripts": {
     "start": "node ./bin/www",
+    "clean": "",
     "build": "webpack",
     "test": "tape -r babel-register 'src/**/*.test.js' | faucet"
   },
