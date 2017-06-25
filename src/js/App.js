@@ -1,11 +1,9 @@
-import createLogo from './components/logo/logo';
+import createHeader from './components/header/header';
 
 export default React => () => {
-  const Logo = createLogo(React);
+  const Header = createHeader(React);
 
   return (
-    <header>
-      <Logo />
-    </header>
+    <Header />
   );
 };
