@@ -1,19 +1,21 @@
 import test from 'tape';
 import React from 'react';
-import ReactDOMServer from 'react-dom/server';
+import dom from 'cheerio';
+import reactDom from 'react-dom/server';
 
 import createLogo from './logo';
 
-const renderText = ReactDOMServer.renderToStaticMarkup;
+const render = reactDom.renderToStaticMarkup;
 
 test('Main logo component', assert => {
   const message = "It should render the main logo.";
 
   const Logo = createLogo(React);
-  const el = <Logo />;
+  const $ = dom.load(render(<Logo />));
+  const output = $('h1').text();
 
-  const actual = renderText(el);
-  const expected = "<h1>JazzPiano<span class=\"domain-suffix\">TV</span></h1>";
+  const actual = output;
+  const expected = 'JazzPianoTV';
 
   assert.equal(actual, expected, message);
   assert.end();

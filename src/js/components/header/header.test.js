@@ -13,10 +13,10 @@ test('Header component', nest => {
 
     const Header = createHeader(React);
     const $ = dom.load(render(<Header />));
-    const output = $('h1').text();
+    const output = $('header').length;
 
-    const actual = output;
-    const expected = 'JazzPianoTV';
+    const actual = output > 0;
+    const expected = true;
 
     assert.equal(actual, expected, message);
     assert.end();
