@@ -1,2 +1,11 @@
 @import 'normalize.css';
 @import 'brand.css';
+
+.coming-soon {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  color: #aaa;
+  font-size: 2rem;
+  margin: 5rem 0;
+}

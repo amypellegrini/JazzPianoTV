@@ -9,6 +9,7 @@
   </head>
   <body>
     <div id="root"></div>
+    <h2 class="coming-soon">Coming soon</h2>
     <script src="/js/jptv-main.js"></script>
   </body>
 </html>

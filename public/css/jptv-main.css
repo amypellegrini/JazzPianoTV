@@ -468,4 +468,11 @@ header p {
   font-size: 1.5rem;
   margin: 0 0 2rem;
 }
-
+.coming-soon {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  color: #aaa;
+  font-size: 2rem;
+  margin: 5rem 0;
+}
