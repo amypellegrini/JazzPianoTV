@@ -4,6 +4,8 @@ export default React => () => {
   const Header = createHeader(React);
 
   return (
-    <Header />
+    <div>
+      <Header />
+    </div>
   );
 };

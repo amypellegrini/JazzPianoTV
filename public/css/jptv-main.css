@@ -445,12 +445,16 @@ template {
 [hidden] {
   display: none;
 }
+.text-align-center {
+  text-align: center;
+}
 header {
   text-align: center;
   padding-left: 1rem;
 }
 
-header h1 {
+h1 {
+  color: #111;
   font-size: 3rem;
   margin-bottom: 0;
   margin-top: 1rem;
@@ -458,8 +462,17 @@ header h1 {
   text-transform: uppercase;
 }
 
-header h1 .domain-suffix {
+h1.logo-lite {
+  font-size: 1.85rem;
+}
+
+h1 .domain-suffix {
   color: #ff6a00;
+}
+
+h1 a {
+  text-decoration: none;
+  color: inherit;
 }
 
 header p {
