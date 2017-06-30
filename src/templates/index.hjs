@@ -9,7 +9,40 @@
   </head>
   <body>
     <div id="root"></div>
-    <h2 class="coming-soon">Coming soon</h2>
+    <div class="exercise-list exercises">
+      <section id="ii-v-i">
+        <h2>II - V - I</h2>
+        <div class="exercise-item">
+          <h3>II - V - I</h3>
+          <p>AB Forms</p>
+        </div>
+        <div class="exercise-item">
+          <h3>II - V - I</h3>
+          <p>Drop-2 Voicings</p>
+        </div>
+      </section>
+      <section id="groups-of-7">
+        <h2>Groups of 7</h2>
+        <div class="exercise-item">
+          <h3>Groups of 7</h3>
+          <p>Greek Modes over II - V - I</p>
+        </div>
+      </section>
+      <section id="groups-of-9">
+        <h2>Groups of 9</h2>
+        <div class="exercise-item">
+          <h3>Groups of 9</h3>
+          <p>Greek Modes over II - V - I</p>
+        </div>
+      </section>
+      <section id="walking-bass">
+        <h2>Walking Bass</h2>
+        <div class="exercise-item">
+          <h3>Walking Bass</h3>
+          <p>Chord Root over II - V - I</p>
+        </div>
+      </section>
+    </div>
     <script src="/js/jptv-main.js"></script>
   </body>
 </html>

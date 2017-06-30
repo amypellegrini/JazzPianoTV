@@ -1,6 +1,7 @@
 @import 'normalize.css';
 @import 'helpers.css';
 @import 'brand.css';
+@import 'exercises.css';
 
 .coming-soon {
   text-align: center;
