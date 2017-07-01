@@ -1,3 +1,22 @@
-.exercises {
-  font-family: 'Roboto';
+@media screen and (min-width: 360px) {
+
+}
+
+@media screen and (min-width: 320px) {
+  .exercises {
+    font-family: 'Roboto';
+  }
+
+  .exercise-list {
+    padding: 0 1.3rem;
+  }
+
+  .exercise-list h2 {
+    margin: 0;
+    border-bottom: 2px solid #ccc;
+  }
+
+  .exercise-list .exercise-item {
+    width: 100%;
+  }
 }

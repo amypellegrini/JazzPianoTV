@@ -3,6 +3,14 @@
 @import 'brand.css';
 @import 'exercises.css';
 
+html {
+  width: 100%;
+}
+
+body {
+  font-size: 16px;
+}
+
 .coming-soon {
   text-align: center;
   text-transform: uppercase;
