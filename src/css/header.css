@@ -1,0 +1,33 @@
+@media screen and (min-width: 1024px) {
+  header {
+    padding-left: 1rem;
+  }
+
+  header p {
+    margin: 0 0 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* iPhone 5 */
+@media screen and (min-width: 320px) {
+  header {
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  header p {
+    color: #666;
+    font-family: 'Raleway';
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}
+
+/* Galaxy S5 */
+@media screen and (min-width: 360px) {
+  header p {
+    font-size: 1.4rem;
+  }
+}

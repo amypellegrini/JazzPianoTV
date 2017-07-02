@@ -12,11 +12,17 @@
   }
 
   .exercise-list h2 {
-    margin: 0;
-    border-bottom: 2px solid #ccc;
+    margin: 0.8rem 0 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+    padding-left: 0.6rem;
   }
 
   .exercise-list .exercise-item {
     width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 0.2rem 0.5rem 0.5rem;
+    border-top: 0;
   }
 }

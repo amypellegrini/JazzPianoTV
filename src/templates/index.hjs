@@ -4,7 +4,7 @@
     <title>JazzPianoTV</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/css/jptv-main.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway|Roboto|Playfair+Display+SC" rel="stylesheet">
     <meta name="description" content="Learn to play the Piano for real.">
     <meta name="author" content="Amy Pellegrini">
   </head>
@@ -21,6 +21,14 @@
           <div class="exercise-item">
             <h3>II - V - I</h3>
             <p>Drop-2 Voicings</p>
+          </div>
+          <div class="exercise-item">
+            <h3>II - V - I</h3>
+            <p>AB Forms + Greek Modes (Groups of 7)</p>
+          </div>
+          <div class="exercise-item">
+            <h3>II - V - I</h3>
+            <p>AB Forms + Greek Modes (Groups of 9)</p>
           </div>
         </section>
       </div>

@@ -1,29 +1,11 @@
 @media screen and (min-width: 1024px) {
-  header {
-    padding-left: 1rem;
-  }
-
   h1 {
     font-size: 3rem;
     margin-top: 1rem;
   }
-
-  header p {
-    margin: 0 0 2rem;
-    font-size: 1.5rem;
-  }
 }
 
-@media screen and (min-width: 320px) {
-  h1 {
-    font-size: 2.8rem;
-  }
-
-  header p {
-    font-size: 1.4rem;
-  }
-}
-
+/* iPhone 5 */
 @media screen and (min-width: 320px) {
   h1 {
     font-family: 'Montserrat';
@@ -46,16 +28,21 @@
     font-size: 1.85rem;
   }
 
-  header {
-    text-align: center;
-    padding-left: 0;
-    margin-bottom: 1rem;
+  h3 {
+    font-family: 'Playfair Display SC', serif;
+    margin-top: 0;
+    margin-bottom: 0.3rem;
   }
 
-  header p {
-    color: #666;
-    font-family: 'Raleway';
-    font-size: 1.2rem;
-    margin: 0;
+  p {
+    margin-top: 0;
+    font-size: 0.9rem;
+  }
+}
+
+/* Galaxy S5 */
+@media screen and (min-width: 360px) {
+  h1 {
+    font-size: 2.8rem;
   }
 }

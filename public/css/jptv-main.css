@@ -453,37 +453,19 @@ template {
 .group:after {
   content: "";
   display: table;
-} 
+}
 
 .group:after {
   clear: both;
 }
 @media screen and (min-width: 1024px) {
-  header {
-    padding-left: 1rem;
-  }
-
   h1 {
     font-size: 3rem;
     margin-top: 1rem;
   }
-
-  header p {
-    margin: 0 0 2rem;
-    font-size: 1.5rem;
-  }
 }
 
-@media screen and (min-width: 320px) {
-  h1 {
-    font-size: 2.8rem;
-  }
-
-  header p {
-    font-size: 1.4rem;
-  }
-}
-
+/* iPhone 5 */
 @media screen and (min-width: 320px) {
   h1 {
     font-family: 'Montserrat';
@@ -506,10 +488,41 @@ template {
     font-size: 1.85rem;
   }
 
+  h3 {
+    font-family: 'Playfair Display SC', serif;
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+  }
+
+  p {
+    margin-top: 0;
+    font-size: 0.9rem;
+  }
+}
+
+/* Galaxy S5 */
+@media screen and (min-width: 360px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    padding-left: 1rem;
+  }
+
+  header p {
+    margin: 0 0 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* iPhone 5 */
+@media screen and (min-width: 320px) {
   header {
     text-align: center;
     padding-left: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
 
   header p {
@@ -517,6 +530,13 @@ template {
     font-family: 'Raleway';
     font-size: 1.2rem;
     margin: 0;
+  }
+}
+
+/* Galaxy S5 */
+@media screen and (min-width: 360px) {
+  header p {
+    font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 360px) {
@@ -533,12 +553,18 @@ template {
   }
 
   .exercise-list h2 {
-    margin: 0;
-    border-bottom: 2px solid #ccc;
+    margin: 0.8rem 0 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+    padding-left: 0.6rem;
   }
 
   .exercise-list .exercise-item {
     width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 0.2rem 0.5rem 0.5rem;
+    border-top: 0;
   }
 }html {
   width: 100%;
