@@ -539,10 +539,7 @@ template {
     font-size: 1.4rem;
   }
 }
-@media screen and (min-width: 360px) {
-
-}
-
+/* iPhone 5 */
 @media screen and (min-width: 320px) {
   .exercises {
     font-family: 'Roboto';
@@ -553,20 +550,40 @@ template {
   }
 
   .exercise-list h2 {
-    margin: 0.8rem 0 0;
+    text-align: center;
+    margin: 1rem 0 0;
     border-bottom: 1px solid #ccc;
-    padding-bottom: 0.3rem;
+    padding-bottom: 0.5rem;
     padding-left: 0.6rem;
   }
 
   .exercise-list .exercise-item {
+    cursor: pointer;
+    color: #555;
     width: 100%;
     border: 1px solid #ccc;
     box-sizing: border-box;
     padding: 0.2rem 0.5rem 0.5rem;
     border-top: 0;
   }
-}html {
+}
+
+/* iPad (portrait) */
+@media screen and (min-width: 768px) {
+  .exercise-list .exercise-item {
+    width: 50%;
+    float: left;
+  }
+}
+
+/* iPad (landscape) */
+@media screen and (min-width: 1024px) {
+  .exercise-list {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+html {
   width: 100%;
 }
 
