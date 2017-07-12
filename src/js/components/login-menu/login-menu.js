@@ -7,7 +7,7 @@ export default React => (props) => {
 
   if (!isUserLogged) {
     return (
-      <div className="jptv-login">
+      <div className="jptv-login-menu">
         <p>
           <span className="login">
             <Link to="/login">Login</Link></span>
@@ -20,9 +20,10 @@ export default React => (props) => {
     );
   } else {
     return (
-      <div className="jptv-login">
+      <div className="jptv-login-menu">
         <p>
-          <span className="logout">Logout</span>
+          <span className="logout">
+            <Link to="/">Logout</Link></span>
         </p>
       </div>
     );

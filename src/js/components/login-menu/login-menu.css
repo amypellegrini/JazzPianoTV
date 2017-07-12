@@ -1,16 +1,16 @@
-.jptv-login {
+.jptv-login-menu {
   position: absolute;
   top: 1rem;
   right: 2rem;
   font-family: 'Roboto', Arial, sans-serif;
 }
 
-.jptv-login p {
+.jptv-login-menu p {
   font-size: 1rem;
   font-family: inherit;
   color: #000;
 }
 
-.jptv-login p span {
+.jptv-login-menu p span {
   cursor: pointer;
 }

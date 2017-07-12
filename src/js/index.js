@@ -11,11 +11,13 @@ import '../css/main.css';
 import jptvApp from './reducers/jptv-app';
 import createApp from './App';
 import createRegister from './components/register/register';
+import createLogin from './components/login/login';
 
 let store = createStore(jptvApp);
 
 const App = createApp(React);
 const Register = createRegister(React);
+const Login = createLogin(React);
 
 render(
   <Provider store={ store }>
@@ -23,6 +25,7 @@ render(
       <div>
         <Route path="/" component={ App }/>
         <Route path="/register" component={ Register } />
+        <Route path="/login" component={ Login } />
       </div>
     </Router>
   </Provider>,
