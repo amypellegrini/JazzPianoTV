@@ -10,14 +10,20 @@ import {
 import '../css/main.css';
 import jptvApp from './reducers/jptv-app';
 import createApp from './App';
+import createRegister from './components/register/register';
+
+let store = createStore(jptvApp);
 
 const App = createApp(React);
-let store = createStore(jptvApp);
+const Register = createRegister(React);
 
 render(
   <Provider store={ store }>
     <Router history={ browserHistory }>
-      <Route exact path="/" component={ App }/>
+      <div>
+        <Route path="/" component={ App }/>
+        <Route path="/register" component={ Register } />
+      </div>
     </Router>
   </Provider>,
   document.getElementById('root')

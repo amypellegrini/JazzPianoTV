@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import './login-menu.css';
 
 export default React => (props) => {
@@ -8,8 +10,11 @@ export default React => (props) => {
       <div className="jptv-login">
         <p>
           <span className="login">
-            Login</span> | <span className="register">
-            Register</span>
+            <Link to="/login">Login</Link></span>
+          <span className="separator"> | </span>
+          <span className="register">
+            <Link to="/register">Register</Link>
+          </span>
         </p>
       </div>
     );
