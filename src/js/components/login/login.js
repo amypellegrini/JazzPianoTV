@@ -1,13 +1,11 @@
-import './login.css';
-
 export default React => () => {
   return (
     <div className="jptv-login">
-      <p>
-        <span className="login">
-          Login</span> | <span className="register">
-          Register</span>
-      </p>
+      <h2>Login</h2>
+      <label>Username / email:</label>
+      <input type="text" />
+      <label>Password:</label>
+      <input type="password" />
     </div>
   );
 }
