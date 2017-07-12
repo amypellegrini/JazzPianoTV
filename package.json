@@ -29,6 +29,7 @@
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^2.1.2",
+    "ignore-styles": "^5.0.1",
     "isparta": "^4.0.0",
     "style-loader": "^0.18.2",
     "tape": "^4.6.3",
@@ -40,7 +41,7 @@
     "clean": "rm -r public",
     "watch": "watch 'clear && npm run -s build && npm run -s test' src",
     "build": "webpack",
-    "test": "tape -r babel-register 'src/**/*.test.js' | faucet"
+    "test": "tape -r babel-register -r ignore-styles 'src/**/*.test.js' | faucet"
   },
   "repository": {
     "type": "git",

@@ -1,13 +1,51 @@
-// import test from 'tape';
-// import auth from './login';
+import test from 'tape';
+import React from 'react';
+import dom from 'cheerio';
+import reactDom from 'react-dom/server';
+import createLogin from './login';
 
-// test('login public API', (assert) => {
-//   const message = 'it should expose a basic API for login and logout';
+const render = reactDom.renderToStaticMarkup;
 
-//   auth.login();
+test('Login component', nest => {
+  nest.test('rendering', assert => {
+    const message = 'It should render the login component.';
 
-//   const expected = true;
-//   const actual = auth.logged();
+    const Login = createLogin(React);
+    const $ = dom.load(render(<Login />));
+    const output = $('.jptv-login').length;
 
-//   assert.equal(expected, actual, message);
-// });
+    const actual = output > 0;
+    const expected = true;
+
+    assert.equal(actual, expected, message);
+    assert.end();
+  });
+
+  nest.test('register button rendering', assert => {
+    const message = 'It should render a register button.';
+
+    const Login = createLogin(React);
+    const $ = dom.load(render(<Login />));
+    const output = $('.jptv-login').find('.register').length;
+
+    const actual = output > 0;
+    const expected = true;
+
+    assert.equal(actual, expected, message);
+    assert.end();
+  });
+
+  nest.test('login button rendering', assert => {
+    const message = 'It should render a register button.';
+
+    const Login = createLogin(React);
+    const $ = dom.load(render(<Login />));
+    const output = $('.jptv-login').find('.login').length;
+
+    const actual = output > 0;
+    const expected = true;
+
+    assert.equal(actual, expected, message);
+    assert.end();
+  });
+});

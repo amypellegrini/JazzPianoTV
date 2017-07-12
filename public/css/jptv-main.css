@@ -599,3 +599,19 @@ body {
   font-size: 2rem;
   margin: 5rem 0;
 }
+.jptv-login {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.jptv-login p {
+  font-size: 1rem;
+  font-family: inherit;
+  color: #000;
+}
+
+.jptv-login p span {
+  cursor: pointer;
+}
