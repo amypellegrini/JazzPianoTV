@@ -630,4 +630,34 @@ body {
 .jptv-register-user form label {
   margin: 1rem 0 .3rem;
   display: block;
+}.jptv-button {
+  border: 1px solid #34A853;
+  line-height: 1.8rem;
+  background: #54BE70;
+  height: 2rem;
+  margin: 1rem auto;
+  display: block;
+  clear: both;
+  width: 200px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.jptv-login-user {
+  width: 172px;
+  margin: 0 auto;
+  text-align: left;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.jptv-login-user h2 {
+  margin: 1rem 0 2rem;
+  text-align: center;
+}
+
+.jptv-login-user form label {
+  margin: 1rem 0 .3rem;
+  display: block;
 }

@@ -13,7 +13,7 @@ test('Login component', nest => {
 
     const Login = createLogin(React);
     const $ = dom.load(render(<Login />));
-    const output = $('.jptv-login').length;
+    const output = $('.jptv-login-user').length;
 
     const actual = output > 0;
     const expected = true;

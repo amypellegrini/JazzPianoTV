@@ -1,0 +1,16 @@
+.jptv-login-user {
+  width: 172px;
+  margin: 0 auto;
+  text-align: left;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.jptv-login-user h2 {
+  margin: 1rem 0 2rem;
+  text-align: center;
+}
+
+.jptv-login-user form label {
+  margin: 1rem 0 .3rem;
+  display: block;
+}
