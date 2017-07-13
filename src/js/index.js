@@ -11,7 +11,7 @@ import '../css/main.css';
 import jptvApp from './reducers/jptv-app';
 import createApp from './App';
 import createRegister from './components/register/register';
-import createLogin from './components/login/login';
+import createLogin from './containers/login/login';
 
 let store = createStore(jptvApp);
 

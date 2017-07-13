@@ -10,7 +10,8 @@ export default React => (props) => {
       <div className="jptv-login-menu">
         <p>
           <span className="login">
-            <Link to="/login">Login</Link></span>
+            <Link to="/login">Login</Link>
+          </span>
           <span className="separator"> | </span>
           <span className="register">
             <Link to="/register">Register</Link>

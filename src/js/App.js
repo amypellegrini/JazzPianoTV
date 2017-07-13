@@ -1,5 +1,5 @@
 import createHeader from './components/header/header';
-import createLoginMenu from './components/login-menu/login-menu';
+import createLoginMenu from './containers/login-menu/login-menu';
 
 export default React => () => {
   const Header = createHeader(React);

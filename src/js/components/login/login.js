@@ -1,9 +1,14 @@
 import './login.css';
 import createButton from '../button/button';
 
-export default React => () => {
+export default React => ({ onLoginClick, history }) => {
+  console.log(history);
   const Button = createButton(React);
   const label = 'Login';
+
+  function onClick(event) {
+    onLoginClick(event, history);
+  }
 
   return (
     <div className="jptv-login-user">
@@ -13,7 +18,7 @@ export default React => () => {
         <input type="text" />
         <label>Password:</label>
         <input type="password" />
-        <Button label={ label } />
+        <Button label={ label } onClick={ onClick } />
       </form>
     </div>
   );
