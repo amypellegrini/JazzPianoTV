@@ -7,7 +7,7 @@ import { login } from '../../actions/'
 export default React => {
   const Login = createLogin(React);
 
-  const mapDispatchToProps = (dispatch) => {
+  const mapDispatchToProps = dispatch => {
     return {
       onLoginClick: (event, history) => {
         event.preventDefault();

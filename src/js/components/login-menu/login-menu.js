@@ -2,9 +2,7 @@ import { Link } from 'react-router-dom';
 
 import './login-menu.css';
 
-export default React => (props) => {
-  const isUserLogged = props.isUserLogged;
-
+export default React => ({ isUserLogged, onLogoutClick }) => {
   if (!isUserLogged) {
     return (
       <div className="jptv-login-menu">
@@ -23,8 +21,7 @@ export default React => (props) => {
     return (
       <div className="jptv-login-menu">
         <p>
-          <span className="logout">
-            <Link to="/">Logout</Link></span>
+          <span className="logout" onClick={ onLogoutClick }>Logout</span>
         </p>
       </div>
     );

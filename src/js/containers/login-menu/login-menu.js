@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { login } from '../../actions/';
 
 import createLoginMenu from '../../components/login-menu/login-menu';
 
@@ -11,7 +12,18 @@ export default React => {
     }
   }
 
+  const mapDispatchToProps = dispatch => {
+    return {
+      onLogoutClick: () => {
+        dispatch(login({
+          isUserLogged: false
+        }));
+      }
+    }
+  }
+
   return connect(
-    mapStateToProps
+    mapStateToProps,
+    mapDispatchToProps
   )(LoginMenu);
 }
