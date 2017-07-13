@@ -2,7 +2,6 @@ import './login.css';
 import createButton from '../button/button';
 
 export default React => ({ onLoginClick, history }) => {
-  console.log(history);
   const Button = createButton(React);
   const label = 'Login';
 
@@ -19,6 +18,12 @@ export default React => ({ onLoginClick, history }) => {
         <label>Password:</label>
         <input type="password" />
         <Button label={ label } onClick={ onClick } />
+        <div className="fb-login-button"
+              data-max-rows="1"
+              data-size="medium"
+              data-button-type="login_with"
+              data-show-faces="false"
+              data-auto-logout-link="false" data-use-continue-as="true"></div>
       </form>
     </div>
   );
