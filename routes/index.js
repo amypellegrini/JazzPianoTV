@@ -7,13 +7,22 @@ module.exports = function(passport) {
     res.render('index', { title: 'Express' });
   });
 
-  router.post('/login', function(req, res, next ){
-    passport.authenticate('local-signup', function(err, user, info) {
-      if (err) { return next(err) }
-      if (!user) { return res.json( { message: info.message }) }
-      res.json(user);
-    })(req, res, next);   
-});
+    router.post('/signup', function(req, res, next) {
+      passport.authenticate('local-signup', { session: false }, function(err, user, info) {
+        if (err) {
+          return next(err);
+        }
+        if (!user) {
+          return res.json(info);
+        }
+        req.logIn(user, function(err) {
+          if (err) {
+            return next(err);
+          }
+          return res.json(info);
+        });
+      })(req, res, next);
+    });
 
   return router;
 }
