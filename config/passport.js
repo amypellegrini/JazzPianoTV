@@ -55,12 +55,12 @@ module.exports = function(passport) {
                 if (user) {
                     return done(null, false, { message: 'That email is already taken.' });
                 } else {
-                    console.log('I was here 3');
                     // if there is no user with that email
                     // create the user
                     var newUser            = new User();
 
                     // set the user's local credentials
+                    newUser.local.name    = name;
                     newUser.local.email    = email;
                     newUser.local.password = newUser.generateHash(password);
 
