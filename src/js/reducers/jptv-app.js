@@ -1,8 +1,11 @@
+import { combineReducers } from 'redux';
+import { reducer as formReducer } from 'redux-form';
+
 const initialState = {
   isUserLogged: false
 }
 
-export default (state, action) => {
+const jptvApp = (state, action) => {
   if (typeof state === 'undefined') {
     return initialState;
   }
@@ -16,3 +19,8 @@ export default (state, action) => {
 
   return state;
 }
+
+export default combineReducers({
+  jptvApp,
+  form: formReducer
+});
