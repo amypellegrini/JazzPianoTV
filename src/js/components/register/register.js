@@ -1,9 +1,9 @@
 import './register.css';
 import createButton from '../button/button';
 
-export default React => () => {
+export default React => ({ onClick }) => {
   const Button = createButton(React);
-  const label = 'Register';
+  const label = 'Signup';
 
   return (
     <div className="jptv-register-user">
@@ -18,7 +18,7 @@ export default React => () => {
           <input type="password" />
           <label>Repeat password:</label>
           <input type="password" />
-          <Button label={ label } />
+          <Button label={ label } onClick={ onClick } />
         </form>
       </section>
     </div>

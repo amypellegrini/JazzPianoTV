@@ -7,13 +7,9 @@ export default React => ({ isUserLogged, onLogoutClick }) => {
     return (
       <div className="jptv-login-menu">
         <p>
-          <span className="login">
-            <Link to="/login">Login</Link>
-          </span>
+          <Link to="/login" className="login">Login</Link>
           <span className="separator"> | </span>
-          <span className="register">
-            <Link to="/register">Register</Link>
-          </span>
+          <Link to="/register" className="register">Signup</Link>
         </p>
       </div>
     );

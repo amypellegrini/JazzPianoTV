@@ -6,6 +6,7 @@ export default React => ({ onLoginClick, history }) => {
   const label = 'Login';
 
   function onClick(event) {
+    // pass history to container handler so that it can redirect.
     onLoginClick(event, history);
   }
 
