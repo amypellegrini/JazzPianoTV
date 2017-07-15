@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import './login.css';
 import createButton from '../button/button';
 
@@ -19,6 +21,7 @@ export default React => ({ onLoginClick, history }) => {
         <label>Password:</label>
         <input type="password" />
         <Button label={ label } onClick={ onClick } />
+        <p>Not registered? <Link to="/signup" >Signup</Link></p>
       </form>
     </div>
   );

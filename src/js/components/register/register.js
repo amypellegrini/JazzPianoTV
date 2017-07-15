@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import './register.css';
 import createButton from '../button/button';
 
@@ -8,7 +10,7 @@ export default React => ({ onClick }) => {
   return (
     <div className="jptv-register-user">
       <section id="register">
-        <h2>Register</h2>
+        <h2>Signup</h2>
         <form>
           <label>Name:</label>
           <input type="text" />
@@ -19,6 +21,7 @@ export default React => ({ onClick }) => {
           <label>Repeat password:</label>
           <input type="password" />
           <Button label={ label } onClick={ onClick } />
+          <p>Already registered? <Link to="/login" >Login</Link></p>
         </form>
       </section>
     </div>

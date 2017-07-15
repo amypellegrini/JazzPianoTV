@@ -645,6 +645,10 @@ body {
   text-transform: uppercase;
   font-size: 0.9rem;
 }
+.jptv-my-account {
+  margin-top: 1rem;
+  text-align: center;
+}
 .jptv-login-user {
   width: 172px;
   margin: 0 auto;
