@@ -2,6 +2,10 @@ import test from 'tape';
 import dom from 'cheerio';
 import React from 'react';
 import reactDom from 'react-dom/server';
+import jptvApp from './reducers/jptv-app';
+
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 import { MemoryRouter } from 'react-router-dom';
 
 import createApp from './app';
@@ -11,12 +15,16 @@ const render = reactDom.renderToStaticMarkup;
 test('Index', assert => {
   const message = 'It sohuld initialize the app.';
 
+  let store = createStore(jptvApp);
+
   const App = createApp(React);
   const $ = dom.load(
     render(
-      <MemoryRouter>
-        <App />
-      </MemoryRouter>
+      <Provider store={ store }>
+        <MemoryRouter>
+          <App />
+        </MemoryRouter>
+      </Provider>
     )
   );
   const output = $('#jptv').length;
