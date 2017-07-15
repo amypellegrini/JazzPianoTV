@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import './register.css';
+import './signup.css';
 import createButton from '../button/button';
 
 export default React => ({ onClick }) => {

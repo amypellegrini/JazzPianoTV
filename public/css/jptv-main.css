@@ -616,21 +616,27 @@ body {
   cursor: pointer;
 }
 .jptv-register-user {
-  width: 172px;
+  width: 200px;
   margin: 0 auto;
   text-align: left;
   font-family: 'Roboto', Arial, sans-serif;
 }
 
 .jptv-register-user h2 {
-  margin: 1rem 0 2rem;
+  margin: 2rem 0 1rem;
   text-align: center;
 }
 
 .jptv-register-user form label {
   margin: 1rem 0 .3rem;
   display: block;
-}.jptv-button {
+}
+
+.jptv-register-user form input {
+  box-sizing: border-box;
+  width: 100%;
+}
+.jptv-button {
   border: 1px solid #34A853;
   line-height: 1.8rem;
   background: #54BE70;
@@ -650,7 +656,7 @@ body {
   text-align: center;
 }
 .jptv-login-user {
-  width: 172px;
+  width: 200px;
   margin: 0 auto;
   text-align: left;
   font-family: 'Roboto', Arial, sans-serif;
@@ -664,4 +670,9 @@ body {
 .jptv-login-user form label {
   margin: 1rem 0 .3rem;
   display: block;
+}
+
+.jptv-login-user form input {
+  box-sizing: border-box;
+  width: 100%;
 }
