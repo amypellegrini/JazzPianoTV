@@ -7,9 +7,9 @@ import { MemoryRouter } from 'react-router-dom';
 
 const render = reactDom.renderToStaticMarkup;
 
-test('Login component', nest => {
+test('Login menu component', nest => {
   nest.test('rendering', assert => {
-    const message = 'It should render the login component.';
+    const message = 'It should render the login menu component.';
 
     const LoginMenu = createLoginMenu(React);
     const $ = dom.load(
