@@ -28,8 +28,8 @@ test('Login menu component', nest => {
     assert.end();
   });
 
-  nest.test('register button rendering', assert => {
-    const message = 'It should render a register button.';
+  nest.test('signup button rendering', assert => {
+    const message = 'It should render a signup button.';
 
     const LoginMenu = createLoginMenu(React);
     const $ = dom.load(
@@ -39,7 +39,7 @@ test('Login menu component', nest => {
         </MemoryRouter>
       )
     );
-    const output = $('.jptv-login-menu').find('.register').length;
+    const output = $('.jptv-login-menu').find('.signup').length;
 
     const actual = output > 0;
     const expected = true;
@@ -49,7 +49,7 @@ test('Login menu component', nest => {
   });
 
   nest.test('login button rendering', assert => {
-    const message = 'It should render a register button.';
+    const message = 'It should render a login button.';
 
     const LoginMenu = createLoginMenu(React);
     const $ = dom.load(
