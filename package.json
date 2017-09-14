@@ -58,7 +58,7 @@
     "clean": "rm -r public",
     "watch": "watch 'clear && npm run -s build && npm run -s test' src",
     "build": "webpack",
-    "test": "tape -r babel-register -r ignore-styles src/js/**/*.test.js | faucet"
+    "test": "tape -r babel-register -r ignore-styles src/js/**/*.test.js -s | faucet"
   },
   "repository": {
     "type": "git",
