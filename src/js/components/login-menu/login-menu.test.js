@@ -2,8 +2,9 @@ import test from 'tape';
 import React from 'react';
 import dom from 'cheerio';
 import reactDom from 'react-dom/server';
-import createLoginMenu from './login-menu';
 import { MemoryRouter } from 'react-router-dom';
+
+import createLoginMenu from './login-menu';
 
 const render = reactDom.renderToStaticMarkup;
 
