@@ -615,7 +615,13 @@ body {
 .jptv-login-menu p span {
   cursor: pointer;
 }
-.jptv-signup-user {
+.jptv-nav-menu {
+  width: 100%;
+}
+
+.jptv-nav-menu li {
+  float: left;
+}.jptv-signup-user {
   width: 200px;
   margin: 0 auto;
   text-align: left;

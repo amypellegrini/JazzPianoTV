@@ -6,7 +6,12 @@ export default React => () => {
   return (
     <nav>
       <ul className="jptv-nav-menu">
-        <li>Lessons</li>
+        <li>
+          <Link to="/lessons">Lessons</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
       </ul>
     </nav>
   );
