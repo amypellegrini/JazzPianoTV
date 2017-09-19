@@ -1,3 +1,4 @@
+import Promise from 'promise-polyfill';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
@@ -13,6 +14,11 @@ import createApp from './App';
 import createSignup from './components/signup/signup';
 import createMyAccount from './containers/my-account/my-account';
 import createLogin from './containers/login/login';
+
+// Polyfill for older browsers that do not support ES6 promise.
+if (!window.Promise) {
+  window.Promise = Promise;
+}
 
 let store = createStore(jptvApp);
 
