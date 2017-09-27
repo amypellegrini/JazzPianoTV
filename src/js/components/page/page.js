@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown';
 
 import './page.css';
 
-export default React => ({ page }) => {
+export default React => ({ match }) => {
   return (
     <div className="jptv-page">
     </div>

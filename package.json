@@ -28,6 +28,7 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-howler": "^3.6.2",
+    "react-markdown": "^2.5.0",
     "react-redux": "^5.0.5",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
@@ -60,7 +61,7 @@
     "clean": "rm -r public",
     "watch": "watch 'clear && npm run -s build && npm run -s test' src",
     "build": "webpack",
-    "test": "tape -r babel-register -r ignore-styles src/js/**/*.test.js -s | faucet"
+    "test": "tape -r babel-register -r ignore-styles src/js/**/*.test.js | faucet"
   },
   "repository": {
     "type": "git",
