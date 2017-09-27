@@ -640,7 +640,11 @@ body {
 .jptv-nav-menu li a:hover {
   color: #888;
 }.jptv-footer {
+  margin-top: 3rem;
+  padding: 2rem 15%;
   font-family: 'Raleway', Arial, sans-serif;
+  background: #000;
+  color: #EEE;
 }
 
 .jptv-footer ul {
