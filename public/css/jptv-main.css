@@ -624,7 +624,7 @@ body {
 }
 
 .jptv-nav-menu li {
-  margin-right: 1rem;
+  margin-right: 2rem;
   display: inline;
 }
 
@@ -639,6 +639,16 @@ body {
 
 .jptv-nav-menu li a:hover {
   color: #888;
+}.jptv-footer {
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+.jptv-footer ul {
+  list-style-type: none;
+}
+
+.jptv-footer ul li {
+  margin-bottom: 1rem;
 }.jptv-signup-user {
   width: 200px;
   margin: 0 auto;

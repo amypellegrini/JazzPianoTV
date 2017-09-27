@@ -1,0 +1,11 @@
+.jptv-footer {
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+.jptv-footer ul {
+  list-style-type: none;
+}
+
+.jptv-footer ul li {
+  margin-bottom: 1rem;
+}

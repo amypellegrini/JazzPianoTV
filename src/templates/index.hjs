@@ -10,51 +10,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <div class="exercises">
-      <div class="exercise-list group">
-        <section id="ii-v-i">
-          <h2>II - V - I</h2>
-          <div class="exercise-item">
-            <h3>II - V - I</h3>
-            <p>AB Forms</p>
-          </div>
-          <div class="exercise-item">
-            <h3>II - V - I</h3>
-            <p>Drop-2 Voicings</p>
-          </div>
-          <div class="exercise-item">
-            <h3>II - V - I</h3>
-            <p>AB Forms + Greek Modes (Groups of 7)</p>
-          </div>
-          <div class="exercise-item">
-            <h3>II - V - I</h3>
-            <p>AB Forms + Greek Modes (Groups of 9)</p>
-          </div>
-        </section>
-      </div>
-      <div class="exercise-list group">
-        <section id="groups-of-7">
-          <h2>Note Groups</h2>
-          <div class="exercise-item">
-            <h3>Groups of 7</h3>
-            <p>Greek Modes over II - V - I</p>
-          </div>
-          <div class="exercise-item">
-            <h3>Groups of 9</h3>
-            <p>Greek Modes over II - V - I</p>
-          </div>
-        </section>
-      </div>
-      <div class="exercise-list group">
-        <section id="walking-bass">
-          <h2>Walking Bass</h2>
-          <div class="exercise-item">
-            <h3>Walking Bass</h3>
-            <p>Chord Root over II - V - I</p>
-          </div>
-        </section>
-      </div>
-    </div>
     <script src="/js/jptv-main.js"></script>
   </body>
 </html>

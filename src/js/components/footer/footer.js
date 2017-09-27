@@ -2,8 +2,8 @@ import './footer.css';
 
 export default React => () => {
   return (
-    <footer class="jptv-footer">
-      <div class="links">
+    <footer className="jptv-footer">
+      <div className="links">
         <ul>
           <li>
             Terms of Service
