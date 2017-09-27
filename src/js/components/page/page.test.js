@@ -9,6 +9,16 @@ const render = reactDom.renderToStaticMarkup;
 
 test('Page renderer component', nest => {
   nest.test('rendering', assert => {
-    
+    const message = 'It should render a Page.';
+
+    const Page = createPage(React);
+    const $ = dom.load(render(<Page />));
+    const output = $('.page').length;
+
+    const actual = output > 0;
+    const expected = true;
+
+    assert.equal();
+    assert.end();
   });
 });
