@@ -35,5 +35,19 @@ test('Search component', nest => {
     assert.equal(actual, expected, message);
     assert.end();
   });
+
+  nest.test('search box magnifying glass icon', assert => {
+    const message = 'Search box should render a magnifying glass icon';
+
+    const Search = createSearch(React);
+    const $ = dom.load(render(<Search />));
+    const output = $('.jptv-search').find('.search-icon').length;
+
+    const actual = output > 0;
+    const expected = true;
+
+    assert.equal(actual, expected, message);
+    assert.end();
+  });
 });
 

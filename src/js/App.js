@@ -23,11 +23,9 @@ export default React => () => {
   return (
     <Router history={ browserHistory }>
       <section id="jptv">
-        <header>
-          <Header />
-          <NavMenu />
-          <LoginMenu />
-        </header>
+        <Header />
+        <NavMenu />
+        <LoginMenu />
 
         <Route path="/signup"
                component={ Signup } />

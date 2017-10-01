@@ -506,17 +506,6 @@ template {
     font-size: 2.8rem;
   }
 }
-@media screen and (min-width: 1024px) {
-  header {
-    padding-left: 1rem;
-  }
-
-  header p {
-    margin: 0 0 2rem;
-    font-size: 1.5rem;
-  }
-}
-
 /* iPhone 5 */
 @media screen and (min-width: 320px) {
   header {
@@ -537,6 +526,19 @@ template {
 @media screen and (min-width: 360px) {
   header p {
     font-size: 1.4rem;
+  }
+}
+
+/* Small desktop */
+@media screen and (min-width: 1024px) {
+  header {
+    text-align: left;
+    padding: 0 15%;
+  }
+
+  header p {
+    margin: 0;
+    font-size: 1.5rem;
   }
 }
 /* iPhone 5 */
@@ -648,6 +650,7 @@ body {
 }
 
 .jptv-footer ul {
+  padding: 0;
   list-style-type: none;
 }
 
