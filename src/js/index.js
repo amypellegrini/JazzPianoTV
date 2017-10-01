@@ -1,3 +1,7 @@
+/**
+ * @todo Refactor this so we can fake history and router in testing.
+ */
+
 import Promise from 'promise-polyfill';
 import React from 'react';
 import { Provider } from 'react-redux';
