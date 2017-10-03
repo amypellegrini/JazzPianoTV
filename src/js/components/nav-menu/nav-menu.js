@@ -7,6 +7,9 @@ export default React => () => {
     <nav>
       <ul className="jptv-nav-menu">
         <li>
+          <Link to="/shows">Shows</Link>
+        </li>
+        <li>
           <Link to="/exercises">Exercises</Link>
         </li>
         <li>
@@ -16,13 +19,13 @@ export default React => () => {
           <Link to="/lessons">Lessons</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
           <Link to="/contact">Contact</Link>
         </li>
         <li>
           <Link to="/products">Products</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
         </li>
       </ul>
     </nav>

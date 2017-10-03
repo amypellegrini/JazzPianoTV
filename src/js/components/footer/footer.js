@@ -12,6 +12,9 @@ export default React => () => {
             Privacy Policy
           </li>
           <li>
+            Cookies
+          </li>
+          <li>
             Report a problem
           </li>
           <li>
