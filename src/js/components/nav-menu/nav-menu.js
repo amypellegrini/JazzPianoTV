@@ -16,7 +16,10 @@ export default React => () => {
           <Link to="/sheet-music">Sheet music</Link>
         </li>
         <li>
-          <Link to="/lessons">Lessons</Link>
+          <Link to="/lessons">Lessons/Articles</Link>
+        </li>
+        <li>
+          <Link to="/videos"></Link>
         </li>
         <li>
           <Link to="/contact">Contact</Link>
