@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { login } from '../../actions/';
 
-import createLoginMenu from '../../components/login-menu/login-menu';
+import createLoginMenu from './login-menu';
 
 export default React => {
   const LoginMenu = createLoginMenu(React);
