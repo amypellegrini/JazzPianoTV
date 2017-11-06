@@ -24,8 +24,10 @@
 /* Small desktop */
 @media screen and (min-width: 1024px) {
   header {
+    position: relative;
     text-align: left;
-    padding: 0 15%;
+    padding: 0;
+    margin: 0 15%;
   }
 
   header p {
