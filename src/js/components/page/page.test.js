@@ -21,4 +21,8 @@ test('Page renderer component', nest => {
     assert.equal();
     assert.end();
   });
+
+  nest.test('It should load a given page', assert => {
+    
+  });
 });
