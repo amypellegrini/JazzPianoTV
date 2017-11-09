@@ -6,25 +6,25 @@ export default React => () => {
       <div className="links">
         <ul>
           <li>
-            Terms of Service
+            <Link to="/page:">Terms of Service</Link>
           </li>
           <li>
-            Privacy Policy
+            <Link to="/page:">Privacy Policy</Link>
           </li>
           <li>
-            Cookies
+            <Link to="/page:">Cookies</Link>
           </li>
           <li>
-            Report a problem
+            <Link to="/page:">Report a problem</Link>
           </li>
           <li>
-            Contact
+            <Link to="/page:">Contact</Link>
           </li>
           <li>
-            Follow us on Twitter
+            <Link to="/page:">Follow us on Twitter</Link>
           </li>
           <li>
-            Like us on Facebook
+            <Link to="/page:">Like us on Facebook</Link>
           </li>
         </ul>
       </div>
