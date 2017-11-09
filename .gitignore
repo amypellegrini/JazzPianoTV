@@ -6,3 +6,4 @@ _site
 .editorconfig
 node_modules
 /dist
+*.pem

@@ -20,12 +20,14 @@ const App = createApp(React);
 const Register = createRegister(React);
 const Login = createLogin(React);
 const MyAccount = createMyAccount(React);
+const LandingPage = createLandingPage(React);
 
 render(
   <Provider store={ store }>
     <Router history={ browserHistory }>
       <div>
-        <Route path="/" component={ App }/>
+        <Route path="/" component={ App } />
+        <Route exact path="/" component={ LandingPage } />
         <Route path="/signup" component={ Register } />
         <Route path="/login" component={ Login } />
         <Route path="/my-account" component={ MyAccount } />

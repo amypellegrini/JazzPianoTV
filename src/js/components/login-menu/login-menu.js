@@ -9,7 +9,7 @@ export default React => ({ isUserLogged, onLogoutClick }) => {
         <p>
           <Link to="/login" className="login">Login</Link>
           <span className="separator"> | </span>
-          <Link to="/register" className="register">Signup</Link>
+          <Link to="/signup" className="signup">Signup</Link>
         </p>
       </div>
     );
