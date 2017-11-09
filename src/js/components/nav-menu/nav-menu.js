@@ -19,7 +19,7 @@ export default React => () => {
           <Link to="/lessons">Lessons/Articles</Link>
         </li>
         <li>
-          <Link to="/videos"></Link>
+          <Link to="/videos">Videos</Link>
         </li>
         <li>
           <Link to="/contact">Contact</Link>
