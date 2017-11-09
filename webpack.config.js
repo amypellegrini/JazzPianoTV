@@ -10,8 +10,16 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
-      { test: /\.css$/, loader: ExtractTextPlugin.extract("css-loader") }
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "babel-loader"
+      },
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract("css-loader")
+      },
+      { test: /\.(eot|svg|ttf|woff|woff2)$/, loader: 'file-loader?name=../fonts/[name].[ext]'}
     ]
   },
   plugins: [
