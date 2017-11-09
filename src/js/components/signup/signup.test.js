@@ -1,18 +1,26 @@
 import test from 'tape';
-import createRegister from './register';
+import createRegister from './signup';
 import dom from 'cheerio';
 import React from 'React';
 import reactDom from 'react-dom/server';
 
+import { MemoryRouter } from 'react-router-dom';
+
 const render = reactDom.renderToStaticMarkup;
 
-test('Register component', nest => {
+test('Signup component', nest => {
   nest.test('rendering', assert => {
-    const message = 'It sohuld render the user registration component.';
+    const message = 'It sohuld render the user signup component.';
 
     const Register = createRegister(React);
-    const $ = dom.load(render(<Register />));
-    const output = $('#register').length;
+    const $ = dom.load(
+      render(
+        <MemoryRouter>
+          <Register />
+        </MemoryRouter>
+      )
+    );
+    const output = $('#signup').length;
   
     const actual = output > 0;
     const expected = true;

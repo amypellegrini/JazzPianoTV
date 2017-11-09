@@ -1,14 +1,3 @@
-@media screen and (min-width: 1024px) {
-  header {
-    padding-left: 1rem;
-  }
-
-  header p {
-    margin: 0 0 2rem;
-    font-size: 1.5rem;
-  }
-}
-
 /* iPhone 5 */
 @media screen and (min-width: 320px) {
   header {
@@ -29,5 +18,20 @@
 @media screen and (min-width: 360px) {
   header p {
     font-size: 1.4rem;
+  }
+}
+
+/* Small desktop */
+@media screen and (min-width: 1024px) {
+  header {
+    position: relative;
+    text-align: left;
+    padding: 0;
+    margin: 0 15%;
+  }
+
+  header p {
+    margin: 0;
+    font-size: 1.5rem;
   }
 }

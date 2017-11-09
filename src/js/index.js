@@ -1,3 +1,8 @@
+/**
+ * @todo Refactor this so we can fake history and router in testing.
+ */
+
+import Promise from 'promise-polyfill';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
@@ -10,27 +15,21 @@ import {
 import '../css/main.css';
 import jptvApp from './reducers/jptv-app';
 import createApp from './App';
-import createRegister from './components/register/register';
-import createMyAccount from './containers/my-account/my-account';
-import createLogin from './containers/login/login';
+
+// Polyfill for older browsers that do not support ES6 promise.
+if (!window.Promise) {
+  window.Promise = Promise;
+}
 
 let store = createStore(jptvApp);
 
 const App = createApp(React);
-const Register = createRegister(React);
-const Login = createLogin(React);
-const MyAccount = createMyAccount(React);
-const LandingPage = createLandingPage(React);
 
 render(
   <Provider store={ store }>
     <Router history={ browserHistory }>
       <div>
-        <Route path="/" component={ App } />
-        <Route exact path="/" component={ LandingPage } />
-        <Route path="/signup" component={ Register } />
-        <Route path="/login" component={ Login } />
-        <Route path="/my-account" component={ MyAccount } />
+        <Route path="/" component={ App }/>
       </div>
     </Router>
   </Provider>,

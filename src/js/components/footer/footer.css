@@ -1,0 +1,16 @@
+.jptv-footer {
+  margin-top: 3rem;
+  padding: 2rem 15%;
+  font-family: 'Raleway', Arial, sans-serif;
+  background: #000;
+  color: #EEE;
+}
+
+.jptv-footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.jptv-footer ul li {
+  margin-bottom: 1rem;
+}

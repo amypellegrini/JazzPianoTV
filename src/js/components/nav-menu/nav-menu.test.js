@@ -4,23 +4,24 @@ import dom from 'cheerio';
 import reactDom from 'react-dom/server';
 import { MemoryRouter } from 'react-router-dom';
 
-import createLogin from './login';
+import createNavMenu from './nav-menu';
 
 const render = reactDom.renderToStaticMarkup;
 
-test('Login component', nest => {
-  nest.test('render', assert => {
-    const message = 'It should render the login component';
+test('Navigation Menu component', nest => {
+  nest.test('rendering', assert => {
+    const message = 'It should render the navigation menu.';
 
-    const Login = createLogin(React);
+    const NavMenu = createNavMenu(React);
     const $ = dom.load(
       render(
         <MemoryRouter>
-          <Login />
+          <NavMenu />
         </MemoryRouter>
       )
     );
-    const output = $('.jptv-login-user').length;
+
+    const output = $('.jptv-nav-menu').length;
 
     const actual = output > 0;
     const expected = true;

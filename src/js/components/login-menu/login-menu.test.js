@@ -2,14 +2,15 @@ import test from 'tape';
 import React from 'react';
 import dom from 'cheerio';
 import reactDom from 'react-dom/server';
-import createLoginMenu from './login-menu';
 import { MemoryRouter } from 'react-router-dom';
+
+import createLoginMenu from './login-menu';
 
 const render = reactDom.renderToStaticMarkup;
 
-test('Login component', nest => {
+test('Login menu component', nest => {
   nest.test('rendering', assert => {
-    const message = 'It should render the login component.';
+    const message = 'It should render the login menu component.';
 
     const LoginMenu = createLoginMenu(React);
     const $ = dom.load(

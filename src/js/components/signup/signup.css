@@ -1,21 +1,21 @@
-.jptv-register-user {
+.jptv-signup-user {
   width: 200px;
   margin: 0 auto;
   text-align: left;
   font-family: 'Roboto', Arial, sans-serif;
 }
 
-.jptv-register-user h2 {
+.jptv-signup-user h2 {
   margin: 2rem 0 1rem;
   text-align: center;
 }
 
-.jptv-register-user form label {
+.jptv-signup-user form label {
   margin: 1rem 0 .3rem;
   display: block;
 }
 
-.jptv-register-user form input {
+.jptv-signup-user form input {
   box-sizing: border-box;
   width: 100%;
 }

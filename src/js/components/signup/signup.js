@@ -8,8 +8,8 @@ export default React => ({ onClick }) => {
   const label = 'Signup';
 
   return (
-    <div className="jptv-register-user">
-      <section id="register">
+    <div className="jptv-signup-user">
+      <section id="signup">
         <h2>Signup</h2>
         <form>
           <label>Name:</label>

@@ -10,14 +10,23 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
-      { test: /\.css$/, loader: ExtractTextPlugin.extract("css-loader") }
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "babel-loader"
+      },
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract("css-loader")
+      },
+      { test: /\.(eot|svg|ttf|woff|woff2)$/, loader: 'file-loader?name=../fonts/[name].[ext]'}
     ]
   },
   plugins: [
     new ExtractTextPlugin('../css/jptv-main.css'),
     new CopyWebpackPlugin([
-      { from: 'src/templates/index.hjs', to: '../views/index.hjs' }
+      { from: 'src/templates/*.hjs', to: '../views/[name].hjs' },
+      { from: 'src/pages/*.md', to: '../pages/[name].md' }
     ])
   ]
 };
