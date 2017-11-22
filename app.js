@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const favicon = require('serve-favicon');
 const logger = require('morgan');
-const mongoose = require('mongoose');
+//const mongoose = require('mongoose');
 const passport = require('passport');
 const flash = require('connect-flash');
 const cookieParser = require('cookie-parser');
@@ -15,7 +15,7 @@ require('./config/passport')(passport)
 
 const app = express();
 
-mongoose.connect(configDB.url);
+// mongoose.connect(configDB.url);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'public/views'));

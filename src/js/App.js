@@ -15,7 +15,7 @@ export default React => () => {
   const NavMenu = createNavMenu(React);
   const Footer = createFooter(React);
   const Signup = createSignup(React);
-  const Login = createLogin(React);
+  // const Login = createLogin(React);
   const MyAccount = createMyAccount(React);
 
   return (
@@ -26,8 +26,8 @@ export default React => () => {
 
         <Route path="/signup"
                component={ Signup } />
-        <Route path="/login"
-               component={ Login } />
+        {/* <Route path="/login"
+               component={ Login } /> */} 
         <Route path="/my-account"
                component={ MyAccount } />
 

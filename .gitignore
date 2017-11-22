@@ -8,6 +8,4 @@ node_modules
 dist
 .rnd
 cert.csr
-cert.pem
-key.pem
-privkey.pem
+*.pem
