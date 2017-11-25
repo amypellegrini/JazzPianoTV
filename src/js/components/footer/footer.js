@@ -20,10 +20,10 @@ export default React => () => {
             <Link to="/page:">Contact</Link>
           </li>
           <li>
-            <a href="" className="twitter-link">Twitter</a>
+            <a href="https://twitter.com/amyvpellegrini" className="twitter-link">Amy Pellegrini on Twitter</a>
           </li>
           <li>
-            <a href="https://www.facebook.com/jazzpianotv/" className="facebook-link">Facebook</a>
+            <a href="https://www.facebook.com/jazzpianotv/" className="facebook-link">JazzPianoTV Facebook page</a>
           </li>
         </ul>
       </div>
