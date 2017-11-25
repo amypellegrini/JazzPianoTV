@@ -1,11 +1,11 @@
 import test from 'tape'
-import { login, signupRequest } from './index';
+import { loginRequest, signupRequest } from './index';
 
 test('Actions', nest => {
   nest.test('login action', assert => {
     const message = 'It should return a function.';
 
-    const actual = typeof login;
+    const actual = typeof loginRequest;
     const expected = 'function';
 
     assert.equal(actual, expected, message);

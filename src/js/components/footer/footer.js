@@ -1,5 +1,7 @@
 import './footer.css';
 
+import { Link } from 'react-router-dom';
+
 export default React => () => {
   return (
     <footer className="jptv-footer">
@@ -15,16 +17,13 @@ export default React => () => {
             <Link to="/page:">Cookies</Link>
           </li>
           <li>
-            <Link to="/page:">Report a problem</Link>
-          </li>
-          <li>
             <Link to="/page:">Contact</Link>
           </li>
           <li>
-            <Link to="/page:">Follow us on Twitter</Link>
+            <a href="" className="twitter-link">Twitter</a>
           </li>
           <li>
-            <Link to="/page:">Like us on Facebook</Link>
+            <a href="https://www.facebook.com/jazzpianotv/" className="facebook-link">Facebook</a>
           </li>
         </ul>
       </div>

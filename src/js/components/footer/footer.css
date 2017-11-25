@@ -13,5 +13,10 @@
 
 .jptv-footer ul li {
   margin-bottom: 1rem;
+}
+
+.jptv-footer ul li a {
+  text-decoration: none;
+  color: inherit;
   cursor: pointer;
 }

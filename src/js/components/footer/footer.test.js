@@ -2,6 +2,7 @@ import test from 'tape';
 import React from 'react';
 import dom from 'cheerio';
 import reactDom from 'react-dom/server';
+import { MemoryRouter } from 'react-router-dom';
 
 import createFooter from './footer';
 
@@ -12,8 +13,48 @@ test('Footer component', nest => {
     const message = 'It should render the footer component.';
 
     const Footer = createFooter(React);
-    const $ = dom.load(render(<Footer />));
+    const $ = dom.load(render(
+      <MemoryRouter>
+        <Footer />
+      </MemoryRouter>
+    ));
     const output = $('footer').length;
+
+    const actual = output > 0;
+    const expected = true;
+
+    assert.equal(actual, expected, message);
+    assert.end();
+  });
+
+  nest.test('Twitter link', assert => {
+    const message = 'It should contain a Twitter page link.';
+
+    const Footer = createFooter(React);
+    const $ = dom.load(render(
+      <MemoryRouter>
+        <Footer />
+      </MemoryRouter>
+    ));
+    const output = $('footer').find('.twitter-link').length;
+
+    const actual = output > 0;
+    const expected = true;
+
+    assert.equal(actual, expected, message);
+    assert.end();
+  });
+
+  nest.test('Facebook link', assert => {
+    const message = 'It should contain a Facebook page link.';
+
+    const Footer = createFooter(React);
+    const $ = dom.load(render(
+      <MemoryRouter>
+        <Footer />
+      </MemoryRouter>
+    ));
+    const output = $('footer').find('.facebook-link').length;
 
     const actual = output > 0;
     const expected = true;
