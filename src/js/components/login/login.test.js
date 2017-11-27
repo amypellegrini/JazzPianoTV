@@ -13,6 +13,7 @@ test('Login component', nest => {
     const message = 'It should render the login component';
 
     const Login = createLogin(React);
+
     const $ = dom.load(
       render(
         <MemoryRouter>
@@ -20,8 +21,8 @@ test('Login component', nest => {
         </MemoryRouter>
       )
     );
-    const output = $('.jptv-login-user').length;
 
+    const output = $('.jptv-login-user').length;
     const actual = output > 0;
     const expected = true;
 
