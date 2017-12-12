@@ -16,9 +16,7 @@ test('Header component', nest => {
 
     const $ = dom.load(
       render(
-        <MemoryRouter>
-          <Header />
-        </MemoryRouter>
+        <Header />
       )
     );
 

@@ -1,9 +1,6 @@
 import createHeader from './components/header/header';
-import createNavMenu from './components/nav-menu/nav-menu';
+import createLandingPage from './components/landing-page/landing-page';
 import createFooter from './components/footer/footer';
-import createSignup from './components/signup/signup';
-import createMyAccount from './containers/my-account/my-account';
-import createLogin from './containers/login/login';
 
 import {
   BrowserRouter as Router,
@@ -12,25 +9,14 @@ import {
 
 export default React => () => {
   const Header = createHeader(React);
-  const NavMenu = createNavMenu(React);
+  const LandingPage = createLandingPage(React);
   const Footer = createFooter(React);
-  const Signup = createSignup(React);
-  // const Login = createLogin(React);
-  const MyAccount = createMyAccount(React);
 
   return (
     <Router history={ browserHistory }>
       <section id="jptv">
         <Header />
-        <NavMenu />
-
-        <Route path="/signup"
-               component={ Signup } />
-        {/* <Route path="/login"
-               component={ Login } /> */} 
-        <Route path="/my-account"
-               component={ MyAccount } />
-
+        <LandingPage />
         <Footer />
       </section>
     </Router>

@@ -1,15 +1,16 @@
 import './landing-page.css';
-import createHero from '../hero/hero';
-import createJumbotron from '../jumbotron/jumbotron';
 
 export default React => () => {
-  const Hero = createHero(React);
-  const Jumbotron = createJumbotron(React);
-
   return (
     <div className="jptv-landing-page">
-      <Hero />
-      <Jumbotron />
+      <section>
+        <header className="jumbotron">
+          <h2>Coming soon</h2>
+          <p>The Hanon Pilgrimage to Mastery</p>
+        </header>
+        <p>Looking for sheet music? Feel free to check out Amy Pellegrini <a className="jptv-musescore-link" href="https://musescore.com/user/3607356" target="_blank">Musescore Profile</a>.
+        </p>
+      </section>
     </div>
   );
 }

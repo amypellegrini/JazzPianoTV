@@ -1,0 +1,41 @@
+.jptv-header {
+  margin-bottom: 2rem; 
+}
+
+/* iPhone 5 */
+@media screen and (min-width: 320px) {
+  .jptv-header {
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .jptv-header p {
+    color: #666;
+    font-family: 'Raleway';
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}
+
+/* Galaxy S5 */
+@media screen and (min-width: 360px) {
+  .jptv-header p {
+    font-size: 1.4rem;
+  }
+}
+
+/* Small desktop */
+@media screen and (min-width: 1024px) {
+  .jptv-header {
+    position: relative;
+    text-align: left;
+    padding: 0;
+    margin: 0 15%;
+  }
+
+  .jptv-header p {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+}
