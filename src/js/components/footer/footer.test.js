@@ -9,7 +9,7 @@ import createFooter from './footer';
 const render = reactDom.renderToStaticMarkup;
 
 test('Footer component', nest => {
-  nest.test('rendering', assert => {
+  nest.test('. rendering', assert => {
     const message = 'It should render the footer component.';
 
     const Footer = createFooter(React);
@@ -27,7 +27,7 @@ test('Footer component', nest => {
     assert.end();
   });
 
-  nest.test('Twitter link', assert => {
+  nest.test('. Twitter link', assert => {
     const message = 'It should contain a Twitter page link.';
 
     const Footer = createFooter(React);
@@ -45,7 +45,7 @@ test('Footer component', nest => {
     assert.end();
   });
 
-  nest.test('Facebook link', assert => {
+  nest.test('. Facebook link', assert => {
     const message = 'It should contain a Facebook page link.';
 
     const Footer = createFooter(React);
@@ -55,6 +55,24 @@ test('Footer component', nest => {
       </MemoryRouter>
     ));
     const output = $('footer').find('.facebook-link').length;
+
+    const actual = output > 0;
+    const expected = true;
+
+    assert.equal(actual, expected, message);
+    assert.end();
+  });
+
+  nest.test('. Musescore link', assert => {
+    const message = 'It should contain a Musescore profile link.';
+
+    const Footer = createFooter(React);
+    const $ = dom.load(render(
+      <MemoryRouter>
+        <Footer />
+      </MemoryRouter>
+    ));
+    const output = $('footer').find('.musescore-link').length;
 
     const actual = output > 0;
     const expected = true;

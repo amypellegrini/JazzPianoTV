@@ -5,28 +5,21 @@ import { Link } from 'react-router-dom';
 export default React => () => {
   return (
     <footer className="jptv-footer">
-      <div className="links">
-        <ul>
-          <li>
-            <Link to="/page:">Terms of Service</Link>
-          </li>
-          <li>
-            <Link to="/page:">Privacy Policy</Link>
-          </li>
-          <li>
-            <Link to="/page:">Cookies</Link>
-          </li>
-          <li>
-            <Link to="/page:">Contact</Link>
-          </li>
-          <li>
-            <a href="https://twitter.com/amyvpellegrini" className="twitter-link">Amy Pellegrini on Twitter</a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/jazzpianotv/" className="facebook-link">JazzPianoTV Facebook page</a>
-          </li>
-        </ul>
-      </div>
+      <ul>
+        <li>
+          <h4>Contact</h4>
+        </li>
+        <li>
+          <a href="https://musescore.com/user/3607356" className="musescore-link" target="_blank">Amy Pellegrini Musescore Profile</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/amyvpellegrini" className="twitter-link" target="_blank">Amy Pellegrini on Twitter</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/jazzpianotv/" className="facebook-link" target="_blank">JazzPianoTV Facebook page</a>
+        </li>
+      </ul>
+      <p>&copy; 2017 Amy Pellegrini</p>
     </footer>
   );
 }
