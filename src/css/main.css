@@ -1,13 +1,30 @@
 @import 'normalize.css';
+@import 'font-awesome.css';
 @import 'helpers.css';
 @import 'brand.css';
 @import 'exercises.css';
 
-.coming-soon {
-  text-align: center;
+html {
+  width: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
   text-transform: uppercase;
   font-family: 'Raleway';
   color: #aaa;
   font-size: 2rem;
-  margin: 5rem 0;
+}
+
+section > header {
+  text-align: center;
+}
+
+section > header > p {
+  font-family: 'Playfair Display SC', 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
 }

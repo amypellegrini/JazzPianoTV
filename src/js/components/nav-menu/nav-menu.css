@@ -1,0 +1,25 @@
+.jptv-nav-menu {
+  padding: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+
+.jptv-nav-menu li {
+  margin-right: 2rem;
+  display: inline;
+}
+
+.jptv-nav-menu li a {
+  color: #444;
+  text-decoration: none;
+}
+
+.jptv-nav-menu li:hover {
+  border-bottom: 2px solid #888;
+}
+
+.jptv-nav-menu li a:hover {
+  color: #888;
+}

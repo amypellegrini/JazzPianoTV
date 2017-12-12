@@ -2,6 +2,7 @@ import test from 'tape';
 import React from 'react';
 import dom from 'cheerio';
 import reactDom from 'react-dom/server';
+import { MemoryRouter } from 'react-router-dom';
 
 import createHeader from './header';
 
@@ -12,9 +13,14 @@ test('Header component', nest => {
     const message = 'It should render the header section';
 
     const Header = createHeader(React);
-    const $ = dom.load(render(<Header />));
-    const output = $('header').length;
 
+    const $ = dom.load(
+      render(
+        <Header />
+      )
+    );
+
+    const output = $('header').length;
     const actual = output > 0;
     const expected = true;
 

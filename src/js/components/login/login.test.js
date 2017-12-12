@@ -1,13 +1,32 @@
-// import test from 'tape';
-// import auth from './login';
+import test from 'tape';
+import React from 'react';
+import dom from 'cheerio';
+import reactDom from 'react-dom/server';
+import { MemoryRouter } from 'react-router-dom';
 
-// test('login public API', (assert) => {
-//   const message = 'it should expose a basic API for login and logout';
+import createLogin from './login';
 
-//   auth.login();
+const render = reactDom.renderToStaticMarkup;
 
-//   const expected = true;
-//   const actual = auth.logged();
+test('Login component', nest => {
+  nest.test('render', assert => {
+    const message = 'It should render the login component';
 
-//   assert.equal(expected, actual, message);
-// });
+    const Login = createLogin(React);
+
+    const $ = dom.load(
+      render(
+        <MemoryRouter>
+          <Login />
+        </MemoryRouter>
+      )
+    );
+
+    const output = $('.jptv-login-user').length;
+    const actual = output > 0;
+    const expected = true;
+
+    assert.equal(actual, expected, message);
+    assert.end();
+  });
+});

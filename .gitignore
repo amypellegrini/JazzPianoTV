@@ -1,8 +1,12 @@
-/public/
+public
 .DS_Store
 _site
-/conf
+conf
 .sass-cache
 .editorconfig
 node_modules
 /dist
+*.pem
+dist
+.rnd
+cert.csr

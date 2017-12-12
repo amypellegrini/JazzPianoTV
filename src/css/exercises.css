@@ -1,3 +1,44 @@
-.exercises {
-  font-family: 'Roboto';
+/* iPhone 5 */
+@media screen and (min-width: 320px) {
+  .exercises {
+    font-family: 'Roboto';
+  }
+
+  .exercise-list {
+    padding: 0 1.3rem;
+  }
+
+  .exercise-list h2 {
+    text-align: center;
+    margin: 1rem 0 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+    padding-left: 0.6rem;
+  }
+
+  .exercise-list .exercise-item {
+    cursor: pointer;
+    color: #555;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 0.2rem 0.5rem 0.5rem;
+    border-top: 0;
+  }
+}
+
+/* iPad (portrait) */
+@media screen and (min-width: 768px) {
+  .exercise-list .exercise-item {
+    width: 50%;
+    float: left;
+  }
+}
+
+/* iPad (landscape) */
+@media screen and (min-width: 1024px) {
+  .exercise-list {
+    margin: 0 auto;
+    width: 768px;
+  }
 }

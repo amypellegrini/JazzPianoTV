@@ -7,16 +7,19 @@ import createQuote from './quote';
 
 const render = reactDom.renderToStaticMarkup;
 
-test('Quote component', assert => {
-  const message = "it should render a quote";
+test('Quotes component', nest => {
+  nest.test('quotes', assert => {
+      const message = "it should render a quote";
 
-  const Logo = createQuote(React);
-  const $ = dom.load(render(<Logo />));
-  const output = $('p').text();
-
-  const actual = output;
-  const expected = 'Learn to Play the Piano for Real';
-
-  assert.equal(actual, expected, message);
-  assert.end();
+      const Logo = createQuote(React);
+      const $ = dom.load(render(<Logo />));
+      const output = $('p').text();
+      
+      const actual = output;
+      const expected = 'Learn to Play the Piano for Real';
+      
+      assert.equal(actual, expected, message);
+      assert.end();
+    }
+  );
 });
