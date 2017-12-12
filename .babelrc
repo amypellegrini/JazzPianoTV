@@ -2,6 +2,7 @@
   "presets": [ "es2015" ],
   "plugins": [
     "transform-react-jsx",
-    "transform-es2015-parameters"
+    "transform-es2015-parameters",
+    "transform-es2015-block-scoping"
   ]
 }
