@@ -14,9 +14,7 @@ body {
 }
 
 h2 {
-  text-transform: uppercase;
-  font-family: 'Raleway';
-  color: #aaa;
+  font-family: 'Playfair Display SC', 'Times New Roman', Times, serif;
   font-size: 2rem;
 }
 
@@ -25,6 +23,8 @@ section > header {
 }
 
 section > header > p {
-  font-family: 'Playfair Display SC', 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  color: #aaa;
   font-size: 1.5rem;
 }
