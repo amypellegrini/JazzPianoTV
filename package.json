@@ -64,7 +64,7 @@
   "scripts": {
     "start": "nodemon ./bin/www",
     "clean": "rm -r public",
-    "build": "webpack",
+    "build": "npm run clean && webpack",
     "test": "tape -r babel-register -r ignore-styles src/js/**/*.test.js | faucet"
   },
   "repository": {
