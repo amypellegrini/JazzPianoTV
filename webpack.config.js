@@ -26,7 +26,8 @@ module.exports = {
     new ExtractTextPlugin('../css/jptv-main.css'),
     new CopyWebpackPlugin([
       { from: 'src/templates/*.hjs', to: '../views/[name].hjs' },
-      { from: 'src/pages/*.md', to: '../pages/[name].md' }
+      { from: 'src/pages/*.md', to: '../pages/[name].md' },
+      { from: 'src/assets/favicon/*.*', to: '../[name].[ext]' }
     ])
   ]
 };

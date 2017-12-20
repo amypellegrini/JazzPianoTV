@@ -45,24 +45,6 @@ test('Footer component', nest => {
     assert.end();
   });
 
-  nest.test('. Facebook link', assert => {
-    const message = 'It should contain a Facebook page link.';
-
-    const Footer = createFooter(React);
-    const $ = dom.load(render(
-      <MemoryRouter>
-        <Footer />
-      </MemoryRouter>
-    ));
-    const output = $('footer').find('.facebook-link').length;
-
-    const actual = output > 0;
-    const expected = true;
-
-    assert.equal(actual, expected, message);
-    assert.end();
-  });
-
   nest.test('. Musescore link', assert => {
     const message = 'It should contain a Musescore profile link.';
 

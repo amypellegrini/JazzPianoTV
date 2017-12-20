@@ -1,9 +1,10 @@
 .jptv-landing-page {
+  padding: 0 14%;
   margin: 0 15%;
 }
 
 .jptv-landing-page .jumbotron {
-  margin-bottom: 7rem;
+  margin-bottom: 3rem;
 }
 
 .jptv-landing-page .jumbotron h2 {
@@ -12,4 +13,9 @@
 
 .jptv-landing-page > section > p {
   font-size: 16px;
+}
+
+.jptv-landing-page hr {
+  border-bottom: none;
+  margin-top: 2rem;
 }

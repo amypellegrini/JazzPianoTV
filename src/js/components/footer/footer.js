@@ -15,9 +15,6 @@ export default React => () => {
         <li>
           <a href="https://twitter.com/amyvpellegrini" className="twitter-link" target="_blank">Amy Pellegrini on Twitter</a>
         </li>
-        <li>
-          <a href="https://www.facebook.com/jazzpianotv/" className="facebook-link" target="_blank">JazzPianoTV Facebook page</a>
-        </li>
       </ul>
       <p>&copy; 2017 Amy Pellegrini</p>
     </footer>
