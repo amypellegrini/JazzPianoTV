@@ -10,12 +10,3 @@
 .jptv-landing-page .jumbotron h2 {
   margin: 2rem 0;
 }
-
-.jptv-landing-page > section > p {
-  font-size: 16px;
-}
-
-.jptv-landing-page hr {
-  border-bottom: none;
-  margin-top: 2rem;
-}
