@@ -13,7 +13,7 @@ import createMyAccount from './my-account';
 const render = reactDom.renderToStaticMarkup;
 
 test('My account component', nest => {
-  nest.test('rendering', assert => {
+  nest.test('. rendering', assert => {
     const message = 'It should render my account component';
 
     let store = createStore(jptvApp);

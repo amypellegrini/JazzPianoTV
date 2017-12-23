@@ -12,7 +12,7 @@ test('Actions', nest => {
     assert.end();
   });
 
-  nest.test('signup request action', assert => {
+  nest.test('. signup request action', assert => {
     const message = 'It should return a function.';
 
     const actual = typeof signupRequest;

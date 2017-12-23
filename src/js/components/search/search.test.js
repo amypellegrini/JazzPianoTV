@@ -22,7 +22,7 @@ test('Search component', nest => {
     assert.end();
   });
 
-  nest.test('text input rendering', assert => {
+  nest.test('. text input rendering', assert => {
     const message = 'It should render a text input.';
 
     const Search = createSearch(React);
@@ -36,7 +36,7 @@ test('Search component', nest => {
     assert.end();
   });
 
-  nest.test('search box magnifying glass icon', assert => {
+  nest.test('. search box magnifying glass icon', assert => {
     const message = 'Search box should render a magnifying glass icon';
 
     const Search = createSearch(React);
