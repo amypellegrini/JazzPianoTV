@@ -8,7 +8,7 @@ import createHero from './hero';
 const render = reactDom.renderToStaticMarkup;
 
 test('Hero component', nest => {
-  nest.test('rendering', assert => {
+  nest.test('. rendering', assert => {
     const message = 'It should render the hero component.';
 
     const Hero = createHero(React);

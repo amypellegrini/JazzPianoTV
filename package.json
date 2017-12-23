@@ -62,7 +62,8 @@
     "start": "nodemon ./bin/www",
     "clean": "rm -r public",
     "build": "npm run clean && webpack",
-    "test": "tape -r babel-register -r ignore-styles src/js/**/*.test.js | faucet"
+    "test": "tape -r babel-register -r ignore-styles src/js/**/*.test.js | faucet",
+    "test:watch": "clear && watch \"npm test\" ."
   },
   "repository": "git+https://github.com/amypellegrini/JazzPianoTV.git",
   "author": "Amy Pellegrini",

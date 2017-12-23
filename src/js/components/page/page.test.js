@@ -8,7 +8,7 @@ import createPage from './page';
 const render = reactDom.renderToStaticMarkup;
 
 test('Page renderer component', nest => {
-  nest.test('rendering', assert => {
+  nest.test('. rendering', assert => {
     const message = 'It should render a Page.';
 
     const Page = createPage(React);
@@ -18,11 +18,12 @@ test('Page renderer component', nest => {
     const actual = output > 0;
     const expected = true;
 
-    assert.equal();
+    assert.equal(actual, expected, message);
     assert.end();
   });
 
-  nest.test('It should load a given page', assert => {
-    
+  nest.test('. loading', assert => {
+    const message = 'It should load a given page';
+    assert.end();
   });
 });
