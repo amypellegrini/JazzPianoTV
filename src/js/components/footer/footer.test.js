@@ -2,7 +2,6 @@ import test from 'tape';
 import React from 'react';
 import dom from 'cheerio';
 import reactDom from 'react-dom/server';
-import { MemoryRouter } from 'react-router-dom';
 
 import createFooter from './footer';
 
@@ -14,9 +13,7 @@ test('Footer component', nest => {
 
     const Footer = createFooter(React);
     const $ = dom.load(render(
-      <MemoryRouter>
-        <Footer />
-      </MemoryRouter>
+      <Footer />
     ));
     const output = $('footer').length;
 
@@ -32,9 +29,7 @@ test('Footer component', nest => {
 
     const Footer = createFooter(React);
     const $ = dom.load(render(
-      <MemoryRouter>
-        <Footer />
-      </MemoryRouter>
+      <Footer />
     ));
     const output = $('footer').find('.twitter-link').length;
 
@@ -50,9 +45,7 @@ test('Footer component', nest => {
 
     const Footer = createFooter(React);
     const $ = dom.load(render(
-      <MemoryRouter>
-        <Footer />
-      </MemoryRouter>
+      <Footer />
     ));
     const output = $('footer').find('.musescore-link').length;
 

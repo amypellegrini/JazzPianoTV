@@ -7,7 +7,8 @@
 }
 
 .jptv-footer ul {
-  margin: 0;
+  float: left;
+  margin: 0 5rem 0 0rem;
   padding: 0;
   list-style-type: none;
 }
@@ -28,6 +29,6 @@
 }
 
 .jptv-footer p {
-  margin: 2rem 0 0;
+  margin: 1rem 0 0;
   font-size: 11px;
 }
