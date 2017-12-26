@@ -7,7 +7,7 @@ export default React => ({ label, to, activeOnlyWhenExact, className }) => {
   return (
     <Route>
       <span className={ className }>
-        <a href="#"></a>
+        <Link to={to}></Link>
       </span>
     </Route>
   );

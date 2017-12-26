@@ -1,8 +1,8 @@
 import test from 'tape';
 import React from 'react';
 import dom from 'cheerio';
-import { MemoryRouter } from 'react-router';
 import reactDom from 'react-dom/server';
+import { MemoryRouter } from 'react-router';
 
 import createLink from './jptv-link';
 
@@ -15,7 +15,7 @@ test('Custom link component', nest => {
     const Link = createLink(React);
     const $ = dom.load(render(
         <MemoryRouter>
-          <Link />
+          <Link to="/target-path" />
         </MemoryRouter>
       ));
     const output = $('a');
@@ -33,7 +33,7 @@ test('Custom link component', nest => {
     const Link = createLink(React);
     const $ = dom.load(render(
         <MemoryRouter>
-          <Link />
+          <Link to="/target-path" />
         </MemoryRouter>
       ));
     const output = $('span');
@@ -51,14 +51,31 @@ test('Custom link component', nest => {
     const Link = createLink(React);
     const $ = dom.load(render(
         <MemoryRouter>
-          <Link className="custom-class" />
+          <Link  to="/target-path" className="custom-class" />
         </MemoryRouter>
       ));
     const output = $('span');
 
     const actual = output.hasClass('custom-class');
-    //const actual = output.attr('class');
     const expected = true;
+
+    assert.equal(actual, expected, message);
+    assert.end();
+  });
+
+  nest.test('. link href', assert => {
+    const message = 'Link should properly set href target';
+
+    const Link = createLink(React);
+    const $ = dom.load(render(
+        <MemoryRouter>
+          <Link to="/target-path" />
+        </MemoryRouter>
+      ));
+    const output = $('a');
+
+    const actual = output.attr('href');
+    const expected = '/target-path';
 
     assert.equal(actual, expected, message);
     assert.end();
