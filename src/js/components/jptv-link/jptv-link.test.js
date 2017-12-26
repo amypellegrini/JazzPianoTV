@@ -64,7 +64,7 @@ test('Custom link component', nest => {
   });
 
   nest.test('. link href', assert => {
-    const message = 'Link should properly set href target';
+    const message = 'Link should properly set href target.';
 
     const Link = createLink(React);
     const $ = dom.load(render(
@@ -76,6 +76,24 @@ test('Custom link component', nest => {
 
     const actual = output.attr('href');
     const expected = '/target-path';
+
+    assert.equal(actual, expected, message);
+    assert.end();
+  });
+
+  nest.test('. link label', assert => {
+    const message = 'Link should render a given label.';
+
+    const Link = createLink(React);
+    const $ = dom.load(render(
+        <MemoryRouter>
+          <Link to="/example-link" label="Example link"/>
+        </MemoryRouter>
+      ));
+    const output = $('a');
+
+    const actual = output.text();
+    const expected = 'Example link';
 
     assert.equal(actual, expected, message);
     assert.end();

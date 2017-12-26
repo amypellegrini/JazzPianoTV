@@ -20,7 +20,7 @@ export default React => () => {
 
         <h3>How does it work?</h3>
 
-        <p><strong>The Hanon Pilgrimage to Mastery</strong> is intended to be used in conjunction with <Link to="/jptv-12-rules" className="jptv-12-rules-link">JazzPianoTV 12 Rules for Piano Mastery</Link>, as a framework for personal and technical development of Piano Mastery. We could think about <strong>The Hanon Pilgrimage to Mastery</strong> as the road to travel, and the <strong>JazzPianoTV 12 Rules for Piano Mastery</strong> as the guideline to make sure you are well prepared for the trip, which could be very disheartening if you are not.</p>
+        <p><strong>The Hanon Pilgrimage to Mastery</strong> is intended to be used in conjunction with <Link to="/jptv-12-rules" className="jptv-12-rules-link" label="JazzPianoTV 12 Rules for Piano Mastery"/>, as a framework for personal and technical development of Piano Mastery. We could think about <strong>The Hanon Pilgrimage to Mastery</strong> as the road to travel, and the <strong>JazzPianoTV 12 Rules for Piano Mastery</strong> as the guideline to make sure you are well prepared for the trip, which could be very disheartening if you are not.</p>
 
         <p>Are you ready?</p>
 
