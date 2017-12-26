@@ -7,8 +7,8 @@ import createApp from './app';
 
 const render = reactDom.renderToStaticMarkup;
 
-test('App init', assert => {
-  const message = 'It sohuld initialize the app.';
+test('App init & render', assert => {
+  const message = 'It sohuld initialize and render the app.';
 
   const App = createApp(React);
   const $ = dom.load(render(<App />));
