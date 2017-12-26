@@ -22,10 +22,10 @@ export default React => () => {
             <h4>Listen</h4>
           </li>
           <li>
-            <a href="https://amypellegrini.bandcamp.com/" className="bandcamp-link" target="_blank">Amy Pellegrini on Bandcamp</a>
+            <a href="https://amypellegrini.bandcamp.com/" className="bandcamp-link" target="_blank">Amy Pellegrini tracks on Bandcamp</a>
           </li>
           <li>
-            <a href="https://soundcloud.com/amyvpellegrini" className="soundcloud-link" target="_blank">Amy Pellegrini on Soundcloud</a>
+            <a href="https://soundcloud.com/amyvpellegrini" className="soundcloud-link" target="_blank">Amy Pellegrini tracks on Soundcloud</a>
           </li>
         </ul>
       </div>
