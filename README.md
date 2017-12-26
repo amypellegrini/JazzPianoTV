@@ -1,4 +1,4 @@
-# JazzPianoTV
+# JazzPianoTV [![Build Status](https://travis-ci.org/amypellegrini/JazzPianoTV.svg?branch=dev)](https://travis-ci.org/amypellegrini/JazzPianoTV)
 
 ## Tech stack
 
