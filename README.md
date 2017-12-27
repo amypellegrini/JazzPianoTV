@@ -2,13 +2,16 @@
 
 ## Tech stack
 
-- NodeJS
+- Node.js
 - Express
 - React
 - Webpack
+- Yarn
+- Tape
 
 ## Commands
 
+- Install: `yarn install`
 - Test: `npm test`
 - Build: `npm run build`
 - Launch server: `npm start`
