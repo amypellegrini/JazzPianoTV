@@ -13,5 +13,6 @@
 
 - Install: `yarn install`
 - Test: `npm test`
+- Watch test: `npm test:watch`
 - Build: `npm run build`
 - Launch server: `npm start`
