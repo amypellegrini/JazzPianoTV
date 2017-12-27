@@ -1,13 +1,10 @@
 {
   "name": "jazzpianotv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JazzPianoTV Website",
   "main": "index.js",
   "dependencies": {
-    "bcrypt": "^1.0.3",
-    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.2",
-    "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
     "credential": "^2.0.0",
     "debug": "^2.6.9",
@@ -18,11 +15,10 @@
     "hjs": "0.0.6",
     "howler": "^2.0.5",
     "isomorphic-fetch": "^2.2.1",
-    "mime-db": "^1.32.0",
     "moment": "^2.19.4",
     "mongoose": "^4.13.7",
     "morgan": "^1.9.0",
-    "nodemon": "^1.12.5",
+    "nodemon": "^1.14.1",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "promise-polyfill": "^6.1.0",
@@ -51,6 +47,7 @@
     "babelify": "^8.0.0",
     "cheerio": "^1.0.0-rc.2",
     "copy-webpack-plugin": "^4.2.3",
+    "cross-env": "^5.1.3",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.2",
     "ignore-styles": "^5.0.1",
@@ -65,16 +62,15 @@
     "start": "nodemon ./bin/www",
     "clean": "rm -r public",
     "build": "npm run clean && webpack",
-    "test": "tape -r babel-register -r ignore-styles src/js/**/*.test.js | faucet"
+    "test": "tape -r babel-register -r ignore-styles src/js/**/*.test.js | faucet",
+    "test:watch": "clear && watch \"npm test\" ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/amypellegrini/JazzPianoTV.git"
-  },
+  "repository": "git+https://github.com/amypellegrini/JazzPianoTV.git",
   "author": "Amy Pellegrini",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/amypellegrini/JazzPianoTV/issues"
   },
-  "homepage": "https://github.com/amypellegrini/JazzPianoTV#readme"
+  "homepage": "https://github.com/amypellegrini/JazzPianoTV#readme",
+  "private": true
 }

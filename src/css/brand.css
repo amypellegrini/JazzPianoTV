@@ -5,7 +5,7 @@
   }
 }
 
-/* iPhone 5 */
+/* Small mobile device */
 @media screen and (min-width: 320px) {
   h1 {
     font-family: 'Montserrat';
@@ -28,19 +28,42 @@
     font-size: 1.85rem;
   }
 
+  h2 {
+    font-family: 'Playfair Display SC', 'Times New Roman', Times, serif;
+    font-size: 2rem;
+  }
+
   h3 {
-    font-family: 'Playfair Display SC', serif;
-    margin-top: 0;
-    margin-bottom: 0.3rem;
+    font-family: 'Montserrat', Arial, serif;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+  }
+
+  section > header {
+    text-align: center;
+  }
+
+  section > header > p {
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    color: #aaa;
+    font-size: 1.5rem;
   }
 
   p {
+    line-height: 1.5rem;
     margin-top: 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
+  }
+
+  hr {
+    border-bottom: none;
+    margin-top: 2rem;
   }
 }
 
-/* Galaxy S5 */
+/* Larger mobile device */
 @media screen and (min-width: 360px) {
   h1 {
     font-size: 2.8rem;

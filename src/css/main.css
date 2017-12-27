@@ -12,19 +12,3 @@ body {
   font-size: 16px;
   font-family: Arial, sans-serif;
 }
-
-h2 {
-  font-family: 'Playfair Display SC', 'Times New Roman', Times, serif;
-  font-size: 2rem;
-}
-
-section > header {
-  text-align: center;
-}
-
-section > header > p {
-  text-transform: uppercase;
-  font-family: 'Raleway';
-  color: #aaa;
-  font-size: 1.5rem;
-}

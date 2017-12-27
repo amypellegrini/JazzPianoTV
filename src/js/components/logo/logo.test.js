@@ -8,7 +8,7 @@ import createLogo from './logo';
 const render = reactDom.renderToStaticMarkup;
 
 test('Main logo component', nest => {
-  nest.test('rendering', assert => {
+  nest.test('. rendering', assert => {
     const message = "It should render the main logo.";
 
     const Logo = createLogo(React);
@@ -22,7 +22,7 @@ test('Main logo component', nest => {
     assert.end();
   });
 
-  nest.test('lite version', assert => {
+  nest.test('. lite version', assert => {
     const message = 'It should provide an option to render a lite version';
 
     const Logo = createLogo(React);
@@ -36,7 +36,7 @@ test('Main logo component', nest => {
     assert.end();
   });
 
-  nest.test('default version link', assert => {
+  nest.test('. default version link', assert => {
     const message = 'It should contain a link';
 
     const Logo = createLogo(React);
@@ -50,7 +50,7 @@ test('Main logo component', nest => {
     assert.end();
   });
 
-  nest.test('default version link href', assert => {
+  nest.test('. default version link href', assert => {
     const message = 'link href should link to base path';
 
     const Logo = createLogo(React);
@@ -64,7 +64,7 @@ test('Main logo component', nest => {
     assert.end();
   });
 
-  nest.test('lite version link', assert => {
+  nest.test('. lite version link', assert => {
     const message = 'It should also contain a link';
 
     const Logo = createLogo(React);
@@ -78,7 +78,7 @@ test('Main logo component', nest => {
     assert.end();
   });
 
-  nest.test('lite version link href', assert => {
+  nest.test('. lite version link href', assert => {
     const message = 'lite logo link href should also link to base path';
 
     const Logo = createLogo(React);

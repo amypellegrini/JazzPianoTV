@@ -8,7 +8,7 @@ import createButton from './button';
 const render = reactDom.renderToStaticMarkup;
 
 test('Button component', nest => {
-  nest.test('rendering', assert => {
+  nest.test('. rendering', assert => {
     const message = 'It should render a button component';
 
     const Button = createButton(React);

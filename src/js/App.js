@@ -1,11 +1,11 @@
+import {
+    BrowserRouter as Router,
+    Route
+  } from 'react-router-dom';
+
 import createHeader from './components/header/header';
 import createLandingPage from './components/landing-page/landing-page';
 import createFooter from './components/footer/footer';
-
-import {
-  BrowserRouter as Router,
-  Route,
-  browserHistory } from 'react-router-dom';
 
 export default React => () => {
   const Header = createHeader(React);
@@ -13,12 +13,12 @@ export default React => () => {
   const Footer = createFooter(React);
 
   return (
-    <Router history={ browserHistory }>
-      <section id="jptv">
-        <Header />
-        <LandingPage />
-        <Footer />
-      </section>
-    </Router>
+    <section id="jptv">
+      <Header />
+        <Router>
+          <Route exact path="/" component={LandingPage} />
+        </Router>
+      <Footer />
+    </section>
   );
 };

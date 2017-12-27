@@ -2,7 +2,7 @@ import test from 'tape'
 import { loginRequest, signupRequest } from './index';
 
 test('Actions', nest => {
-  nest.test('login action', assert => {
+  nest.test('. login action', assert => {
     const message = 'It should return a function.';
 
     const actual = typeof loginRequest;
@@ -12,7 +12,7 @@ test('Actions', nest => {
     assert.end();
   });
 
-  nest.test('signup request action', assert => {
+  nest.test('. signup request action', assert => {
     const message = 'It should return a function.';
 
     const actual = typeof signupRequest;
