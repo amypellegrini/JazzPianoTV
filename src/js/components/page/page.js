@@ -1,3 +1,5 @@
+import './page.css';
+
 export default React => {
   class Page extends React.Component {
     constructor(props) {

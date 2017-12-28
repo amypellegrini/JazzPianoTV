@@ -1,0 +1,6 @@
+.jptv-page-container.loading {
+  min-height: 100px;
+  background-image: url('../jptv-loading.gif');
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
