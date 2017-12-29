@@ -6,6 +6,12 @@
   color: #EEE;
 }
 
+.jptv-footer h4,
+.jptv-footer p,
+.jptv-footer ul li a {
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
 .jptv-footer ul {
   float: left;
   margin: 0 5rem 0 0rem;
@@ -14,10 +20,11 @@
 }
 
 .jptv-footer ul li {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .jptv-footer ul li a {
+  font-size: 0.9rem;
   text-decoration: none;
   color: inherit;
   cursor: pointer;
@@ -26,9 +33,10 @@
 .jptv-footer h4 {
   margin: 0;
   text-decoration: underline;
+  margin-bottom: 0.8rem;
 }
 
 .jptv-footer p {
   margin: 1rem 0 0;
-  font-size: 11px;
+  font-size: 0.8rem;
 }

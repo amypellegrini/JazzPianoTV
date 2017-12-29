@@ -45,6 +45,8 @@ export default React => {
         );
       }
 
+      classNames.push('loading');
+
       return <div className={ classNames.join(' ') }></div>;
     }
   }

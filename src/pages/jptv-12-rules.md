@@ -10,5 +10,5 @@
 8. Music is a language, learn to think, read, write, and improvise music, just as you once  learned to think, read, write text, and improvise spoken sentences in ordinary conversation.
 9. Get used to play in varied social circumstances: when you are alone, in the stage, in front of an audience, and with other musicians. Don’t forget Music is primarily a social activity.
 10. Get used to play with obstacles and difficult circumstances.
-11. Get used to play whatever you can hear in your mind, which is the same as playing by ear.
-12. Feel free to break any (or all) of these commandments anytime you want, without guilt, sadness, or regret.
+11. Get used to play whatever you can hear in your mind, which is the same thing as playing by ear.
+12. Feel free to break any (or all) of these rules anytime you want, without guilt, sadness, or regret.

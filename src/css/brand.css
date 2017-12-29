@@ -51,10 +51,36 @@
     font-size: 1.5rem;
   }
 
-  p {
+  p,
+  ol li,
+  ul li {
+    font-family: 'Lora', Times, serif;
     line-height: 1.5rem;
     margin-top: 0;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.7rem;
+  }
+
+  ol {
+    list-style-type: none;
+  }
+
+  ol li {
+    position: relative;
+    margin: 1.5rem 0;
+    counter-increment: step-counter;
+  }
+
+  ol li::before {
+    padding-right: 3rem;
+    text-align: right;
+    margin-left: -4rem;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    content: counter(step-counter) ". ";
+    position: absolute;
+    width: 3rem;
   }
 
   hr {
