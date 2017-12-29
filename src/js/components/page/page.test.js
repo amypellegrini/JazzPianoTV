@@ -48,7 +48,7 @@ test('Page component', nest => {
     assert.end();
   });
 
-  nest.test('. page content async', assert => {
+  nest.test('. page content fetch', assert => {
     const message = 'It should load and render a given page by ID.'
 
     const matchProp = {
