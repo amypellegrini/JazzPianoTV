@@ -8,7 +8,7 @@ export default React => () => {
       <div className="group">
         <ul>
           <li>
-            <h4>Contact</h4>
+            <h4>Contact / follow</h4>
           </li>
           <li>
             <a href="https://musescore.com/user/3607356" className="musescore-link" target="_blank">Amy Pellegrini Musescore Profile</a>
@@ -19,13 +19,13 @@ export default React => () => {
         </ul>
         <ul>
           <li>
-            <h4>Listen</h4>
+            <h4>Listen music tracks</h4>
           </li>
           <li>
-            <a href="https://amypellegrini.bandcamp.com/" className="bandcamp-link" target="_blank">Amy Pellegrini tracks on Bandcamp</a>
+            <a href="https://amypellegrini.bandcamp.com/" className="bandcamp-link" target="_blank">Amy Pellegrini on Bandcamp</a>
           </li>
           <li>
-            <a href="https://soundcloud.com/amyvpellegrini" className="soundcloud-link" target="_blank">Amy Pellegrini tracks on Soundcloud</a>
+            <a href="https://soundcloud.com/amyvpellegrini" className="soundcloud-link" target="_blank">Amy Pellegrini on Soundcloud</a>
           </li>
         </ul>
       </div>
