@@ -63,6 +63,8 @@
     "start": "nodemon ./bin/www",
     "clean": "rm -r public",
     "build": "webpack",
+    "build:watch": "webpack --watch",
+    "build:prod": "webpack -p",
     "test": "tape -r babel-register -r ignore-styles src/js/**/*.test.js | faucet",
     "test:watch": "clear && watch \"npm test\" ."
   },
