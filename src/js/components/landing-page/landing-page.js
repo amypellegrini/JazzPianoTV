@@ -5,7 +5,7 @@ export default React => () => {
   const Link = createLink(React);
 
   return (
-    <div className="jptv-landing-page">
+    <div className="jptv-landing-page font-large-size">
       <section>
         <header className="jumbotron">
           <h2>The Hanon Pilgrimage to Mastery</h2>
@@ -28,7 +28,7 @@ export default React => () => {
 
         <hr />
 
-        <p>Looking for sheet music? Feel free to visit Amy Pellegrini <a className="jptv-musescore-link" href="https://musescore.com/user/3607356" target="_blank">Musescore Profile</a>.</p>
+        <p className="font-default-size">Looking for sheet music? Feel free to visit Amy Pellegrini <a className="jptv-musescore-link" href="https://musescore.com/user/3607356" target="_blank">Musescore Profile</a>.</p>
       </section>
     </div>
   );

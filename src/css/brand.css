@@ -35,9 +35,9 @@
 
   h3 {
     font-family: 'Montserrat', Arial, serif;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    font-size: 1.7rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
   }
 
   section > header {
@@ -51,7 +51,12 @@
     font-size: 1.5rem;
   }
 
-  p,
+  p {
+    font-family: 'Lora', Times, serif;
+    margin-top: 0;
+    margin-bottom: 1.7rem;
+  }
+
   ol li,
   ul li {
     font-family: 'Lora', Times, serif;
@@ -59,6 +64,16 @@
     margin-top: 0;
     font-size: 1.1rem;
     margin-bottom: 1.7rem;
+  }
+
+  .font-default-size {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .font-large-size {
+    line-height: 2.3rem;
+    font-size: 1.4rem
   }
 
   ol {
