@@ -1,15 +1,24 @@
-.jptv-page-container {
-  padding: 0 14%;
-  margin: 0 15%;
+@media screen and (min-width: 320px) {
+  .jptv-page-container {
+    padding: 0 0%;
+    margin: 0 3%;
+  }
+
+  .jptv-page-container h2 {
+    text-align: center;
+  }
+
+  .jptv-page-container.loading {
+    height: 300px;
+    background-image: url('../jptv-loading.gif');
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
 }
 
-.jptv-page-container h2 {
-  text-align: center;
-}
-
-.jptv-page-container.loading {
-  height: 300px;
-  background-image: url('../jptv-loading.gif');
-  background-repeat: no-repeat;
-  background-position-x: center;
+@media screen and (min-width: 1024px) {
+  .jptv-page-container {
+    padding: 0 14%;
+    margin: 0 15%;
+  }
 }
