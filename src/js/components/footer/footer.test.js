@@ -88,7 +88,7 @@ test('Footer component', nest => {
     const output = $('footer').find('.bandcamp-link').text();
 
     actual = output;
-    const expected = 'Amy Pellegrini tracks on Bandcamp';
+    const expected = 'Amy Pellegrini on Bandcamp';
 
     assert.equal(actual, expected, message);
     assert.end();
@@ -104,7 +104,7 @@ test('Footer component', nest => {
     const output = $('footer').find('.soundcloud-link').text();
 
     actual = output;
-    const expected = 'Amy Pellegrini tracks on Soundcloud';
+    const expected = 'Amy Pellegrini on Soundcloud';
 
     assert.equal(actual, expected, message);
     assert.end();
