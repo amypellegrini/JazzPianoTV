@@ -15,9 +15,7 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <div id="root">
-      {{{ serverRender }}}
-    </div>
+    <div id="root">{{{serverRender}}}</div>
     <script src="/js/jptv-main.js"></script>
   </body>
 </html>

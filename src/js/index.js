@@ -1,12 +1,12 @@
 import React from 'react';
-import { render } from 'react-dom';
+import { hydrate } from 'react-dom';
 
 import '../css/main.css';
 import createApp from './App';
 
 const App = createApp(React);
 
-render(
+hydrate(
   <App />,
   document.getElementById('root')
 );
