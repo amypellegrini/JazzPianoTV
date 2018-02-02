@@ -9,10 +9,12 @@ var createApp = require('../src/js/app-server').default;
 
 module.exports = function(passport) {
   var app = createApp(React);
-  var render =  reactDOMServer.renderToString(app());
 
   /* GET home page. */
   router.get('/*', function(req, res, next) {
+    var render =  reactDOMServer.renderToString(app({
+      location: req.url
+    }));
     res.render('index', { serverRender: render });
   });
 
