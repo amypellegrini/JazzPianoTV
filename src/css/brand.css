@@ -44,13 +44,6 @@
     text-align: center;
   }
 
-  section > header > p {
-    text-transform: uppercase;
-    font-family: 'Raleway';
-    color: #aaa;
-    font-size: 1.5rem;
-  }
-
   p {
     font-family: 'Lora', Times, serif;
     margin-top: 0;

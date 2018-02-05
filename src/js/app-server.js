@@ -15,8 +15,6 @@ export default React => (props) => {
   const Page = createPage(React);
   const Footer = createFooter(React);
 
-  console.log('location: ', location);
-
   var context = {};
 
   return (

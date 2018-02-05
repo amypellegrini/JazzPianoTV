@@ -16,6 +16,14 @@
   }
 }
 
+/* Landscape mobile / portrait small tablet */
+@media screen and (min-width: 684px) {
+  .jptv-page-container {
+    padding: 0 0%;
+    margin: 0 9%;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .jptv-page-container {
     padding: 0 14%;
