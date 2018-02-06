@@ -16,3 +16,5 @@
 - Watch test: `npm test:watch`
 - Build: `npm run build`
 - Launch server: `npm start`
+
+By convention, unit tests are included in each component folder along with its associated component, while integration tests are within the "tests" folder.

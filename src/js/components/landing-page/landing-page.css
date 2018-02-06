@@ -1,13 +1,28 @@
-.jptv-landing-page {
-  text-align: center;
-  padding: 0 14%;
-  margin: 0 15%;
+@media screen and (min-width: 320px) {
+  .jptv-landing-page {
+    text-align: center;
+    padding: 0;
+    margin: 0 15%;
+  }
+
+  .jptv-landing-page header {
+    margin-bottom: 3rem;
+  }
+
+  .jptv-landing-page header h2 {
+    margin: 2rem 0;
+  }
+
+  .jptv-landing-page header p {
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    color: #aaa;
+    font-size: 1.5rem;
+  }
 }
 
-.jptv-landing-page .jumbotron {
-  margin-bottom: 3rem;
-}
-
-.jptv-landing-page .jumbotron h2 {
-  margin: 2rem 0;
+@media screen and (min-width: 1024px) {
+  .jptv-landing-page {
+    padding: 0 14%;
+  }
 }
