@@ -2,7 +2,6 @@ import test from 'tape';
 import React from 'react';
 import reactDom from 'react-dom/server';
 import dom from 'cheerio';
-
 import createPage from './page';
 
 const render = reactDom.renderToStaticMarkup;
@@ -18,6 +17,7 @@ test('Page component', nest => {
     };
 
     const Page = createPage(React);
+
     const $ = dom.load(render(<Page match={ matchProp } />));
     const output = $('.jptv-page-container');
 
@@ -48,8 +48,8 @@ test('Page component', nest => {
     assert.end();
   });
 
-  nest.test('. page content fetch', assert => {
-    const message = 'It should load and render a given page by ID.'
+  nest.test('. page .md content render (not loading)', assert => {
+    const message = 'It should render a given MD content.'
 
     const matchProp = {
       params: {
@@ -58,11 +58,11 @@ test('Page component', nest => {
     };
 
     const Page = createPage(React);
-    const $ = dom.load(render(<Page match={ matchProp } />));
-    const output = $('h2').text();
+    const pageContent = '## JPTV Markdown Render';
 
-    const actual = output;
-    const expected = 'JazzPianoTV 12 Rules for Piano Mastery';
+    const $ = dom.load(render(<Page pageContent={pageContent} match={ matchProp } />));
+    const actual = $('h2').text();
+    const expected = 'JPTV Markdown Render';
 
     assert.equal(actual, expected, message);
     assert.end();
