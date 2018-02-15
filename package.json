@@ -46,7 +46,6 @@
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
     "babelify": "^8.0.0",
-    "blue-tape": "^1.0.0",
     "cheerio": "^1.0.0-rc.2",
     "copy-webpack-plugin": "^4.2.3",
     "cross-env": "^5.1.3",
